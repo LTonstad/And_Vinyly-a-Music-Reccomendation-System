@@ -1,26 +1,25 @@
 # DSI_Capstone_Three
 
-## Music/Album Recommender
+## Music/Album Content Based Recommender
 
-* Would really like to do an album recommender based on already owned albums which could be done through [Discogs API](https://www.discogs.com/developers)
+* Would idealy like to feed album or playlist to get features of the songs and have it recommend another album based on the similarities in song data gathered by Librosa
 
-Looked up backup plans in case the api is too much to deal with (I've gotten a key to use it but haven't had time to test it out much)
+Datasets
 
-* [Spotify Tracks](https://www.kaggle.com/luckey01/test-data-set)
-* [Another one, less songs but more features per song](https://www.kaggle.com/yamaerenay/spotify-dataset-19212020-160k-tracks)
+* Have large dataset from my Amazon Music account that includes things like playlists and can download the songs themselves, then can also use all the spotify data in the link below:
+  * [Spotify Tracks](https://www.kaggle.com/luckey01/test-data-set)
+  * [Another one, less songs but more features per song](https://www.kaggle.com/yamaerenay/spotify-dataset-19212020-160k-tracks)
 
-## Stand up Comedy Recommender
 
-* May not be totally feasible, difficult to find a Dataset that has Stand-up comedy separate from regular comedy movies/tv
+* Could get a users already owned/wanted albums through [Discogs API](https://www.discogs.com/developers)
+  * Tested this and able to get Albums from userID
 
-[Tons of info, not separated](https://www.kaggle.com/komalkhetlani/imdb-dataset)
+## Detect Movie Genre based on Movie poster
 
-[Comedians DB](https://www.kaggle.com/eduardo4jesus/scomedy?select=scomedy-comedians.csv)
+* [Kaggle Dataset](https://www.kaggle.com/neha1703/movie-genre-from-its-poster)
 
 ## Beer Recommender
 
 * Review Dataset [BeerAdvocate](https://data.world/socialmediadata/beeradvocate)
 
-https://www.kaggle.com/techsash/waste-classification-data
-
-https://www.kaggle.com/neha1703/movie-genre-from-its-poster
+Really wanted to get data from something like Untapped but have to apply for api key...
