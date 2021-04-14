@@ -21,3 +21,6 @@ Looked up backup plans in case the api is too much to deal with (I've gotten a k
 
 * Review Dataset [BeerAdvocate](https://data.world/socialmediadata/beeradvocate)
 
+https://www.kaggle.com/techsash/waste-classification-data
+
+https://www.kaggle.com/neha1703/movie-genre-from-its-poster
