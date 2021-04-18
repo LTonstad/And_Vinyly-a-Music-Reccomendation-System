@@ -7,6 +7,10 @@
 * Could get a users already owned/wanted albums through [Discogs API](https://www.discogs.com/developers)
   * Tested this and able to get Albums from userID
 
+Get Album id's --> https://stackoverflow.com/questions/36237522/get-spotipy-album-id-from-album
+
+
+
 # Backup Plans
 
 ## Detect Movie Genre based on Movie poster
