@@ -10,15 +10,9 @@
 Get Album id's --> https://stackoverflow.com/questions/36237522/get-spotipy-album-id-from-album
 
 
+Columns that I'd want in csv:
 
-# Backup Plans
-
-## Detect Movie Genre based on Movie poster
-
-* [Kaggle Dataset](https://www.kaggle.com/neha1703/movie-genre-from-its-poster)
-
-## Beer Recommender
-
-* Review Dataset [BeerAdvocate](https://data.world/socialmediadata/beeradvocate)
-
-Really wanted to get data from something like Untapped but have to apply for api key...
+* 'name', 'artist', 'album', 'year', 'Label', 'explicit', 'duration_ms', 'popularity', 'danceability',
+  'energy', 'key', 'loudness', 'mode', 'speechiness', 'acousticness',
+  'instrumentalness', 'liveness', 'valence', 'tempo', 'type', 'id', 'uri',
+  'track_href', 'track_number', 'analysis_url', 'time_signature'
