@@ -25,6 +25,9 @@ albums = pd.read_excel('data/my_albums.ods')
 # Making sure all Titles are read in as strings
 albums['Title'] = albums['Title'].map(str)
 
+# Ratings array
+ratings = albums['Rating'].to_numpy(dtype='int')
+
 def get_song_data(track, year, artist):
       
     """
@@ -41,6 +44,8 @@ def get_song_data(track, year, artist):
     results = results['tracks']['items'][0]
 
     track_id = results['id']
+    
+    # Audio_Features section
     audio_features = sp.audio_features(track_id)[0]
     
     song_data['name'] = [track]
@@ -65,8 +70,26 @@ def get_song_data(track, year, artist):
     for key, value in audio_features.items():
         song_data[key] = value
     
+    song_data['artist_uri'] = [results['album']['artists'][0]['uri']]
+    song_data['album_uri'] = [results['album']['uri']]
+    song_data['release_date'] = [results['album']['release_date']]
     song_data['album_image_url'] = [results['album']['images'][0]['url']]
 
+    # Audio Analysis Section
+    aa = sp.audio_analysis(track_id)
+
+    song_data['track_length'] = [aa['track']['duration']]
+    song_data['tempo_confidence'] = [aa['track']['tempo_confidence']]
+    song_data['end_fade_in'] = [aa['track']['end_of_fade_in']]
+    song_data['start_fade_out'] = [aa['track']['start_of_fade_out']]
+    song_data['end_silence_time'] = aa['track']['duration'] - aa['track']['start_of_fade_out']
+
+    # Adding dict columns from audio analysis
+    song_data['sections'] = [aa['sections']]
+    song_data['tatums'] = [aa['tatums']]
+    song_data['beats'] = [aa['beats']]
+    song_data['bars'] = [aa['bars']]
+    
     return pd.DataFrame(song_data)
 
 
@@ -112,15 +135,17 @@ def get_album_df(file_name='my_albums'):
         plt.imshow(img)
         plt.show()
 
-    df.to_csv('../data/my_albums.csv')
+    df.to_csv('../data/{file_name}.csv')
 
 df_main = pd.read_csv('data/my_albums.csv')
 
 def get_album_avgs(df_main):
     album_avgs = df_main.groupby('album')['year', 'featured_artists', 'tracks_on_album',
-                                        'explicit', 'duration_ms', 'popularity',
-        'danceability', 'energy', 'key', 'loudness', 'mode', 'speechiness',
-        'acousticness', 'instrumentalness', 'liveness', 'valence', 'tempo'].agg(np.mean)
+                        'explicit', 'duration_ms', 'popularity','danceability', 'energy', 
+                        'key', 'loudness', 'mode', 'speechiness', 'acousticness', 
+                        'instrumentalness', 'liveness', 'valence', 'tempo',
+                        'tempo_confidence', 'track_length', 'end_fade_in', 'start_fade_out',
+                        'end_silence_time'].agg(np.mean)
 
     # Changing values to integers
     album_avgs['year'] = album_avgs['year'].astype('int')
