@@ -1,0 +1,101 @@
+Rank,Title,Band,Country,Year,Compilation,Live,YearRank,DecadeRank,OverallRank,RankScore,AvgRating,NumRatings,AlbumID
+1,What's Going On,Marvin Gaye,us,1971,No,No,5,20,68,21974,85.186553955,1698,159
+2,Pet Sounds,The Beach Boys,us,1966,No,No,2,5,13,57080,87.943382263,2932,18
+3,Blue,Joni Mitchell,ca,1971,No,No,6,22,79,19587,84.23374939,1312,132
+4,Songs In The Key Of Life,Stevie Wonder,us,1976,No,No,1,28,109,15097,84.840858459,1126,270
+5,Abbey Road,The Beatles,uk,1969,No,No,1,1,3,81451,91.683708191,4133,24
+6,Nevermind,Nirvana,us,1991,No,No,1,2,15,53204,86.54259491,3924,187
+7,Rumours,Fleetwood Mac,un,1977,No,No,1,7,26,38458,86.509468079,2273,101
+8,Purple Rain,Prince And The Revolution,us,1984,No,No,1,11,82,18921,83.402450562,1434,215
+9,Blood On The Tracks,Bob Dylan,us,1975,No,No,2,12,43,29061,87.018516541,1961,45
+10,The Miseducation Of Lauryn Hill,Lauryn Hill,us,1998,No,No,6,71,371,5312,77.750564575,689,141
+11,Revolver,The Beatles,uk,1966,No,No,1,2,4,74630,91.212265015,4111,28
+12,Thriller,Michael Jackson,us,1982,No,No,1,10,81,19057,82.05708313,1912,166
+13,I Never Loved A Man The Way I Love You,Aretha Franklin,us,1967,No,No,14,52,423,4652,80.377059937,509,11
+14,Exile On Main St.,The Rolling Stones,uk,1972,No,No,2,11,42,29161,85.665206909,2135,241
+15,It Takes A Nation Of Millions To Hold Us Back,Public Enemy,us,1988,No,No,4,29,244,8173,79.882362366,889,219
+16,London Calling,The Clash,uk,1979,No,No,1,5,18,48445,86.922409058,2874,65
+17,My Beautiful Dark Twisted Fantasy,Kanye West,us,2010,No,No,1,2,34,32562,84.707931519,2057,12555
+18,Highway 61 Revisited,Bob Dylan,us,1965,No,No,1,7,24,40051,88.64125824,2548,47
+19,To Pimp A Butterfly,Kendrick Lamar,us,2015,No,No,1,1,23,41264,89.663078308,1926,77758
+20,Kid A,Radiohead,uk,2000,No,No,1,1,5,69014,89.33820343,4007,1002
+21,Born To Run,Bruce Springsteen,us,1975,No,No,3,18,64,22455,83.434425354,1782,54
+22,Ready To Die,The Notorious B.I.G.,us,1994,No,No,12,59,299,6688,81.601470947,716,1429
+23,The Velvet Underground +ACY- Nico,The Velvet Underground +ACY- Nico,un,1967,No,No,2,4,10,60119,88.54511261,3193,302
+24,Sgt. Pepper's Lonely Hearts Club Band,The Beatles,uk,1967,No,No,1,3,6,68994,90.490684509,4138,30
+25,Tapestry,Carole King,us,1971,No,No,11,61,261,7594,81.320671082,822,62
+26,Horses,Patti Smith,us,1975,No,No,7,45,184,10277,81.748519897,1059,195
+27,Enter The Wu+AC0-Tang (36 Chambers),Wu+AC0-Tang Clan,us,1993,No,No,3,21,112,15056,83.790367126,1112,311
+28,Voodoo,D'Angelo,us,2000,No,No,12,100,592,3276,79.595214844,362,5749
+29,The Beatles (The White Album),The Beatles,uk,1968,No,No,1,6,14,53788,88.757011414,3465,31
+30,Are You Experienced,The Jimi Hendrix Experience,us,1967,No,No,4,12,38,30749,87.262451172,2241,125
+31,Kind Of Blue,Miles Davis,us,1959,No,No,1,1,40,30073,89.058158875,2028,168
+32,Lemonade,Beyonce,us,2016,No,No,9,71,534,3613,77.519538879,527,97211
+33,Back To Black,Amy Winehouse,uk,2006,No,No,3,38,225,8670,79.360664368,957,1843
+34,Innervisions,Stevie Wonder,us,1973,No,No,3,30,119,14578,85.541763306,1155,269
+35,Rubber Soul,The Beatles,uk,1965,No,No,2,8,27,38438,88.227355957,3039,29
+36,Off The Wall,Michael Jackson,us,1979,No,No,6,91,365,5450,78.891281128,896,165
+37,The Chronic,Dr. Dre,us,1992,No,No,6,79,438,4492,79.575630188,644,1409
+38,Blonde On Blonde,Bob Dylan,us,1966,No,No,3,11,31,34429,87.912864685,2176,44
+39,Remain In Light,Talking Heads,us,1980,No,No,1,3,30,35696,87.177360535,1991,285
+40,The Rise And Fall Of Ziggy Stardust And The Spiders From Mars,David Bowie,uk,1972,No,No,1,3,9,63058,90.132148743,3131,74
+41,Let It Bleed,The Rolling Stones,uk,1969,No,No,5,16,62,22769,85.615066528,1889,242
+42,OK Computer,Radiohead,uk,1997,No,No,1,1,1,101635,91.837974548,5051,227
+43,The Low End Theory,A Tribe Called Quest,us,1991,No,No,6,32,151,12071,84.833526611,992,2729
+44,Illmatic,Nas,us,1994,No,No,3,14,70,21027,86.153282166,1384,2441
+45,Sign 'O' The Times,Prince,us,1987,No,No,3,25,201,9292,81.029045105,819,216
+46,Graceland,Paul Simon,us,1986,No,No,3,16,129,13665,81.08757782,1198,196
+47,Ramones,Ramones,us,1976,No,No,3,52,214,9061,80.166252136,1167,229
+48,Legend,Bob Marley +ACY- The Wailers,jm,1984,Yes,No,8,51,388,5088,84.240104675,957,50
+49,Aquemini,OutKast,us,1998,No,No,4,55,282,7045,82.657951355,662,3507
+50,The Blueprint,Jay+AC0-Z,us,2001,No,No,10,86,517,3753,78.142074585,645,122
+51,The Great Twenty+AC0-Eight,Chuck Berry,us,1982,Yes,No,38,351,2241,725,79.958305359,290,64
+52,Station To Station,David Bowie,uk,1976,No,No,2,32,125,13976,85.369407654,1326,77
+53,Electric Ladyland,The Jimi Hendrix Experience,us,1968,No,No,3,17,72,20739,86.2891922,1752,127
+54,Star Time,James Brown,us,1991,Yes,No,75,937,5297,249,75.875297546,116,119
+55,The Dark Side Of The Moon,Pink Floyd,uk,1973,No,No,1,1,2,94021,92.274200439,4788,203
+56,Exile In Guyville,Liz Phair,us,1993,No,No,12,130,704,2709,76.867454529,394,149
+57,The Band,The Band,ca,1969,No,No,13,39,241,8257,81.458000183,869,17
+58,Untitled (Led Zeppelin IV),Led Zeppelin,uk,1971,No,No,1,4,11,58363,89.786369324,3621,144
+59,Talking Book,Stevie Wonder,us,1972,No,No,16,150,630,3046,80.788619995,572,271
+60,Astral Weeks,Van Morrison,uk,1968,No,No,2,15,59,22943,84.692771912,1532,296
+61,Paid In Full,Eric B. +ACY- Rakim,us,1987,No,No,16,131,879,2131,77.92678833,348,1537
+62,Appetite For Destruction,Guns N' Roses,us,1987,No,No,2,15,113,14945,78.499565125,1780,110
+63,Aja,Steely Dan,us,1977,No,No,6,49,206,9221,83.072685242,825,1126
+64,Stankonia,OutKast,us,2000,No,No,8,66,380,5189,79.990692139,800,1417
+65,Live At The Apollo,James Brown,us,1963,No,Yes,4,72,632,3042,79.258705139,509,117
+66,A Love Supreme,John Coltrane,us,1965,No,No,3,19,78,19600,87.093360901,1321,128
+67,Reasonable Doubt,Jay+AC0-Z,us,1996,No,No,13,135,725,2630,76.665206909,474,2744
+68,Hounds Of Love,Kate Bush,uk,1985,No,No,1,9,74,20267,84.6746521,1148,137
+69,Jagged Little Pill,Alanis Morissette,ca,1995,No,No,7,68,353,5647,76.692405701,894,6
+70,Straight Outta Compton,N.W.A,us,1988,No,No,7,67,480,4050,78.673484802,641,177
+71,Exodus,Bob Marley +ACY- The Wailers,jm,1977,No,No,11,74,293,6775,82.132240295,761,49
+72,Harvest,Neil Young,ca,1972,No,No,5,25,99,16020,84.806816101,1530,179
+73,Loveless,My Bloody Valentine,un,1991,No,No,2,5,21,42031,86.283966064,2177,176
+74,The College Dropout,Kanye West,us,2004,No,No,5,34,185,10218,82.391395569,1234,1836
+75,Lady Soul,Aretha Franklin,us,1968,No,No,15,77,695,2753,79.444145203,424,12
+76,Superfly,Curtis Mayfield,us,1972,No,No,12,125,536,3595,80.82862854,492,72
+77,Who's Next,The Who,uk,1971,No,No,2,10,37,30893,86.298713684,2313,309
+78,The Sun Sessions,Elvis Presley,us,1976,Yes,No,39,437,2263,718,79.696136475,268,98
+79,Blonde,Frank Ocean,us,2016,No,No,2,8,114,14871,83.949378967,924,101825
+80,+ACI-Never Mind The Bollocks, Here's The Sex Pistols+ACI-,Sex Pistols,uk,1977,No,No,5,29,116,14784,80.350784302,1690,247
+81,Beyonce,Beyonce,us,2013,No,No,26,191,1263,1435,72.077041626,301,52395
+82,There's A Riot Goin' On,Sly +ACY- The Family Stone,us,1971,No,No,17,92,370,5317,81.582107544,599,254
+83,Dusty In Memphis,Dusty Springfield,uk,1969,No,No,20,71,624,3076,79.073394775,470,88
+84,Back In Black,AC/DC,au,1980,No,No,3,17,136,12986,79.710357666,1685,2
+85,John Lennon/Plastic Ono Band,John Lennon,uk,1970,No,No,5,36,146,12335,83.556442261,1267,5438
+86,The Doors,The Doors,us,1967,No,No,3,10,29,36574,86.945167542,2556,86
+87,Bitches Brew,Miles Davis,us,1970,No,No,6,39,156,11735,84.712112427,1045,167
+88,Hunky Dory,David Bowie,uk,1971,No,No,3,13,46,27045,87.400680542,2164,73
+89,Baduizm,Erykah Badu,us,1997,No,No,26,270,1415,1271,77.373924255,189,3923
+90,After The Gold Rush,Neil Young,ca,1970,No,No,2,21,75,19907,85.834503174,1617,178
+91,Darkness On The Edge Of Town,Bruce Springsteen,us,1978,No,No,1,46,190,9730,82.292617798,1015,55
+92,Axis: Bold As Love,The Jimi Hendrix Experience,us,1967,No,No,9,37,231,8478,83.520881653,1214,126
+93,Supa Dupa Fly,Missy Elliott,us,1997,No,No,51,552,2958,512,72.501838684,81,7191
+94,Fun House,The Stooges,us,1970,No,No,9,48,205,9226,83.789230347,965,274
+95,Take Care,Drake,ca,2011,No,No,17,120,814,2310,70.867958069,364,19923
+96,Automatic For The People,R.E.M.,us,1992,No,No,1,9,57,23332,83.874221802,1961,225
+97,Master Of Puppets,Metallica,us,1986,No,No,2,14,104,15665,83.155670166,1577,960
+98,Car Wheels On A Gravel Road,Lucinda Williams,us,1998,No,No,11,139,738,2578,79.393760681,305,1057
+99,Red,Taylor Swift,us,2012,No,No,27,283,1732,987,62.544376373,219,31342
+100,Music From Big Pink,The Band,ca,1968,No,No,8,43,289,6813,81.284980774,861,16
