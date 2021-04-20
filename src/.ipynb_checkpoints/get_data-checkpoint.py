@@ -16,8 +16,9 @@ plt.style.use('fivethirtyeight')
 # Image.open(requests.get(df_song['album_image_url'][0], stream=True).raw)
 
 # Setup Authentication
-# auth_manager = SpotifyClientCredentials()
-# sp = spotipy.Spotify(auth_manager=auth_manager)
+auth_manager = SpotifyClientCredentials('424af1dc12124b348f3512f327311c06',  '4f653f97baa9452984c3a2dc2d202024')
+sp = spotipy.Spotify(auth_manager=auth_manager, requests_timeout=5, 
+                    retries=15, status_retries=10, backoff_factor=1)
 
 # Pull in my Album Data
 albums = pd.read_excel('data/my_albums.ods')
@@ -37,8 +38,10 @@ def get_song_data(track, year, artist):
     """
     
     song_data = defaultdict()
-    results = sp.search(q='track: {} year: {} artist: {}'.format(track, year, artist), type="track", limit=1)
+    results = sp.search(q='track: {} year: {} artist: {}'.format(str(track), int(year), str(artist)), type="track", limit=1)
     if results['tracks']['items'] == []:
+        return None
+    elif results is None:
         return None
     
     results = results['tracks']['items'][0]
@@ -110,14 +113,19 @@ def get_song_data(track, year, artist):
 
 
 # Get dictionary for inputs into the get_song_data function
-def get_songs_on_album(album_idx):
-    album = albums['Title'][album_idx]
-    year = albums['Released'][album_idx]
-    artist = albums['Artist'][album_idx]
+def get_songs_on_album(album_idx, df_albums):
+    album = df_albums['Title'][album_idx]
+    year = df_albums['Released'][album_idx]
+    artist = df_albums['Artist'][album_idx]
 
     # find album by name
     results = sp.search('album: {} year: {} artist: {}'.format(album, year, artist), type = "album")
-
+    
+    if results['albums']['items'] == []:
+        return None
+    elif results is None:
+        return None
+    
     # get the first album uri
     album_id = results['albums']['items'][0]['uri']
 
@@ -129,9 +137,16 @@ def get_songs_on_album(album_idx):
     for idx, track in enumerate(tracks['items']):
         if idx == 0:
             album_df = get_song_data(track['name'], year, artist)
+            if album_df is None:
+                print('Unable to find song :(')
+                continue
         else:
             song_df = get_song_data(track['name'], year, artist)
-            album_df = album_df.append(song_df, ignore_index=True)
+            if song_df is None or album_df is None:
+                print('Unable to find song :(')
+                continue
+            else:
+                album_df = album_df.append(song_df, ignore_index=True)
 
         print(track['name'])
 

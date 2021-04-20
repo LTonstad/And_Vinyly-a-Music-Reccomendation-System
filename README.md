@@ -12,18 +12,27 @@ Get Album id's --> https://stackoverflow.com/questions/36237522/get-spotipy-albu
 
 Columns that I'd want in csv:
 
-* 'name', 'artist', 'album', 'year', 'Label', 'explicit', 'duration_ms', 'popularity', 'danceability',
-  'energy', 'key', 'loudness', 'mode', 'speechiness', 'acousticness',
-  'instrumentalness', 'liveness', 'valence', 'tempo', 'type', 'id', 'uri',
-  'track_href', 'track_number', 'analysis_url', 'time_signature'
+```python
+* ['name', 'album', 'year', 'artist', 'featured_artists', 'track_number',
+       'tracks_on_album', 'explicit', 'duration_ms', 'popularity',
+       'danceability', 'energy', 'key', 'loudness', 'mode', 'speechiness',
+       'acousticness', 'instrumentalness', 'liveness', 'valence', 'tempo',
+       'type', 'id', 'uri', 'track_href', 'analysis_url', 'time_signature',
+       'artist_uri', 'album_uri', 'release_date', 'album_image_url',
+       'track_length', 'tempo_confidence', 'end_fade_in', 'start_fade_out',
+       'end_silence_time', 'sections', 'tatums', 'beats', 'bars']
+```
 
 # Steps to be taken
 
 ## Decisions to be made
 
-* Setup AWS?
+* **Completed**Setup AWS
 * What to choose for Feature Engineering & Recommender Model
 * What pool of music to have Recommender system choose from
+    * Chose [Rolling Stones top 100 albums](https://www.besteveralbums.com/thechart.php?c=62479) & [1000 Best albums of 2010s](https://www.besteveralbums.com/yearstats.php?y=201&f=&fv=&orderby=InfoRankScore&sortdir=DESC&page=2)
+    * Possibly have it recommend 1-3 for each
+    * When running through the script to get this data through Spotipy, there was a handful that it was not able to find
 
 ## Getting Data through Spotipy
 
