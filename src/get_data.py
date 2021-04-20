@@ -16,7 +16,7 @@ plt.style.use('fivethirtyeight')
 # Image.open(requests.get(df_song['album_image_url'][0], stream=True).raw)
 
 # Setup Authentication
-auth_manager = SpotifyClientCredentials('424af1dc12124b348f3512f327311c06', '4f653f97baa9452984c3a2dc2d202024')
+auth_manager = SpotifyClientCredentials()
 sp = spotipy.Spotify(auth_manager=auth_manager)
 
 # Pull in my Album Data

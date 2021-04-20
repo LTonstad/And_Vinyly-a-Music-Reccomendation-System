@@ -16,3 +16,32 @@ Columns that I'd want in csv:
   'energy', 'key', 'loudness', 'mode', 'speechiness', 'acousticness',
   'instrumentalness', 'liveness', 'valence', 'tempo', 'type', 'id', 'uri',
   'track_href', 'track_number', 'analysis_url', 'time_signature'
+
+# Steps to be taken
+
+## Decisions to be made
+
+* Setup AWS?
+* What to choose for Feature Engineering & Recommender Model
+* What pool of music to have Recommender system choose from
+
+## Getting Data through Spotipy
+
+* **Completed** Pulling all of the songs from my albums along with 40 features of the songs within the albums
+* Need to decide what to do with the huge 4 columns --> ['sections', 'tatums', 'beats', 'bars']
+
+## Feature Engineering
+
+* PCA/NMF
+
+## Cluster Albums
+
+* Probably use K-Means
+
+## Create Model
+
+* Sequential Neural Network
+
+## Setup recommender for presentation
+
+* Probably Flask
