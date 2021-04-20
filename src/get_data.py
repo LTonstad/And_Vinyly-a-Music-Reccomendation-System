@@ -16,8 +16,8 @@ plt.style.use('fivethirtyeight')
 # Image.open(requests.get(df_song['album_image_url'][0], stream=True).raw)
 
 # Setup Authentication
-auth_manager = SpotifyClientCredentials()
-sp = spotipy.Spotify(auth_manager=auth_manager)
+# auth_manager = SpotifyClientCredentials()
+# sp = spotipy.Spotify(auth_manager=auth_manager)
 
 # Pull in my Album Data
 albums = pd.read_excel('data/my_albums.ods')
@@ -83,8 +83,24 @@ def get_song_data(track, year, artist):
     song_data['end_fade_in'] = [aa['track']['end_of_fade_in']]
     song_data['start_fade_out'] = [aa['track']['start_of_fade_out']]
     song_data['end_silence_time'] = aa['track']['duration'] - aa['track']['start_of_fade_out']
-
-    # Adding dict columns from audio analysis
+    
+    # Getting some other columns based on album search
+    # First to change what I use in place of 'results'
+    album_results = sp.album(results['album']['uri'])
+    
+    # Now to get other data from album that we couldn't from song
+    song_data['album_label'] = [album_results['label']]
+    
+    # Same with artist data
+    artist_results = sp.artist(results['album']['artists'][0]['uri'])
+    
+    song_data['artist_spotify_link'] = [artist_results['external_urls']['spotify']]
+    song_data['followers'] = [artist_results['followers']['total']]
+    song_data['artist_genres'] = [artist_results['genres']]
+    song_data['artist_image_url'] = [artist_results['images'][0]['url']]
+    song_data['artist_popularity'] = [artist_results['popularity']]
+    
+    # Adding dict columns from audio analysis, these columns are extremely large
     song_data['sections'] = [aa['sections']]
     song_data['tatums'] = [aa['tatums']]
     song_data['beats'] = [aa['beats']]
@@ -136,23 +152,3 @@ def get_album_df(file_name='my_albums'):
         plt.show()
 
     df.to_csv('../data/{file_name}.csv')
-
-df_main = pd.read_csv('data/my_albums.csv')
-
-def get_album_avgs(df_main):
-    album_avgs = df_main.groupby('album')['year', 'featured_artists', 'tracks_on_album',
-                        'explicit', 'duration_ms', 'popularity','danceability', 'energy', 
-                        'key', 'loudness', 'mode', 'speechiness', 'acousticness', 
-                        'instrumentalness', 'liveness', 'valence', 'tempo',
-                        'tempo_confidence', 'track_length', 'end_fade_in', 'start_fade_out',
-                        'end_silence_time'].agg(np.mean)
-
-    # Changing values to integers
-    album_avgs['year'] = album_avgs['year'].astype('int')
-    album_avgs['tracks_on_album'] = album_avgs['tracks_on_album'].astype('int')
-    album_avgs['explicit'] = album_avgs['explicit'].astype('int')
-
-    ratings = albums['Rating'].to_numpy(dtype='int')
-    album_avgs['ratings'] = ratings
-
-    return album_avgs
