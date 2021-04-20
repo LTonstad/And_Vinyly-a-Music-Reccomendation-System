@@ -113,3 +113,21 @@ def get_album_df(file_name='my_albums'):
         plt.show()
 
     df.to_csv('../data/my_albums.csv')
+
+df_main = pd.read_csv('data/my_albums.csv')
+
+def get_album_avgs(df_main):
+    album_avgs = df_main.groupby('album')['year', 'featured_artists', 'tracks_on_album',
+                                        'explicit', 'duration_ms', 'popularity',
+        'danceability', 'energy', 'key', 'loudness', 'mode', 'speechiness',
+        'acousticness', 'instrumentalness', 'liveness', 'valence', 'tempo'].agg(np.mean)
+
+    # Changing values to integers
+    album_avgs['year'] = album_avgs['year'].astype('int')
+    album_avgs['tracks_on_album'] = album_avgs['tracks_on_album'].astype('int')
+    album_avgs['explicit'] = album_avgs['explicit'].astype('int')
+
+    ratings = albums['Rating'].to_numpy(dtype='int')
+    album_avgs['ratings'] = ratings
+
+    return album_avgs
