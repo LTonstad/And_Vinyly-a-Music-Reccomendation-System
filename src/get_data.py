@@ -22,7 +22,10 @@ sp = spotipy.Spotify(auth_manager=auth_manager)
 # Pull in my Album Data
 albums = pd.read_excel('data/my_albums.ods')
 
-def get_song_data(name, year):
+# Making sure all Titles are read in as strings
+albums['Title'] = albums['Title'].map(str)
+
+def get_song_data(track, year, artist):
       
     """
     This function returns a dataframe with data for a song given the name and release year.
@@ -31,7 +34,7 @@ def get_song_data(name, year):
     """
     
     song_data = defaultdict()
-    results = sp.search(q= 'track: {} year: {}'.format(name, year), limit=1)
+    results = sp.search(q='track: {} year: {} artist: {}'.format(track, year, artist), type="track", limit=1)
     if results['tracks']['items'] == []:
         return None
     
@@ -40,7 +43,7 @@ def get_song_data(name, year):
     track_id = results['id']
     audio_features = sp.audio_features(track_id)[0]
     
-    song_data['name'] = [name]
+    song_data['name'] = [track]
     song_data['album'] = [results['album']['name']]
     song_data['year'] = [year]
 
@@ -67,13 +70,14 @@ def get_song_data(name, year):
     return pd.DataFrame(song_data)
 
 
-def get_song_dict(album_idx):
-    d = defaultdict(list)
+# Get dictionary for inputs into the get_song_data function
+def get_songs_on_album(album_idx):
     album = albums['Title'][album_idx]
     year = albums['Released'][album_idx]
+    artist = albums['Artist'][album_idx]
 
     # find album by name
-    results = sp.search(q = "album:" + album, type = "album")
+    results = sp.search('album: {} year: {} artist: {}'.format(album, year, artist), type = "album")
 
     # get the first album uri
     album_id = results['albums']['items'][0]['uri']
@@ -81,12 +85,31 @@ def get_song_dict(album_idx):
     # get album tracks
     tracks = sp.album_tracks(album_id)
 
-    print(f'Getting songs for {album}' + '\n')
-    for track in tracks['items']:
-        d['name'].append(track['name'])
-        d['year'].append(year)
+    print('\n' + f'Getting songs for {album}' + '\n')
+    
+    for idx, track in enumerate(tracks['items']):
+        if idx == 0:
+            album_df = get_song_data(track['name'], year, artist)
+        else:
+            song_df = get_song_data(track['name'], year, artist)
+            album_df = album_df.append(song_df, ignore_index=True)
+
         print(track['name'])
 
-    print(f'Done getting songs for {album}' + '\n')
+    print('\n' + f'Done getting songs for {album}' + '\n')
 
-    return d
+    return album_df
+
+def get_album_df(file_name='my_albums'):
+    for album_idx in range(len(albums['Title'])):
+        if album_idx == 0:
+            df = get_songs_on_album(album_idx)
+            img = Image.open(requests.get(df['album_image_url'][0], stream=True).raw)
+        else:
+            album_df = get_songs_on_album(album_idx)
+            df = df.append(album_df)
+            img = Image.open(requests.get(album_df['album_image_url'][0], stream=True).raw)
+        plt.imshow(img)
+        plt.show()
+
+    df.to_csv('../data/my_albums.csv')
