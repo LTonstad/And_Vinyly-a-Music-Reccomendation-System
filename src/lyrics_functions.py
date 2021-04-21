@@ -13,17 +13,49 @@ import unicodedata
 import string
 import numpy as np
 import pandas as pd
+import re
 
 import lyricsgenius
 genius = lyricsgenius.Genius('8RrM66Ch9ov3QcGvV5KKkTwHTsnZpb2FRW2Jgvx04Me3sq9Duozolc0aoXpoIsKo')
 
-def get_album_lyrics(album, artist):
+df = pd.read_csv('../my_albums.csv', engine='python')
+
+def clean_lyrics(lyrics_str):
+    lyr_clean = re.sub("[\(\[].*?[\)\]]", "", lyrics_str)
+    lyr_clean = lyr_clean.rstrip()
+    lyr_clean = lyr_clean.splitlines()
+    return lyr_clean # Is a list of strings as bars from the lyrics
+
+def get_song_lyrics(song, artist):
+    song = genius.search_song(song, artist)
+    return song.to_text()
+
+def loop_songs_for_lyrics(df):
+    for i in range(len(df['name'])):
+        song = genius.search_song(df['name'][i], df['artist'][i])
+        
+        if song is None:
+            print(f"Unable to find {df['name'][i]} on Genius search...")
+            ser_lyrics.append(pd.Series('no lyrics found'))
+            continue
+            
+        lyrics = get_song_lyrics(df['name'][i], df['artist'][i])
+        if i == 0:
+            ser_lyrics = pd.Series(lyrics)
+        else:
+            ser_lyrics.append(pd.Series(lyrics))
+    
+    df['song_lyrics'] = ser_lyrics.T.values
+    
+    return df
+    
+def get_album_lyrics(album, artist, df):
     lyrics_dict = {}
 
-    for i in range(len(df_nsp['name'])):
-        song = genius.search_song(df_nsp['name'][i], df_nsp['artist'][i])
+    for i in range(len(df['name'])):
+        song = genius.search_song(df['name'][i], df['artist'][i])
         lyrics = song.to_text()
-        lyrics_dict[df_nsp['name'][i]] = lyrics
+        lyrics_dict[df['name'][i]] = lyrics
 
     documents = lyrics_dict.values()
 

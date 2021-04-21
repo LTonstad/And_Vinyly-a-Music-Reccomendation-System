@@ -5,6 +5,7 @@ from spotipy.oauth2 import SpotifyClientCredentials
 from collections import defaultdict
 from PIL import Image
 import requests
+import matplotlib.pyplot as plt
 
 # Setup Authentication
 auth_manager = SpotifyClientCredentials('424af1dc12124b348f3512f327311c06',  '4f653f97baa9452984c3a2dc2d202024')
@@ -153,7 +154,7 @@ def get_songs_on_album(album_idx, df_albums):
     return album_df
 
 def get_album_df(df_album, file_name):
-    for album_idx in range(len(album_df['Title'])):
+    for album_idx in range(len(df_album['Title'])):
         if album_idx == 0:
             df = get_songs_on_album(album_idx, df_album)
             if df is None:
