@@ -5,15 +5,6 @@ from spotipy.oauth2 import SpotifyClientCredentials
 from collections import defaultdict
 from PIL import Image
 import requests
-import matplotlib.pyplot as plt
-
-plt.style.use('fivethirtyeight')
-
-# Taken from here: https://towardsdatascience.com/how-to-build-an-amazing-music-recommendation-system-4cce2719a572
-# Returns 1 column dataframe with all the song features
-
-# How to print album art:
-# Image.open(requests.get(df_song['album_image_url'][0], stream=True).raw)
 
 # Setup Authentication
 auth_manager = SpotifyClientCredentials('424af1dc12124b348f3512f327311c06',  '4f653f97baa9452984c3a2dc2d202024')
@@ -39,13 +30,15 @@ def get_song_data(track, year, artist):
     
     song_data = defaultdict()
     results = sp.search(q='track: {} year: {} artist: {}'.format(str(track), int(year), str(artist)), type="track", limit=1)
+    
+    # Checking if error in search results
     if results['tracks']['items'] == []:
         return None
     elif results is None:
         return None
     
+    # Making life easier for the rest of dictionary slicing
     results = results['tracks']['items'][0]
-
     track_id = results['id']
     
     # Audio_Features section
@@ -54,7 +47,8 @@ def get_song_data(track, year, artist):
     song_data['name'] = [track]
     song_data['album'] = [results['album']['name']]
     song_data['year'] = [year]
-
+    
+    # Getting artist names within loop, dependent on if there is multiple artists
     if len(results['artists']) > 1:
         for idx, i in enumerate(results['artists']):
             if idx == 0:
@@ -119,7 +113,7 @@ def get_songs_on_album(album_idx, df_albums):
     artist = df_albums['Artist'][album_idx]
 
     # find album by name
-    results = sp.search('album: {} year: {} artist: {}'.format(album, year, artist), type = "album")
+    results = sp.search('album: {} year: {} artist: {}'.format(str(album), int(year), str(artist)), type = "album")
     
     if results['albums']['items'] == []:
         return None
@@ -134,14 +128,18 @@ def get_songs_on_album(album_idx, df_albums):
 
     print('\n' + f'Getting songs for {album}' + '\n')
     
+    # Looping through track names to load into get_song_data function
     for idx, track in enumerate(tracks['items']):
+        # To create df if it's not already created
         if idx == 0:
             album_df = get_song_data(track['name'], year, artist)
+            # Error checking...
             if album_df is None:
                 print('Unable to find song :(')
                 continue
         else:
             song_df = get_song_data(track['name'], year, artist)
+            # Error checking...
             if song_df is None or album_df is None:
                 print('Unable to find song :(')
                 continue
@@ -154,16 +152,24 @@ def get_songs_on_album(album_idx, df_albums):
 
     return album_df
 
-def get_album_df(file_name='my_albums'):
-    for album_idx in range(len(albums['Title'])):
+def get_album_df(df_album, file_name):
+    for album_idx in range(len(album_df['Title'])):
         if album_idx == 0:
-            df = get_songs_on_album(album_idx)
+            df = get_songs_on_album(album_idx, df_album)
+            if df is None:
+                print('Album was not found...')
+                continue
             img = Image.open(requests.get(df['album_image_url'][0], stream=True).raw)
         else:
-            album_df = get_songs_on_album(album_idx)
+            album_df = get_songs_on_album(album_idx, df_album)
+            if album_df is None:
+                print('Album was not found...')
+                continue
             df = df.append(album_df)
             img = Image.open(requests.get(album_df['album_image_url'][0], stream=True).raw)
         plt.imshow(img)
         plt.show()
 
-    df.to_csv('../data/{file_name}.csv')
+    df.to_csv(f'data/{file_name}.csv')
+    
+    return album_df
