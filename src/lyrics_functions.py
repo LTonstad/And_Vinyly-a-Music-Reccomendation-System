@@ -36,7 +36,10 @@ def loop_songs_for_lyrics(df):
         
         if song is None:
             print(f"Unable to find {df['name'][i]} on Genius search...")
-            ser_lyrics.append(pd.Series('no lyrics found'))
+            if i == 0:
+                ser_lyrics = pd.Series('no lyrics found')
+            else:
+                ser_lyrics.append(pd.Series('no lyrics found'))
             continue
             
         lyrics = get_song_lyrics(df['name'][i], df['artist'][i])
