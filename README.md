@@ -50,3 +50,5 @@ Columns that I'd want in csv:
 
 * Probably Flask, possibly look into dash
 * For graphs/charts checking out the main chart on the [altair](https://github.com/altair-viz/altair) page
+
+Get silhouette scores, plots. Do clustering, maybe have recommendation system recommend a few within the cluster and a few just outside of the cluster

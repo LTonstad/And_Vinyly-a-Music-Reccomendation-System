@@ -48,3 +48,105 @@ def get_album_avgs(df_main):
     album_avgs['ratings'] = ratings
 
     return album_avgs
+
+# Returns Pandas series of a dictionary created indicating all the known Genres as keys 
+# and then a count for each song that belongs to this particular genre
+def get_genres_series(df):
+    genre_dict = {}
+
+    for i in range(len(df['artist_genres'])):
+        stringA = df['artist_genres'][i].strip('][').split(', ')
+        stringA = [x.replace("'", "") for x in stringA]
+        for genre in stringA:
+            if genre in genre_dict:
+                genre_dict[genre] += 1
+            else:
+                genre_dict[genre] = 1
+
+    return pd.Series(genre_dict)
+
+def get_genres_series_alt(df):
+    # This is an alterate to the original get_genres_series
+    # Used for cases that the 'artist_genres' are already lists
+    genre_dict = {}
+
+    for i in range(len(df['artist_genres'])):
+        
+        stringA = df['artist_genres'].iloc[i]
+        
+        for genre in stringA:
+            if genre in genre_dict:
+                genre_dict[genre] += 1
+            else:
+                genre_dict[genre] = 1
+
+    return pd.Series(genre_dict)
+
+# Takes list of DataFrame Variables, makes Series objects with
+# Genres listed as features, then concatenates the genre DataFrames
+def get_genre_df(df_lst):
+    for df in df_lst:
+        df.sort_index(inplace=True)
+
+    result = pd.concat(df_lst, axis=1)
+    result.sort_index(inplace=True)
+    result.fillna(0, inplace=True)
+    result = result.T
+    result = result.append(result.sum(numeric_only=True), ignore_index=True)
+
+    gen_dict = {}
+    gen_lst = ['2010s', 'Rolling_Stones', 'Mine', 'Totals']
+    for idx in range(len(gen_lst)):
+        gen_dict[idx] = gen_lst[idx]
+    
+    result.rename(gen_dict, inplace=True)
+    
+    return result.astype('int64')
+
+# Will need to be made after df_genre to get columns properly
+def add_genre_vals(df, df_genre):
+    # Gets all Genres in a list of strings
+    genre_cols = df_genre.columns
+
+    # Needed if there is an empty string for Genre
+    if '' in df.columns:
+        df['unknown'] = df['']
+        del df['']
+
+    # Adds the columns with nans as placeholders
+    for col in genre_cols:
+        df[col] = np.nan
+
+    # Loops through and adds 1 to rows that the song is considered a part of that genre
+    # leaves values as nans otherwise
+    for i in range(len(df['artist_genres'])):
+        stringA = df['artist_genres'][i].strip('][').split(', ')
+        stringA = [x.replace("'", "") for x in stringA]
+        for genre in stringA:
+            if genre in df.columns:
+                df[genre][i] = 1
+
+# Will need to be made after df_genre to get columns properly
+# This is used for 2010s data, genres were passed as list instead of string
+def add_genre_vals_alt(df, df_genre):
+    # Gets all Genres in a list of strings
+    genre_cols = df_genre.columns
+
+    # Needed if there is an empty string for Genre
+    if '' in df.columns:
+        df['unknown'] = df['']
+        del df['']
+
+    # Adds the columns with nans as placeholders
+    for col in genre_cols:
+        df[col] = np.nan
+    
+    # Loops through and adds 1 to rows that the song is considered a part of that genre
+    # leaves values as nans otherwise
+    for i in range(len(df['artist_genres'])):
+
+        stringA = df['artist_genres'].iloc[i]
+
+        for genre in stringA:
+            if genre in df.columns:
+                df[genre][i] = 1
