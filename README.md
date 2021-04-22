@@ -13,14 +13,12 @@ Get Album id's --> https://stackoverflow.com/questions/36237522/get-spotipy-albu
 Columns that I'd want in csv:
 
 ```python
-* ['name', 'album', 'year', 'artist', 'featured_artists', 'track_number',
-       'tracks_on_album', 'explicit', 'duration_ms', 'popularity',
-       'danceability', 'energy', 'key', 'loudness', 'mode', 'speechiness',
-       'acousticness', 'instrumentalness', 'liveness', 'valence', 'tempo',
-       'type', 'id', 'uri', 'track_href', 'analysis_url', 'time_signature',
-       'artist_uri', 'album_uri', 'release_date', 'album_image_url',
-       'track_length', 'tempo_confidence', 'end_fade_in', 'start_fade_out',
-       'end_silence_time', 'sections', 'tatums', 'beats', 'bars']
+['name', 'album', 'year', 'release_date', 'artist', 'has_featured_artist', 'featured_artists', 'artist_genres', 'artist_popularity', 'followers', 'track_number', 'tracks_on_album', 'album_label', 
+'explicit', 'duration_ms', 'popularity', 'danceability', 'energy', 'key', 'loudness', 
+'mode', 'speechiness', 'acousticness', 'instrumentalness', 'liveness', 'valence', 
+'tempo', 'tempo_confidence', 'track_length', 'end_fade_in', 'start_fade_out', 'end_silence_time', 
+'id', 'uri','track_href', 'analysis_url', 'artist_uri','album_uri', 'album_image_url',
+'artist_spotify_link', 'artist_image_url', 'sections', 'tatums', 'beats', 'bars']
 ```
 
 # Steps to be taken
@@ -39,18 +37,16 @@ Columns that I'd want in csv:
 * **Completed** Pulling all of the songs from my albums along with 40 features of the songs within the albums
 * Need to decide what to do with the huge 4 columns --> ['sections', 'tatums', 'beats', 'bars']
 
-## Feature Engineering
-
-* PCA/NMF
-
 ## Cluster Albums
 
-* Probably use K-Means
+* K-Means, prepping for this
 
-## Create Model
+## Create Recommender Model
 
-* Sequential Neural Network
+* Probably using similarity metrics like cosine_similarity
+* Sequential Neural Network, if time permits
 
-## Setup recommender for presentation
+## Setup for presentation
 
-* Probably Flask
+* Probably Flask, possibly look into dash
+* For graphs/charts checking out the main chart on the [altair](https://github.com/altair-viz/altair) page
