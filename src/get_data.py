@@ -153,13 +153,19 @@ def get_songs_on_album(album_idx, df_albums):
 
     return album_df
 
+# This function essentially puts it all together, just need to make sure the column names match
 def get_album_df(df_album, file_name):
+    # Iterates through the amount of times that is equal to the amount of album titles in the dataframe
     for album_idx in range(len(df_album['Title'])):
+        # To create Dataframe on first round through
         if album_idx == 0:
             df = get_songs_on_album(album_idx, df_album)
+            # Checks to verify that Spotipy api was able to find the album or not, prints the error
+            # and moves to the next album if that is the case
             if df is None:
                 print('Album was not found...')
                 continue
+            # Captures image to be printed by MatPlotLib at the end of the loop
             img = Image.open(requests.get(df['album_image_url'][0], stream=True).raw)
         else:
             album_df = get_songs_on_album(album_idx, df_album)
@@ -168,9 +174,11 @@ def get_album_df(df_album, file_name):
                 continue
             df = df.append(album_df)
             img = Image.open(requests.get(album_df['album_image_url'][0], stream=True).raw)
+        # Prints album artwork once it's completed with this album
         plt.imshow(img)
         plt.show()
 
+    # Saves resulting DataFrame with the given name to the data folder as a .csv file
     df.to_csv(f'data/{file_name}.csv')
     
     return album_df
