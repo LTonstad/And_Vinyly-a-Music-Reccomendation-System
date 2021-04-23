@@ -11,13 +11,8 @@ from src.data_prep import *
 
 # Setup Authentication
 auth_manager = SpotifyClientCredentials('424af1dc12124b348f3512f327311c06',  '4f653f97baa9452984c3a2dc2d202024')
-<<<<<<< HEAD
 sp = spotipy.Spotify(auth_manager=auth_manager, requests_timeout=10, 
                     retries=15, status_retries=10, backoff_factor=1)
-=======
-sp = spotipy.Spotify(auth_manager=auth_manager, requests_timeout=5, 
-                    retries=15, status_retries=10)
->>>>>>> 2f9345eff1988929bf318f5bce6cb9d656a50d2b
 
 # Pull in my Album Data
 albums = pd.read_excel('data/my_albums.ods')
