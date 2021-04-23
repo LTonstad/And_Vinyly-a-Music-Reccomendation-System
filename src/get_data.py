@@ -11,8 +11,13 @@ from src.data_prep import *
 
 # Setup Authentication
 auth_manager = SpotifyClientCredentials('424af1dc12124b348f3512f327311c06',  '4f653f97baa9452984c3a2dc2d202024')
+<<<<<<< HEAD
 sp = spotipy.Spotify(auth_manager=auth_manager, requests_timeout=10, 
                     retries=15, status_retries=10, backoff_factor=1)
+=======
+sp = spotipy.Spotify(auth_manager=auth_manager, requests_timeout=5, 
+                    retries=15, status_retries=10)
+>>>>>>> 2f9345eff1988929bf318f5bce6cb9d656a50d2b
 
 # Pull in my Album Data
 albums = pd.read_excel('data/my_albums.ods')
@@ -185,9 +190,12 @@ def get_album_df(df_album, file_name):
     
     return album_df
 
+<<<<<<< HEAD
 ###################################
 
 # Functions below are meant to be used for recommender system
+=======
+>>>>>>> 2f9345eff1988929bf318f5bce6cb9d656a50d2b
 
 # Get dictionary for inputs into the get_song_data function
 def user_input(album_name, artist_name):
@@ -195,10 +203,15 @@ def user_input(album_name, artist_name):
     results = sp.search('album: {} artist: {}'.format(str(album_name), str(artist_name)), type = "album")
     
     if results['albums']['items'] == []:
+<<<<<<< HEAD
         print(f'Spotify did not find {album_name}, please try another one :)')
         return None
     elif results is None:
         print(f'Spotify did not find {album_name}, please try another one :)')
+=======
+        return None
+    elif results is None:
+>>>>>>> 2f9345eff1988929bf318f5bce6cb9d656a50d2b
         return None
     
     # get the first album uri
@@ -234,6 +247,7 @@ def user_input(album_name, artist_name):
 
     print('\n' + f'Done getting songs for {album_name}' + '\n')
 
+<<<<<<< HEAD
     album_df = album_df[['name', 'album', 'year', 'release_date', 'artist', 'featured_artists', 'artist_genres', 
                          'artist_popularity', 'followers', 'track_number', 'tracks_on_album', 'album_label', 
                          'explicit', 'duration_ms', 'popularity', 'danceability', 'energy', 'key', 'loudness', 
@@ -244,14 +258,22 @@ def user_input(album_name, artist_name):
 
     add_genre_vals_alt(album_df, df_genre)
 
+=======
+>>>>>>> 2f9345eff1988929bf318f5bce6cb9d656a50d2b
     # Creating bool value for if an there is an artist feature in the song
     album_df['has_featured_artist'] = np.where(album_df['featured_artists'].isna(), 0, 1)
 
     # Filling featured artists with 'No Features' as a string
     album_df['featured_artists'].fillna('No Features', inplace=True)
 
+<<<<<<< HEAD
     album_df.drop('Unnamed: 0', inplace=True, axis=1)
     album_df['year'] = album_df['year'].apply(pd.to_numeric)
     album_df.set_index(['album', 'name', 'artist', 'release_date', 'album_image_url', 'id'], inplace=True)
 
     return album_df.select_dtypes(include=np.number)
+=======
+    add_genre_vals_alt(album_df, df_genre)
+
+    return album_df
+>>>>>>> 2f9345eff1988929bf318f5bce6cb9d656a50d2b

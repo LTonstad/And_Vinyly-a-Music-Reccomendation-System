@@ -1,7 +1,11 @@
 import numpy as np
 import pandas as pd
 
+<<<<<<< HEAD
 df_genre = pd.read_csv('data/genre_matrix.csv')
+=======
+df_genre = pd.read_csv('data/genre_matrix.csv', index_col='Index')
+>>>>>>> 2f9345eff1988929bf318f5bce6cb9d656a50d2b
 
 def get_genres_series_alt(df):
     # This is an alterate to the original get_genres_series
