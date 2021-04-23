@@ -10,7 +10,7 @@ from src.data_prep import *
 
 
 # Setup Authentication
-auth_manager = SpotifyClientCredentials('424af1dc12124b348f3512f327311c06',  '4f653f97baa9452984c3a2dc2d202024')
+auth_manager = SpotifyClientCredentials()
 sp = spotipy.Spotify(auth_manager=auth_manager, requests_timeout=10, 
                     retries=15, status_retries=10, backoff_factor=1)
 
