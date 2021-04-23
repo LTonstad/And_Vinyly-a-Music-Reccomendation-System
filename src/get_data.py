@@ -6,11 +6,13 @@ from collections import defaultdict
 from PIL import Image
 import requests
 import matplotlib.pyplot as plt
+from src.data_prep import *
+
 
 # Setup Authentication
 auth_manager = SpotifyClientCredentials('424af1dc12124b348f3512f327311c06',  '4f653f97baa9452984c3a2dc2d202024')
 sp = spotipy.Spotify(auth_manager=auth_manager, requests_timeout=5, 
-                    retries=15, status_retries=10, backoff_factor=1)
+                    retries=15, status_retries=10)
 
 # Pull in my Album Data
 albums = pd.read_excel('data/my_albums.ods')
@@ -181,4 +183,58 @@ def get_album_df(df_album, file_name):
     # Saves resulting DataFrame with the given name to the data folder as a .csv file
     df.to_csv(f'data/{file_name}.csv')
     
+    return album_df
+
+
+# Get dictionary for inputs into the get_song_data function
+def user_input(album_name, artist_name):
+    # find album by name
+    results = sp.search('album: {} artist: {}'.format(str(album_name), str(artist_name)), type = "album")
+    
+    if results['albums']['items'] == []:
+        return None
+    elif results is None:
+        return None
+    
+    # get the first album uri
+    album_id = results['albums']['items'][0]['uri']
+    
+    artist = results['albums']['items'][0]['artists'][0]['name']
+    year = results['albums']['items'][0]['release_date'][0:4]
+
+    # get album tracks
+    tracks = sp.album_tracks(album_id)
+
+    print('\n' + f'Getting songs for {album_name}' + '\n')
+    
+    # Looping through track names to load into get_song_data function
+    for idx, track in enumerate(tracks['items']):
+        # To create df if it's not already created
+        if idx == 0:
+            album_df = get_song_data(track['name'], year, artist)
+            # Error checking...
+            if album_df is None:
+                print('Unable to find song :(')
+                continue
+        else:
+            song_df = get_song_data(track['name'], year, artist)
+            # Error checking...
+            if song_df is None or album_df is None:
+                print('Unable to find song :(')
+                continue
+            else:
+                album_df = album_df.append(song_df, ignore_index=True)
+
+        print(track['name'])
+
+    print('\n' + f'Done getting songs for {album_name}' + '\n')
+
+    # Creating bool value for if an there is an artist feature in the song
+    album_df['has_featured_artist'] = np.where(album_df['featured_artists'].isna(), 0, 1)
+
+    # Filling featured artists with 'No Features' as a string
+    album_df['featured_artists'].fillna('No Features', inplace=True)
+
+    add_genre_vals_alt(album_df, df_genre)
+
     return album_df

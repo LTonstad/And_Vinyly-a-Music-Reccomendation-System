@@ -1,4 +1,5 @@
 from sklearn.metrics.pairwise import cosine_similarity
+from src.get_data import *
 import pandas as pd
 import numpy as np
 
@@ -77,13 +78,13 @@ class ItemRecommender():
         return user_profile
 
 
-    def get_user_recommendation(self, items, n=5):
+    def get_user_recommendation(self, album_name, artist_name, n=10):
         '''
         Takes a list of movies user liked and returns the top n items for that user
 
         INPUT 
-            items  -   LIST - list of movie names user likes / has seen
-            n -  INT - number of items to return
+            album_name  -  STR - Title of Album user is thinking of
+            artist_name -  STR - Name of Artist that has the album
 
         OUTPUT 
             items - LIST - n recommended items
@@ -91,12 +92,13 @@ class ItemRecommender():
     
         Make use of the get_user_profile method to create a user profile that will be used to get the similarity to all items and recommend the top n.
         '''
-        num_items = len(items)
-        user_profile = self.get_user_profile(items)
+        album_df = user_input(album_name, artist_name)
+
+        user_profile = self.get_user_profile(album_df)
 
         user_sim =  self.similarity_measure(self.item_counts, user_profile.reshape(1,-1))
 
-        return self.item_names[user_sim[:,0].argsort()[-(num_items+n):-num_items]].values[::-1]
+        return self.item_names[user_sim[:,0].argsort()[-(1+n):-1]].values[::-1]
 
 
 
