@@ -16,7 +16,7 @@ import pandas as pd
 import re
 
 import lyricsgenius
-genius = lyricsgenius.Genius('8RrM66Ch9ov3QcGvV5KKkTwHTsnZpb2FRW2Jgvx04Me3sq9Duozolc0aoXpoIsKo')
+genius = lyricsgenius.Genius()
 
 df = pd.read_csv('../my_albums.csv', engine='python')
 
