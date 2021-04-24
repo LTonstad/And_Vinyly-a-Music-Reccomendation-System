@@ -1,4 +1,5 @@
 from sklearn.metrics.pairwise import cosine_similarity
+from sklearn.preprocessing import StandardScaler, MinMax
 from src.get_data import *
 import pandas as pd
 import numpy as np
@@ -31,20 +32,25 @@ class ItemRecommender():
 
         # While keeping this as a sparse matrix would be best the cosign sim
         # function returns a array so there is no reason.
-        
-        if isinstance(X, pd.DataFrame):
-            self.item_counts = X
-            self.item_names = X.index
-            self.similarity_df = pd.DataFrame(self.similarity_measure(X.values, X.values),
-                 index = self.item_names)
-        else:
-            self.item_counts = X
-            self.similarity_df = pd.DataFrame(self.similarity_measure(X, X),
-                 index = titles)
-            self.item_names = self.similarity_df.index
+
+        lst_of_albums = X.index.get_level_values(1)
+
+        scaler = StandardScaler()
+        scale_matrix = scaler.fit_transform(X)
+
+        indices = pd.Series(lst_of_albums)
+
+        count_df = pd.DataFrame(scale_matrix, index=indices.values)
+
+        print(count_df)
+
+        self.item_counts = X
+        self.item_names = X.index
+        self.similarity_df = pd.DataFrame(self.similarity_measure(count_df.values, count_df.values),
+                index = self.item_names)
 
         
-    def get_recommendations(self, item, n=5):
+    def get_recommendations(self, song_name, artist_name, n=5):
         '''
         Returns the top n items related to the item passed in
         INPUT:
@@ -55,52 +61,38 @@ class ItemRecommender():
 
         For a given item find the n most similar items to it (this can be done using the similarity matrix created in the fit method)
         '''
-        return self.item_names[self.similarity_df.loc[item].values.argsort()[-(n+1):-1]].values[::-1]
+        # Searches for song through Spotipy and then gets variables for the output
+        song_df = get_song(song_name, artist_name)
 
+        print(f'You chose {song_df.index[0][1]} for your song', '\n')
+        img = Image.open(requests.get(song_df.index[0][4], stream=True).raw)
+        plt.imshow(img)
+        plt.show()
+        
+        simsim = cosine_similarity(song_df, self.item_counts)
 
-    def get_user_profile(self, items):
-        '''
-        Takes a list of items and returns a user profile. A vector representing the likes of the user.
-        INPUT: 
-            items  -   LIST - list of movie names user likes / has seen
+        recs_arr = np.argsort(simsim, axis=1)[0][-(n+1):-1]
 
-        OUTPUT: 
-            user_profile - NP ARRAY - array representing the likes of the user 
-                    The columns of this will match the columns of the trained on matrix
-    
+        for idx, i in enumerate(recs_arr, start=1):
+            ser = self.item_counts.iloc[[i], :]
+            
+            print('\n', f'Number {idx} pick:', '\n')
+            if idx == 1:
+                df_recs = pd.DataFrame(ser)
+                
+            print('\n', f'Song chosen: {ser.index[0][1]}', '\n', 
+                f'Performed by: {ser.index[0][2]}', 
+                '\n', f'On the Album: {ser.index[0][0]}', '\n')
+            
+            # Captures image to be printed by MatPlotLib at the end of the loop
+            img = Image.open(requests.get(ser.index[0][4], stream=True).raw)
+            
+            plt.imshow(img)
+            plt.show()
+            
+            df_recs = df_recs.append(pd.DataFrame(ser))
 
-        Using the list of items liked by the user create a profile which will be a 1 x number of features array.  This should be the addition of the values for all liked item features (you can choose how to normalize if you think it is needed)
-        '''
-        user_profile = np.zeros(self.item_counts.shape[1])
-        for item in items:
-            user_profile += self.item_counts.loc[item].values
-
-        return user_profile
-
-
-    def get_user_recommendation(self, album_name, artist_name, n=10):
-        '''
-        Takes a list of movies user liked and returns the top n items for that user
-
-        INPUT 
-            album_name  -  STR - Title of Album user is thinking of
-            artist_name -  STR - Name of Artist that has the album
-
-        OUTPUT 
-            items - LIST - n recommended items
-
-    
-        Make use of the get_user_profile method to create a user profile that will be used to get the similarity to all items and recommend the top n.
-        '''
-        album_df = user_input(album_name, artist_name)
-
-        user_profile = self.get_user_profile(album_df)
-
-        user_sim =  self.similarity_measure(self.item_counts, user_profile.reshape(1,-1))
-
-        return self.item_names[user_sim[:,0].argsort()[-(1+n):-1]].values[::-1]
-
-
+        return df_recs
 
 
 

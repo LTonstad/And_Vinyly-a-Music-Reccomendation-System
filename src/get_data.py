@@ -6,13 +6,14 @@ from collections import defaultdict
 from PIL import Image
 import requests
 import matplotlib.pyplot as plt
+plt.style.use('fivethirtyeight')
 from src.data_prep import *
 
 
 # Setup Authentication
 auth_manager = SpotifyClientCredentials('424af1dc12124b348f3512f327311c06',  '4f653f97baa9452984c3a2dc2d202024')
-sp = spotipy.Spotify(auth_manager=auth_manager, requests_timeout=10, 
-                    retries=15, status_retries=10, backoff_factor=1)
+sp = spotipy.Spotify(auth_manager=auth_manager, requests_timeout=20, 
+                    retries=20, status_retries=20, backoff_factor=3)
 
 def get_song_data(track, year, artist):
       
@@ -269,3 +270,106 @@ def user_input(album_name, artist_name):
     album_df.set_index(['album', 'name', 'artist', 'release_date', 'album_image_url', 'id'], inplace=True)
 
     return album_df.select_dtypes(include=np.number)
+
+def get_song(song_name, artist_name):
+    results = sp.search('track: {} artist: {}'.format(str(song_name), str(artist_name)), type = "track")
+
+    # Checking if error in search results
+    if results['tracks']['items'] == []:
+        print(f'Spotify did not find {song_name}, please try another one :)')
+        return None
+    elif results is None:
+        print(f'Spotify did not find {song_name}, please try another one :)')
+        return None
+
+    year = results['tracks']['items'][0]['album']['release_date'][0:4]
+
+    # Most of the rest of the code copied from other functions but slightly modified
+
+    song_data = defaultdict()
+    
+    # Making life easier for the rest of dictionary slicing
+    results = results['tracks']['items'][0]
+    track_id = results['id']
+    
+    # Audio_Features section
+    audio_features = sp.audio_features(track_id)[0]
+    
+    song_data['name'] = [results['name']]
+    song_data['album'] = [results['album']['name']]
+    song_data['year'] = [results['album']['release_date'][0:4]]
+    
+    # Getting artist names within loop, dependent on if there is multiple artists
+    if len(results['artists']) > 1:
+        for idx, i in enumerate(results['artists']):
+            if idx == 0:
+                song_data['artist'] = results['artists'][idx]['name']
+            else:
+                song_data['featured_artists'] = results['artists'][idx]['name']
+    else:
+        song_data['artist'] = results['artists'][0]['name']
+        song_data['featured_artists'] = 'No Features'
+
+    song_data['track_number'] = [results['track_number']]
+    song_data['tracks_on_album'] = [results['album']['total_tracks']]
+    song_data['explicit'] = [int(results['explicit'])]
+    song_data['duration_ms'] = [results['duration_ms']]
+    song_data['popularity'] = [results['popularity']]
+
+    for key, value in audio_features.items():
+        song_data[key] = value
+    
+    song_data['artist_uri'] = [results['album']['artists'][0]['uri']]
+    song_data['album_uri'] = [results['album']['uri']]
+    song_data['release_date'] = [results['album']['release_date']]
+    song_data['album_image_url'] = [results['album']['images'][0]['url']]
+
+    # Audio Analysis Section
+    aa = sp.audio_analysis(track_id)
+
+    song_data['track_length'] = [aa['track']['duration']]
+    song_data['tempo_confidence'] = [aa['track']['tempo_confidence']]
+    song_data['end_fade_in'] = [aa['track']['end_of_fade_in']]
+    song_data['start_fade_out'] = [aa['track']['start_of_fade_out']]
+    song_data['end_silence_time'] = aa['track']['duration'] - aa['track']['start_of_fade_out']
+    
+    # Getting some other columns based on album search
+    # First to change what I use in place of 'results'
+    album_results = sp.album(results['album']['uri'])
+    
+    # Now to get other data from album that we couldn't from song
+    song_data['album_label'] = [album_results['label']]
+    
+    # Same with artist data
+    artist_results = sp.artist(results['album']['artists'][0]['uri'])
+    
+    song_data['artist_spotify_link'] = [artist_results['external_urls']['spotify']]
+    song_data['followers'] = [artist_results['followers']['total']]
+    song_data['artist_genres'] = [artist_results['genres']]
+    song_data['artist_image_url'] = [artist_results['images'][0]['url']]
+    song_data['artist_popularity'] = [artist_results['popularity']]
+
+    song_df = pd.DataFrame(song_data)
+
+    song_df = song_df[['name', 'album', 'year', 'release_date', 'artist', 'featured_artists', 'artist_genres', 
+                        'artist_popularity', 'followers', 'track_number', 'tracks_on_album', 'album_label', 
+                        'explicit', 'duration_ms', 'popularity', 'danceability', 'energy', 'key', 'loudness', 
+                        'mode', 'speechiness', 'acousticness', 'instrumentalness', 'liveness', 'valence', 
+                        'tempo', 'tempo_confidence', 'track_length', 'end_fade_in', 'start_fade_out', 'end_silence_time', 
+                        'id', 'uri','track_href', 'analysis_url', 'artist_uri','album_uri', 'album_image_url',
+                        'artist_spotify_link', 'artist_image_url']]
+
+    add_genre_vals_alt(song_df, df_genre)
+
+    # Creating bool value for if an there is an artist feature in the song
+    if len(results['artists']) > 1:
+        song_df['has_featured_artist'] = 1
+    else:
+        song_df['has_featured_artist'] = 0
+
+    song_df.drop('Unnamed: 0', inplace=True, axis=1)
+    song_df['year'] = song_df['year'].apply(pd.to_numeric)
+    song_df.set_index(['album', 'name', 'artist', 'release_date', 'album_image_url', 'id'], inplace=True)
+
+    return song_df.select_dtypes(include=np.number)
+
