@@ -175,26 +175,26 @@ def get_album_df(df_album, file_name):
         plt.imshow(img)
         plt.show()
 
-    album_df = album_df[['name', 'album', 'year', 'release_date', 'artist', 'featured_artists', 'artist_genres', 
+    df = df[['name', 'album', 'year', 'release_date', 'artist', 'featured_artists', 'artist_genres', 
                          'artist_popularity', 'followers', 'track_number', 'tracks_on_album', 'album_label', 
                          'explicit', 'duration_ms', 'popularity', 'danceability', 'energy', 'key', 'loudness', 
                          'mode', 'speechiness', 'acousticness', 'instrumentalness', 'liveness', 'valence', 
                          'tempo', 'tempo_confidence', 'track_length', 'end_fade_in', 'start_fade_out', 'end_silence_time', 
                          'id', 'uri','track_href', 'analysis_url', 'artist_uri','album_uri', 'album_image_url',
-                         'artist_spotify_link', 'artist_image_url', 'sections', 'tatums', 'beats', 'bars']]
+                         'artist_spotify_link', 'artist_image_url', 'tatums_per_second', 'beats_per_second', 'bars_per_second']]
 
-    add_genre_vals_alt(album_df, df_genre)
+    add_genre_vals_alt(df, df_genre)
 
     # Creating bool value for if an there is an artist feature in the song
-    album_df['has_featured_artist'] = np.where(album_df['featured_artists'].isna(), 0, 1)
+    df['has_featured_artist'] = np.where(df['featured_artists'].isna(), 0, 1)
 
-    album_df['year'] = album_df['year'].apply(pd.to_numeric)
-    album_df.set_index(['album', 'name', 'artist', 'release_date', 'album_image_url', 'artist_image_url', 'id'], inplace=True)
+    df['year'] = df['year'].apply(pd.to_numeric)
+    df.set_index(['album', 'name', 'artist', 'release_date', 'album_image_url', 'artist_image_url', 'id'], inplace=True)
 
     # Saves resulting DataFrame with the given name to the data folder as a .csv file
     df.to_csv(f'data/{file_name}.csv')
     
-    return album_df
+    return df
 
 
 

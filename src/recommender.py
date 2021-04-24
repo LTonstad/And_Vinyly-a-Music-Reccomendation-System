@@ -3,8 +3,12 @@ from sklearn.preprocessing import StandardScaler, MinMaxScaler, RobustScaler
 from src.get_data import *
 import pandas as pd
 import numpy as np
+import operator
+from collections import Counter
+import random
 
-df_mine = pd.read_pickle('../num_mine.pkl')
+
+df_mine = pd.read_pickle('../num_my_albums_final.pkl')
 df_2010s = pd.read_pickle('../num_2010s.pkl')
 df_rolling = pd.read_pickle('../num_rolling.pkl')
 df_mega_main = pd.read_pickle('../num_mega_main.pkl')
@@ -100,6 +104,15 @@ class ItemRecommender():
             plt.show()
             
             df_recs = df_recs.append(pd.DataFrame(ser))
+
+        recs = df_recs.reset_index()
+
+        artist_rec = max(Counter(recs['artist']).items(), key=operator.itemgetter(np.random.randint(1)))[0]
+
+        print('\n', f'Artist Recommendation: {artist_rec}', '\n')
+
+        plt.imshow(Image.open(requests.get(recs[recs['artist'] == artist_rec]['artist_image_url'].values[0], stream=True).raw))
+        plt.show()
 
         return df_recs
 
