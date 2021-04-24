@@ -1,8 +1,13 @@
-from sklearn.metrics.pairwise import cosine_similarity
-from sklearn.preprocessing import StandardScaler, MinMax
+from sklearn.metrics.pairwise import cosine_distances, cosine_similarity, euclidean_distances, pairwise_distances
+from sklearn.preprocessing import StandardScaler, MinMaxScaler, RobustScaler
 from src.get_data import *
 import pandas as pd
 import numpy as np
+
+df_mine = pd.read_pickle('../num_mine.pkl')
+df_2010s = pd.read_pickle('../num_2010s.pkl')
+df_rolling = pd.read_pickle('../num_rolling.pkl')
+df_mega_main = pd.read_pickle('../num_mega_main.pkl')
 
 class ItemRecommender():
     '''
@@ -14,7 +19,7 @@ class ItemRecommender():
         self.similarity_measure = similarity_measure
 
     
-    def fit(self, X, titles=None):
+    def fit(self, X, scaler=StandardScaler, no_genre=False):
         '''
         Takes a numpy array of the item attributes and creates the similarity matrix
 
@@ -34,15 +39,16 @@ class ItemRecommender():
         # function returns a array so there is no reason.
 
         lst_of_albums = X.index.get_level_values(1)
+        
+        if no_genre == True:
+            X = X[X.columns[:24]]
 
-        scaler = StandardScaler()
+        scaler = scaler()
         scale_matrix = scaler.fit_transform(X)
 
         indices = pd.Series(lst_of_albums)
 
         count_df = pd.DataFrame(scale_matrix, index=indices.values)
-
-        print(count_df)
 
         self.item_counts = X
         self.item_names = X.index
@@ -50,7 +56,7 @@ class ItemRecommender():
                 index = self.item_names)
 
         
-    def get_recommendations(self, song_name, artist_name, n=5):
+    def get_recommendations(self, song_name, artist_name, n=5, no_genre=False):
         '''
         Returns the top n items related to the item passed in
         INPUT:
@@ -69,6 +75,9 @@ class ItemRecommender():
         plt.imshow(img)
         plt.show()
         
+        if no_genre == True:
+            song_df = song_df[song_df.columns[:24]]
+
         simsim = cosine_similarity(song_df, self.item_counts)
 
         recs_arr = np.argsort(simsim, axis=1)[0][-(n+1):-1]
