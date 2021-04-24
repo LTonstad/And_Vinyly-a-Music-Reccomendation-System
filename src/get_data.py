@@ -52,11 +52,12 @@ def get_song_data(track, year, artist):
                 song_data['featured_artists'] = results['artists'][idx]['name']
     else:
         song_data['artist'] = results['artists'][0]['name']
+        song_data['featured_artists'] = 'No Features'
 
     song_data['track_number'] = [results['track_number']]
     song_data['tracks_on_album'] = [results['album']['total_tracks']]
     song_data['explicit'] = [int(results['explicit'])]
-    song_data['duration_ms'] = [results['duration_ms']]
+    song_data['duration_seconds'] = [results['duration_ms'] / 1000]
     song_data['popularity'] = [results['popularity']]
 
     for key, value in audio_features.items():
@@ -92,11 +93,10 @@ def get_song_data(track, year, artist):
     song_data['artist_image_url'] = [artist_results['images'][0]['url']]
     song_data['artist_popularity'] = [artist_results['popularity']]
     
-    #Adding dict columns from audio analysis, these columns are extremely large
-    song_data['sections'] = [aa['sections']]
-    song_data['tatums'] = [aa['tatums']]
-    song_data['beats'] = [aa['beats']]
-    song_data['bars'] = [aa['bars']]
+    #Adding per minute columns from audio analysis
+    song_data['tatums_per_second'] = [len(aa['tatums']) / (results['duration_ms'] / 1000)]
+    song_data['beats_per_second'] = [len(aa['beats']) / (results['duration_ms'] / 1000)]
+    song_data['bars_per_second'] = [len(aa['bars']) / (results['duration_ms'] / 1000)]
     
     return pd.DataFrame(song_data)
 
@@ -188,17 +188,16 @@ def get_album_df(df_album, file_name):
     # Creating bool value for if an there is an artist feature in the song
     album_df['has_featured_artist'] = np.where(album_df['featured_artists'].isna(), 0, 1)
 
-    # Filling featured artists with 'No Features' as a string
-    album_df['featured_artists'].fillna('No Features', inplace=True)
-
-    album_df.drop('Unnamed: 0', inplace=True, axis=1)
     album_df['year'] = album_df['year'].apply(pd.to_numeric)
-    album_df.set_index(['album', 'name', 'artist', 'release_date', 'album_image_url', 'id'], inplace=True)
+    album_df.set_index(['album', 'name', 'artist', 'release_date', 'album_image_url', 'artist_image_url', 'id'], inplace=True)
 
     # Saves resulting DataFrame with the given name to the data folder as a .csv file
     df.to_csv(f'data/{file_name}.csv')
     
     return album_df
+
+
+
 
 ###################################
 
