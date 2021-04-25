@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 
-df_genre = pd.read_csv('data/genre_matrix.csv')
+df_genre = pd.read_csv('data/genre_matrix.csv', index_col=0)
 
 # Creates the df_genre csv above
 # Useful when more music comes in to get any new genres
@@ -39,7 +39,7 @@ def add_genre_vals_alt(df, df_genre):
     
     # Loops through and adds 1 to rows that the song is considered a part of that genre
     # leaves values as nans otherwise
-    for i in range(len(df['artist_genres'])):
+    for i in range(len(df['artist_genres']) - 1):
 
         stringA = df['artist_genres'].iloc[i]
 
@@ -47,17 +47,6 @@ def add_genre_vals_alt(df, df_genre):
             if genre in df.columns:
                 df.loc[:, (genre, i)] = 1
     
-    df.fillna(0, inplace=True)
+    df.fillna(0, axis=1, inplace=True)
 
-# For df's that don't have the genre columns yet
-def add_pms(df):
-    feat_lst = ['tatums', 'beats', 'bars']
-    df['duration_seconds'] = df['duration_ms'] / 1000
-    df.drop('duration_ms', inplace=True, axis=1)
 
-    for i in range(len(df['duration_seconds'])):
-        song_length = df['duration_seconds'][i]
-        for feat in feat_lst:
-            df[f'{feat}_per_minute'][i] = len(df[feat][i]) / song_length
-    
-    return df

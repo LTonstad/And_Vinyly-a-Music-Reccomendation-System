@@ -179,11 +179,11 @@ def get_album_df(df_album, file_name):
 
     df = df[['name', 'album', 'year', 'release_date', 'artist', 'featured_artists', 'artist_genres', 
                          'artist_popularity', 'followers', 'track_number', 'tracks_on_album', 'album_label', 
-                         'explicit', 'duration_ms', 'popularity', 'danceability', 'energy', 'key', 'loudness', 
+                         'explicit', 'duration_minutes', 'popularity', 'danceability', 'energy', 'key', 'loudness', 
                          'mode', 'speechiness', 'acousticness', 'instrumentalness', 'liveness', 'valence', 
                          'tempo', 'tempo_confidence', 'track_length', 'end_fade_in', 'start_fade_out', 'end_silence_time', 
                          'id', 'uri','track_href', 'analysis_url', 'artist_uri','album_uri', 'album_image_url',
-                         'artist_spotify_link', 'artist_image_url', 'tatums_per_second', 'beats_per_second', 'bars_per_second']]
+                         'artist_spotify_link', 'artist_image_url', 'tatums_per_minute', 'beats_per_minute', 'bars_per_minute']]
 
     add_genre_vals_alt(df, df_genre)
 
@@ -295,7 +295,7 @@ def get_song(song_name, artist_name):
     
     song_data['name'] = [results['name']]
     song_data['album'] = [results['album']['name']]
-    song_data['year'] = [results['album']['release_date'][0:4]]
+    song_data['year'] = [year]
     
     # Getting artist names within loop, dependent on if there is multiple artists
     if len(results['artists']) > 1:
@@ -311,7 +311,7 @@ def get_song(song_name, artist_name):
     song_data['track_number'] = [results['track_number']]
     song_data['tracks_on_album'] = [results['album']['total_tracks']]
     song_data['explicit'] = [int(results['explicit'])]
-    song_data['duration_ms'] = [results['duration_ms']]
+    song_data['duration_minutes'] = [results['duration_ms'] / 60000]
     song_data['popularity'] = [results['popularity']]
 
     for key, value in audio_features.items():
@@ -347,15 +347,20 @@ def get_song(song_name, artist_name):
     song_data['artist_image_url'] = [artist_results['images'][0]['url']]
     song_data['artist_popularity'] = [artist_results['popularity']]
 
+    #Adding per minute columns from audio analysis
+    song_data['tatums_per_minute'] = [len(aa['tatums']) / (results['duration_ms'] / 60000)]
+    song_data['beats_per_minute'] = [len(aa['beats']) / (results['duration_ms'] / 60000)]
+    song_data['bars_per_minute'] = [len(aa['bars']) / (results['duration_ms'] / 60000)]
+
     song_df = pd.DataFrame(song_data)
 
     song_df = song_df[['name', 'album', 'year', 'release_date', 'artist', 'featured_artists', 'artist_genres', 
-                        'artist_popularity', 'followers', 'track_number', 'tracks_on_album', 'album_label', 
-                        'explicit', 'duration_ms', 'popularity', 'danceability', 'energy', 'key', 'loudness', 
-                        'mode', 'speechiness', 'acousticness', 'instrumentalness', 'liveness', 'valence', 
-                        'tempo', 'tempo_confidence', 'track_length', 'end_fade_in', 'start_fade_out', 'end_silence_time', 
-                        'id', 'uri','track_href', 'analysis_url', 'artist_uri','album_uri', 'album_image_url',
-                        'artist_spotify_link', 'artist_image_url']]
+                         'artist_popularity', 'followers', 'track_number', 'tracks_on_album', 'album_label', 
+                         'explicit', 'duration_minutes', 'popularity', 'danceability', 'energy', 'key', 'loudness', 
+                         'mode', 'speechiness', 'acousticness', 'instrumentalness', 'liveness', 'valence', 
+                         'tempo', 'tempo_confidence', 'track_length', 'end_fade_in', 'start_fade_out', 'end_silence_time', 
+                         'id', 'uri','track_href', 'analysis_url', 'artist_uri','album_uri', 'album_image_url',
+                         'artist_spotify_link', 'artist_image_url', 'tatums_per_minute', 'beats_per_minute', 'bars_per_minute']]
 
     add_genre_vals_alt(song_df, df_genre)
 
@@ -365,9 +370,10 @@ def get_song(song_name, artist_name):
     else:
         song_df['has_featured_artist'] = 0
 
-    song_df.drop('Unnamed: 0', inplace=True, axis=1)
+    #song_df = song_df.loc[:,~song_df.columns.str.match('Unnamed: 0')]
     song_df['year'] = song_df['year'].apply(pd.to_numeric)
     song_df.set_index(['album', 'name', 'artist', 'release_date', 'album_image_url', 'id'], inplace=True)
 
     return song_df.select_dtypes(include=np.number)
 
+print('GOGOGO')

@@ -108,3 +108,16 @@ def get_genres_series(df):
                 genre_dict[genre] = 1
 
     return pd.Series(genre_dict)
+
+# For df's that don't have the genre columns yet
+def add_pms(df):
+    feat_lst = ['tatums', 'beats', 'bars']
+    df['duration_seconds'] = df['duration_ms'] / 1000
+    df.drop('duration_ms', inplace=True, axis=1)
+
+    for i in range(len(df['duration_seconds'])):
+        song_length = df['duration_seconds'][i]
+        for feat in feat_lst:
+            df[f'{feat}_per_minute'][i] = len(df[feat][i]) / song_length
+    
+    return df
