@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<html>
+    <h1>Transaction Tester for Fraud Prediction: </h1>
+        <p>You are an agent at an ecommerce company, and you have been tasked with investigating suspiscious transactions. Before beginning your manual review, you can use this tool to enter the transaction id (ObjectID) and see a prediction of how likely the transaction is to be fraud. 
+        </p>
+
+    <a href="/predict" title="Let's GO!"><button class="button button2">Let's GO!</button></a>
+    
+    <img src="/static/cc_fraud.jpeg" alt="credit card fraud graphic">
+
+</html>
+
+{% endblock content %}

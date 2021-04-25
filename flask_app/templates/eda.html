@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block content %}
+  <form action="/graphs" method = 'post'>
+
+    <style>
+      .important-paragraph{
+        color:rgb(255, 127, 227)
+      }
+      </style>
+
+    <p class = 'important-paragraph form-inputs'>
+      <label for='t1'>Text input field: </label>
+      <input type='text' name='text_input1' id='t1'/>
+    </p>
+      
+    <p class = 'important-paragraph form-inputs'>
+      <label for='t2'>Another text input field: </label>
+      <input type='text' name='text_input2' id='t2'/>
+    </p>
+
+</form>
+{% endblock content %}

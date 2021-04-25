@@ -50,9 +50,11 @@ def get_song_data(track, year, artist):
                 song_data['artist'] = results['artists'][idx]['name']
             else:
                 song_data['featured_artists'] = results['artists'][idx]['name']
+        song_data['has_featured_artist'] = 1
     else:
         song_data['artist'] = results['artists'][0]['name']
         song_data['featured_artists'] = 'No Features'
+        song_data['has_featured_artist'] = 0
 
     song_data['track_number'] = [results['track_number']]
     song_data['tracks_on_album'] = [results['album']['total_tracks']]
@@ -94,9 +96,9 @@ def get_song_data(track, year, artist):
     song_data['artist_popularity'] = [artist_results['popularity']]
     
     #Adding per minute columns from audio analysis
-    song_data['tatums_per_second'] = [len(aa['tatums']) / (results['duration_minutes'])]
-    song_data['beats_per_second'] = [len(aa['beats']) / (results['duration_minutes'])]
-    song_data['bars_per_second'] = [len(aa['bars']) / (results['duration_minutes'])]
+    song_data['tatums_per_minute'] = [len(aa['tatums']) / (results['duration_ms'] / 60000)]
+    song_data['beats_per_minute'] = [len(aa['beats']) / (results['duration_ms'] / 60000)]
+    song_data['bars_per_minute'] = [len(aa['bars']) / (results['duration_ms'] / 60000)]
     
     return pd.DataFrame(song_data)
 
@@ -184,9 +186,6 @@ def get_album_df(df_album, file_name):
                          'artist_spotify_link', 'artist_image_url', 'tatums_per_second', 'beats_per_second', 'bars_per_second']]
 
     add_genre_vals_alt(df, df_genre)
-
-    # Creating bool value for if an there is an artist feature in the song
-    df['has_featured_artist'] = np.where(df['featured_artists'].isna(), 0, 1)
 
     df['year'] = df['year'].apply(pd.to_numeric)
     df.set_index(['album', 'name', 'artist', 'release_date', 'album_image_url', 'artist_image_url', 'id'], inplace=True)

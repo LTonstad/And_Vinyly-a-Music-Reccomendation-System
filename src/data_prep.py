@@ -45,7 +45,7 @@ def add_genre_vals_alt(df, df_genre):
 
         for genre in stringA:
             if genre in df.columns:
-                df[genre][i] = 1
+                df.loc[:, (genre, i)] = 1
     
     df.fillna(0, inplace=True)
 

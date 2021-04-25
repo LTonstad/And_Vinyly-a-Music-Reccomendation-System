@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<html>
+  <h1>Fraud Detection Case Study</h1>
+   
+        <p>
+           Project Team:<br/>
+            <ul>
+                <li>Henry Hoenig</li>
+                <li>Ben Lasko </li>
+                <li>Chris Stellato</li>
+                <li>Luke Tonstad</li>
+
+            </ul>
+            
+        </p>
+
+    <h1>About the project</h1>
+        <h3>Process Pipeline:</h3>
+            <p>
+                <ul>
+                    <li>Pull data from the API.</li>
+                    <li>Store the data in a MongoDB database.</li>
+                    <li>Clean the data to prepare it for the model.</li>
+                    <li>Send the data through the prediction model using RandomForest.</li>
+                    <li>Return probability of fraud and display in browser via Flask App</li>
+                </ul>
+            </p>
+
+        <h3>Final Model Performance:</h3>
+            <p>•Accuracy: 97% <br/>
+                •Precision: 99%<br/>
+                •Recall: 97%<br/>
+                •F1 score: 98%<br/>
+</p>
+
+<p>We tested performance on sample data using RandomForest, GradientBoosting, and a TensorFlow Keras Sequential model. The default RandomForest model performed the best, with no additional tuning of hyperparameters from default settings.</p>
+
+<h3>Next steps:</h3>
+<p>Provide a more interactive user interface where an e-commerce agent could view a list of all currently flagged transactions, see the predicted probability of fraud for each, and drill down to see additional details for a selected transaction.</p>
+                
+
+
+
+
+<img src='/static/cc_fraud_2.png' alt='credit card fraud happens to everyone at some point'>
+</html>
+
+{% endblock content %}

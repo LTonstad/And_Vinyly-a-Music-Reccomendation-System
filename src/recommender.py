@@ -9,7 +9,7 @@ import random
 
 
 df_mine = pd.read_pickle('../final_num_mine.pkl')
-df_2010s = pd.read_pickle('../num_2010s.pkl')
+# df_2010s = pd.read_pickle('../num_2010s.pkl') This one is currently messed up, but don't really need for presentation
 df_rolling = pd.read_pickle('../final_num_rolling.pkl')
 df_mega_main = pd.read_pickle('../final_num_all.pkl')
 
@@ -80,7 +80,7 @@ class ItemRecommender():
         plt.show()
         
         if no_genre == True:
-            song_df = song_df[song_df.columns[:24]]
+            song_df = song_df[song_df.columns[:23] | song_df.columns[-4:]]
 
         simsim = cosine_similarity(song_df, self.item_counts)
 
