@@ -8,10 +8,10 @@ from collections import Counter
 import random
 
 
-df_mine = pd.read_pickle('../num_my_albums_final.pkl')
+df_mine = pd.read_pickle('../final_num_mine.pkl')
 df_2010s = pd.read_pickle('../num_2010s.pkl')
-df_rolling = pd.read_pickle('../num_rolling.pkl')
-df_mega_main = pd.read_pickle('../num_mega_main.pkl')
+df_rolling = pd.read_pickle('../final_num_rolling.pkl')
+df_mega_main = pd.read_pickle('../final_num_all.pkl')
 
 class ItemRecommender():
     '''

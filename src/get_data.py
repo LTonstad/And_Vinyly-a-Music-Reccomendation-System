@@ -57,7 +57,7 @@ def get_song_data(track, year, artist):
     song_data['track_number'] = [results['track_number']]
     song_data['tracks_on_album'] = [results['album']['total_tracks']]
     song_data['explicit'] = [int(results['explicit'])]
-    song_data['duration_seconds'] = [results['duration_ms'] / 1000]
+    song_data['duration_minutes'] = [results['duration_ms'] / 60000]
     song_data['popularity'] = [results['popularity']]
 
     for key, value in audio_features.items():
@@ -94,9 +94,9 @@ def get_song_data(track, year, artist):
     song_data['artist_popularity'] = [artist_results['popularity']]
     
     #Adding per minute columns from audio analysis
-    song_data['tatums_per_second'] = [len(aa['tatums']) / (results['duration_ms'] / 1000)]
-    song_data['beats_per_second'] = [len(aa['beats']) / (results['duration_ms'] / 1000)]
-    song_data['bars_per_second'] = [len(aa['bars']) / (results['duration_ms'] / 1000)]
+    song_data['tatums_per_second'] = [len(aa['tatums']) / (results['duration_minutes'])]
+    song_data['beats_per_second'] = [len(aa['beats']) / (results['duration_minutes'])]
+    song_data['bars_per_second'] = [len(aa['bars']) / (results['duration_minutes'])]
     
     return pd.DataFrame(song_data)
 
