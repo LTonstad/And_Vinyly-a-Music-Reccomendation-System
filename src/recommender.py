@@ -15,8 +15,6 @@ df_mine = pd.read_pickle('../final_num_mine.pkl')
 df_rolling = pd.read_pickle('../final_num_rolling.pkl')
 df_mega_main = pd.read_pickle('../final_num_all.pkl')
 
-my_rec = ItemRecommender()
-my_rec.fit(df_mine)
 
 class ItemRecommender():
     '''
