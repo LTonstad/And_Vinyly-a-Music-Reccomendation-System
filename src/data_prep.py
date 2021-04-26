@@ -35,6 +35,7 @@ def add_genre_vals_alt(df, df_genre):
 
     # Adds the columns with nans as placeholders
     for col in genre_cols:
+        print(f'Adding {col}')
         df[col] = np.nan
     
     # Loops through and adds 1 to rows that the song is considered a part of that genre
@@ -46,6 +47,7 @@ def add_genre_vals_alt(df, df_genre):
         for genre in stringA:
             if genre in df.columns:
                 df.loc[:, (genre, i)] = 1
+                print(i)
     
     df.fillna(0, axis=1, inplace=True)
 

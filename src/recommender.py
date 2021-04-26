@@ -6,12 +6,17 @@ import numpy as np
 import operator
 from collections import Counter
 import random
+import math
+plt.rcParams["axes.grid"] = False
 
 
 df_mine = pd.read_pickle('../final_num_mine.pkl')
-# df_2010s = pd.read_pickle('../num_2010s.pkl') This one is currently messed up, but don't really need for presentation
+# df_2010s = pd.read_pickle('../num_2010s.pkl') messed up pickle file
 df_rolling = pd.read_pickle('../final_num_rolling.pkl')
 df_mega_main = pd.read_pickle('../final_num_all.pkl')
+
+my_rec = ItemRecommender()
+my_rec.fit(df_mine)
 
 class ItemRecommender():
     '''
@@ -23,7 +28,7 @@ class ItemRecommender():
         self.similarity_measure = similarity_measure
 
     
-    def fit(self, X, scaler=StandardScaler, no_genre=False):
+    def fit(self, X, scaler=StandardScaler, no_genre=False, just_song=False):
         '''
         Takes a numpy array of the item attributes and creates the similarity matrix
 
@@ -45,7 +50,10 @@ class ItemRecommender():
         lst_of_albums = X.index.get_level_values(1)
         
         if no_genre == True:
-            X = X[X.columns[:24]]
+            X = X[X.columns[:23] | X.columns[-4:]]
+            if just_song == True:
+                X.drop(columns=['artist_popularity', 'followers', 'popularity', 'track_number', 'year'],
+                            inplace=True)
 
         scaler = scaler()
         scale_matrix = scaler.fit_transform(X)
@@ -60,7 +68,7 @@ class ItemRecommender():
                 index = self.item_names)
 
         
-    def get_recommendations(self, song_name, artist_name, n=5, no_genre=False):
+    def get_recommendations(self, song_name, artist_name, n=20, no_genre=False, just_song=False):
         '''
         Returns the top n items related to the item passed in
         INPUT:
@@ -74,13 +82,20 @@ class ItemRecommender():
         # Searches for song through Spotipy and then gets variables for the output
         song_df = get_song(song_name, artist_name)
 
-        print(f'You chose {song_df.index[0][1]} for your song', '\n')
+        print(f'You chose {song_df.index[0][1]} by {song_df.index[0][2]} for your song', '\n')
         img = Image.open(requests.get(song_df.index[0][4], stream=True).raw)
         plt.imshow(img)
+        plt.axis('off')
         plt.show()
         
-        if no_genre == True:
+        song_df = song_df[self.item_counts.columns]
+        
+        if no_genre == True or just_song == True:
             song_df = song_df[song_df.columns[:23] | song_df.columns[-4:]]
+            if just_song == True:
+                song_df.drop(columns=['artist_popularity', 'followers', 'popularity', 
+                                             'track_number', 'year'],
+                            inplace=True)
 
         simsim = cosine_similarity(song_df, self.item_counts)
 
@@ -89,32 +104,39 @@ class ItemRecommender():
         for idx, i in enumerate(recs_arr, start=1):
             ser = self.item_counts.iloc[[i], :]
             
-            print('\n', f'Number {idx} pick:', '\n')
             if idx == 1:
                 df_recs = pd.DataFrame(ser)
                 
-            print('\n', f'Song chosen: {ser.index[0][1]}', '\n', 
-                f'Performed by: {ser.index[0][2]}', 
-                '\n', f'On the Album: {ser.index[0][0]}', '\n')
-            
-            # Captures image to be printed by MatPlotLib at the end of the loop
-            img = Image.open(requests.get(ser.index[0][4], stream=True).raw)
-            
-            plt.imshow(img)
-            plt.show()
-            
             df_recs = df_recs.append(pd.DataFrame(ser))
-
+        
         recs = df_recs.reset_index()
+        
+        print(f'The most similar {n} songs are displayed below:')
+        
+        fig = plt.figure(figsize=(10,14))
+        ax = []
+        columns = 4
+        rows = math.ceil(n / columns)
+        
+        for i in range(n):
+            # Captures image to be printed by MatPlotLib at the end of the loop
+            img = Image.open(requests.get(recs['album_image_url'].values[i], stream=True).raw)
+            ax.append(fig.add_subplot(rows, columns, i+1))
+            title = (f'Song Name: {recs["name"][i]}\n Artist Name: {recs["artist"][i]}\n Album Name: {recs["album"][i]}')
+            ax[-1].set_title(title, fontsize=8)
+            ax[-1].set_axis_off()
+            plt.imshow(img)
+        
+        
+        plt.tight_layout()
+        plt.show()
 
         artist_rec = max(Counter(recs['artist']).items(), key=operator.itemgetter(np.random.randint(1)))[0]
 
         print('\n', f'Artist Recommendation: {artist_rec}', '\n')
-
+        
         plt.imshow(Image.open(requests.get(recs[recs['artist'] == artist_rec]['artist_image_url'].values[0], stream=True).raw))
+        plt.axis('off')
         plt.show()
 
         return df_recs
-
-
-

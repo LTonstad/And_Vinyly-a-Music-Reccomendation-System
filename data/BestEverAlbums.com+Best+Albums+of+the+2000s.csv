@@ -5,12 +5,12 @@ Rank,Title,Artist,Country,Released,Compilation,Live,YearRank,DecadeRank,OverallR
 4,Is This It,The Strokes,us,2001,No,No,1,4,22,41568,85.807518005,2746,279
 5,Illinois,Sufjan Stevens,us,2005,No,No,1,5,45,27641,86.500694275,1701,1394
 6,Yankee Hotel Foxtrot,Wilco,us,2002,No,No,1,6,48,26426,85.367385864,1773,1389
-7,"Whatever People Say I Am, That's What I'm Not",Arctic Monkeys,uk,2006,No,No,1,7,52,24260,82.985046387,2150,1617
+7,+ACI-Whatever People Say I Am, That's What I'm Not+ACI-,Arctic Monkeys,uk,2006,No,No,1,7,52,24260,82.985046387,2150,1617
 8,Turn On The Bright Lights,Interpol,us,2002,No,No,2,8,83,18877,83.808486938,1455,1043
-9,Lift Yr. Skinny Fists Like Antennas To Heaven,Godspeed You! Black Emperor,ca,2000,No,No,2,9,85,18731,85.959014893,1167,1087
+9,Lift Yr. Skinny Fists Like Antennas To Heaven,Godspeed You+ACE- Black Emperor,ca,2000,No,No,2,9,85,18731,85.959014893,1167,1087
 10,Madvillainy,Madvillain,un,2004,No,No,2,10,87,18216,85.659194946,1005,2546
 11,Sound Of Silver,LCD Soundsystem,us,2007,No,No,2,11,90,16941,84.226341248,1238,2121
-12,"For Emma, Forever Ago",Bon Iver,us,2007,No,No,3,12,91,16885,83.102928162,1402,3418
+12,+ACI-For Emma, Forever Ago+ACI-,Bon Iver,us,2007,No,No,3,12,91,16885,83.102928162,1402,3418
 13,A Rush Of Blood To The Head,Coldplay,uk,2002,No,No,3,13,92,16786,78.944992065,2006,67
 14,Elephant,The White Stripes,us,2003,No,No,1,14,101,15924,82.630378723,1984,306
 15,Amnesiac,Radiohead,uk,2001,No,No,2,15,109,15102,82.455276489,2331,1405
@@ -19,7 +19,7 @@ Rank,Title,Artist,Country,Released,Compilation,Live,YearRank,DecadeRank,OverallR
 18,Demon Days,Gorillaz,uk,2005,No,No,2,18,117,14759,81.465782166,1486,923
 19,Fleet Foxes,Fleet Foxes,us,2008,No,No,1,19,129,13674,82.65461731,1464,3430
 20,Songs For The Deaf,Queens Of The Stone Age,us,2002,No,No,5,20,133,13350,82.840499878,1360,945
-21,The Moon & Antarctica,Modest Mouse,us,2000,No,No,3,21,134,13303,83.706459045,1159,1604
+21,The Moon +ACY- Antarctica,Modest Mouse,us,2000,No,No,3,21,134,13303,83.706459045,1159,1604
 22,Discovery,Daft Punk,fr,2001,No,No,3,22,137,12785,82.398353577,1254,2239
 23,Neon Bible,Arcade Fire,un,2007,No,No,4,23,139,12702,81.944648743,1862,1267
 24,Boxer,The National,us,2007,No,No,5,24,143,12550,82.584037781,1110,2447
@@ -33,7 +33,7 @@ Rank,Title,Artist,Country,Released,Compilation,Live,YearRank,DecadeRank,OverallR
 32,The Glow Pt. 2,The Microphones,us,2001,No,No,6,32,181,10324,83.987579346,678,2696
 33,Hot Fuss,The Killers,us,2004,No,No,4,33,182,10311,77.536857605,1374,1107
 34,The College Dropout,Kanye West,us,2004,No,No,5,34,185,10211,82.372589111,1235,1836
-35,Vespertine,Björk,is,2001,No,No,7,35,204,9235,83.278831482,850,1475
+35,Vespertine,Bj+//3//Q-rk,is,2001,No,No,7,35,204,9235,83.278831482,850,1475
 36,Parachutes,Coldplay,uk,2000,No,No,5,36,213,9070,77.770843506,1575,68
 37,Vampire Weekend,Vampire Weekend,us,2008,No,No,2,37,217,8951,80.673210144,1196,2745
 38,Back To Black,Amy Winehouse,uk,2006,No,No,3,38,226,8664,79.360626221,957,1843
@@ -54,18 +54,18 @@ Rank,Title,Artist,Country,Released,Compilation,Live,YearRank,DecadeRank,OverallR
 53,Chutes Too Narrow,The Shins,us,2003,No,No,5,53,332,5952,80.686569214,708,1014
 54,Silent Alarm,Bloc Party,uk,2005,No,No,4,54,336,5929,77.506736755,769,1048
 55,Untrue,Burial,uk,2007,No,No,9,55,338,5890,81.379692078,534,2582
-56,Takk...,Sigur Rós,is,2005,No,No,5,56,345,5828,81.88494873,774,2055
+56,Takk...,Sigur R+//3//Q-s,is,2005,No,No,5,56,345,5828,81.88494873,774,2055
 57,The Devil And God Are Raging Inside Me,Brand New,us,2006,No,No,5,57,348,5750,81.036598206,512,2049
 58,Third,Portishead,uk,2008,No,No,4,58,352,5681,81.026954651,736,2465
 59,The Black Parade,My Chemical Romance,us,2006,No,No,6,59,354,5609,73.008270264,685,1422
 60,Good News For People Who Love Bad News,Modest Mouse,us,2004,No,No,6,60,357,5558,80.299835205,887,2004
-61,( ),Sigur Rós,is,2002,No,No,8,61,363,5452,82.118255615,771,2052
-62,"Stories From The City, Stories From The Sea",PJ Harvey,uk,2000,No,No,7,62,365,5445,80.937225342,745,193
+61,( ),Sigur R+//3//Q-s,is,2002,No,No,8,61,363,5452,82.118255615,771,2052
+62,+ACI-Stories From The City, Stories From The Sea+ACI-,PJ Harvey,uk,2000,No,No,7,62,365,5445,80.937225342,745,193
 63,Veckatimest,Grizzly Bear,us,2009,No,No,4,63,367,5381,79.916511536,754,5332
 64,Transatlanticism,Death Cab For Cutie,us,2003,No,No,6,64,369,5379,78.471748352,672,2561
 65,Person Pitch,Panda Bear,us,2007,No,No,10,65,375,5269,80.8516922,598,2695
 66,Stankonia,OutKast,us,2000,No,No,8,66,380,5198,79.990646362,800,1417
-67,"I'm Wide Awake, It's Morning",Bright Eyes,us,2005,No,No,6,67,382,5117,78.448852539,679,1255
+67,+ACI-I'm Wide Awake, It's Morning+ACI-,Bright Eyes,us,2005,No,No,6,67,382,5117,78.448852539,679,1255
 68,Alligator,The National,us,2005,No,No,7,68,400,4947,80.248291016,658,2502
 69,Franz Ferdinand,Franz Ferdinand,uk,2004,No,No,7,69,401,4943,78.309036255,1071,1606
 70,Deathconsciousness,Have A Nice Life,us,2008,No,No,5,70,405,4880,82.035598755,353,12072
@@ -75,24 +75,24 @@ Rank,Title,Artist,Country,Released,Compilation,Live,YearRank,DecadeRank,OverallR
 74,Wolfgang Amadeus Phoenix,Phoenix (FR),fr,2009,No,No,5,74,426,4605,78.77671051,808,7518
 75,Graduation,Kanye West,us,2007,No,No,11,75,437,4530,77.513587952,953,1837
 76,Fear Of A Blank Planet,Porcupine Tree,uk,2007,No,No,12,76,439,4484,81.257614136,514,1640
-77,X&Y,Coldplay,uk,2005,No,No,8,77,444,4424,71.799446106,1088,1934
+77,X+ACY-Y,Coldplay,uk,2005,No,No,8,77,444,4424,71.799446106,1088,1934
 78,Feels,Animal Collective,us,2005,No,No,9,78,454,4338,79.450363159,538,3424
-79,De-Loused In The Comatorium,The Mars Volta,us,2003,No,No,8,79,464,4192,78.477874756,589,1293
-80,Relationship Of Command,At The Drive-In,us,2000,No,No,9,80,469,4147,78.69985199,471,1292
+79,De+AC0-Loused In The Comatorium,The Mars Volta,us,2003,No,No,8,79,464,4192,78.477874756,589,1293
+80,Relationship Of Command,At The Drive+AC0-In,us,2000,No,No,9,80,469,4147,78.69985199,471,1292
 81,Antics,Interpol,us,2004,No,No,8,81,474,4089,78.823532104,652,1356
-82,"Hissing Fauna, Are You The Destroyer?",of Montreal,us,2007,No,No,13,82,475,4088,78.741668701,428,2129
+82,+ACI-Hissing Fauna, Are You The Destroyer?+ACI-,of Montreal,us,2007,No,No,13,82,475,4088,78.741668701,428,2129
 83,In Absentia,Porcupine Tree,uk,2002,No,No,10,83,505,3848,80.68334198,515,2508
 84,Up The Bracket,The Libertines,uk,2002,No,No,11,84,515,3768,77.735778809,631,1459
 85,The Seldom Seen Kid,Elbow,uk,2008,No,No,6,85,516,3758,78.284210205,523,3481
-86,The Blueprint,Jay-Z,us,2001,No,No,10,86,517,3748,78.142021179,645,122
+86,The Blueprint,Jay+AC0-Z,us,2001,No,No,10,86,517,3748,78.142021179,645,122
 87,Rated R,Queens Of The Stone Age,us,2000,No,No,10,87,522,3717,80.607559204,750,224
 88,The Earth Is Not A Cold Dead Place,Explosions In The Sky,us,2003,No,No,9,88,526,3698,79.919120789,462,12546
 89,Stadium Arcadium,Red Hot Chili Peppers,us,2006,No,No,8,89,527,3693,73.504875183,844,1456
 90,White Pony,Deftones,us,2000,No,No,11,90,529,3676,81.029052734,435,2751
-91,"Oh, Inverted World",The Shins,us,2001,No,No,11,91,531,3643,78.860176086,626,1975
-92,808s & Heartbreak,Kanye West,us,2008,No,No,7,92,537,3587,75.821456909,779,6320
+91,+ACI-Oh, Inverted World+ACI-,The Shins,us,2001,No,No,11,91,531,3643,78.860176086,626,1975
+92,808s +ACY- Heartbreak,Kanye West,us,2008,No,No,7,92,537,3587,75.821456909,779,6320
 93,Geogaddi,Boards Of Canada,uk,2002,No,No,12,93,545,3519,80.833618164,393,6613
-94,"10,000 Days",Tool,us,2006,No,No,9,94,556,3471,78.458778381,580,1729
+94,+ACI-10,000 Days+ACI-,Tool,us,2006,No,No,9,94,556,3471,78.458778381,580,1729
 95,Sam's Town,The Killers,us,2006,No,No,10,95,557,3466,74.3776474,754,2227
 96,Gorillaz,Gorillaz,uk,2001,No,No,12,96,562,3445,77.214744568,762,2856
 97,Mm.. Food,MF DOOM,uk,2004,No,No,9,97,565,3406,81.697715759,299,12961
@@ -105,11 +105,11 @@ Rank,Title,Artist,Country,Released,Compilation,Live,YearRank,DecadeRank,OverallR
 104,Hybrid Theory,Linkin Park,us,2000,No,No,13,104,623,3080,65.604728699,755,1414
 105,Deadwing,Porcupine Tree,uk,2005,No,No,11,105,627,3051,81.504226685,383,3960
 106,Fever To Tell,Yeah Yeah Yeahs,us,2003,No,No,10,106,640,2979,77.413230896,575,2808
-107,Lungs,Florence + The Machine,uk,2009,No,No,7,107,643,2970,76.117454529,585,6514
+107,Lungs,Florence  The Machine,uk,2009,No,No,7,107,643,2970,76.117454529,585,6514
 108,Humbug,Arctic Monkeys,uk,2009,No,No,8,108,645,2962,75.707221985,853,6600
 109,Wincing The Night Away,The Shins,us,2007,No,No,14,109,656,2945,77.494987488,471,2770
 110,The Magnolia Electric Co.,Songs: Ohia,us,2003,No,No,11,110,658,2940,82.666435242,205,2566
-111,The Milk-Eyed Mender,Joanna Newsom,us,2004,No,No,11,111,661,2923,80.82346344,323,3535
+111,The Milk+AC0-Eyed Mender,Joanna Newsom,us,2004,No,No,11,111,661,2923,80.82346344,323,3535
 112,American IV: The Man Comes Around,Johnny Cash,us,2002,No,No,14,112,678,2835,80.902870178,455,1254
 113,Sung Tongs,Animal Collective,us,2004,No,No,12,113,688,2794,78.436332703,443,3602
 114,The Crane Wife,The Decemberists,us,2006,No,No,11,114,691,2785,78.373733521,393,2123
@@ -121,15 +121,15 @@ Rank,Title,Artist,Country,Released,Compilation,Live,YearRank,DecadeRank,OverallR
 120,A Ghost Is Born,Wilco,us,2004,No,No,14,120,721,2651,80.72644043,446,2893
 121,Bitte Orca,Dirty Projectors,us,2009,No,No,9,121,731,2617,78.722671509,360,7603
 122,The Eraser,Thom Yorke,uk,2006,No,No,13,122,733,2612,76.927078247,665,1637
-123,Abattoir Blues/The Lyre Of Orpheus,Nick Cave & The Bad Seeds,au,2004,No,No,15,123,739,2580,80.255508423,379,1672
+123,Abattoir Blues/The Lyre Of Orpheus,Nick Cave +ACY- The Bad Seeds,au,2004,No,No,15,123,739,2580,80.255508423,379,1672
 124,Brian Wilson Presents Smile,Brian Wilson,us,2004,No,No,16,124,742,2576,79.254226685,436,1063
 125,O,Damien Rice,ie,2002,No,No,15,125,744,2564,77.446685791,321,1742
-126,I Am A Bird Now,Antony & The Johnsons,un,2005,No,No,12,126,746,2553,78.5364151,330,3177
+126,I Am A Bird Now,Antony +ACY- The Johnsons,un,2005,No,No,12,126,746,2553,78.5364151,330,3177
 127,Ghosts Of The Great Highway,Sun Kil Moon,us,2003,No,No,13,127,755,2528,83.406105042,261,2031
 128,Figure 8,Elliott Smith,us,2000,No,No,14,128,767,2497,79.755439758,435,3628
 129,Original Pirate Material,The Streets,uk,2002,No,No,16,129,771,2463,77.910804749,411,278
 130,All That You Can't Leave Behind,U2,ie,2000,No,No,15,130,773,2452,71.417678833,881,1404
-131,Sigh No More,Mumford & Sons,uk,2009,No,No,10,131,779,2437,67.053337097,695,7549
+131,Sigh No More,Mumford +ACY- Sons,uk,2009,No,No,10,131,779,2437,67.053337097,695,7549
 132,Speakerboxxx/The Love Below,OutKast,us,2003,No,No,14,132,781,2432,77.086860657,506,191
 133,Kala,M.I.A.,un,2007,No,No,16,133,785,2416,76.087882996,461,2977
 134,Z,My Morning Jacket,us,2005,No,No,13,134,791,2388,78.299079895,406,2191
@@ -146,9 +146,9 @@ Rank,Title,Artist,Country,Released,Compilation,Live,YearRank,DecadeRank,OverallR
 145,The Rising,Bruce Springsteen,us,2002,No,No,17,145,869,2154,75.674926758,446,1723
 146,Velocity : Design : Comfort,Sweet Trip,us,2003,No,No,16,146,880,2128,83.238685608,159,9808
 147,LCD Soundsystem,LCD Soundsystem,us,2005,No,No,15,147,882,2124,78.509124756,451,2192
-148,The Black Album,Jay-Z,us,2003,No,No,17,148,886,2112,77.475769043,412,7569
+148,The Black Album,Jay+AC0-Z,us,2003,No,No,17,148,886,2112,77.475769043,412,7569
 149,Deltron 3030,Deltron 3030,un,2000,No,No,20,149,889,2108,78.819709778,230,5769
-150,No More Shall We Part,Nick Cave & The Bad Seeds,au,2001,No,No,14,150,897,2096,80.254226685,320,1679
+150,No More Shall We Part,Nick Cave +ACY- The Bad Seeds,au,2001,No,No,14,150,897,2096,80.254226685,320,1679
 151,Continuum,John Mayer,us,2006,No,No,15,151,908,2067,72.721405029,322,2600
 152,Mezmerize,System Of A Down,us,2005,No,No,16,152,923,2042,76.286140442,489,1605
 153,Leaves Turn Inside You,Unwound,us,2001,No,No,15,153,926,2034,83.425590515,168,10259
@@ -162,26 +162,26 @@ Rank,Title,Artist,Country,Released,Compilation,Live,YearRank,DecadeRank,OverallR
 161,Bleed American,Jimmy Eat World,us,2001,No,No,17,161,968,1958,75.058570862,297,3748
 162,Sky Blue Sky,Wilco,us,2007,No,No,17,162,974,1943,76.823471069,405,1827
 163,Think Tank,Blur,uk,2003,No,No,20,163,975,1941,75.615898132,467,2416
-164,"Spirit They're Gone, Spirit They've Vanished",Avey Tare & Panda Bear,us,2000,No,No,21,164,980,1930,79.195327759,292,5460
+164,+ACI-Spirit They're Gone, Spirit They've Vanished+ACI-,Avey Tare +ACY- Panda Bear,us,2000,No,No,21,164,980,1930,79.195327759,292,5460
 165,Fever Ray,Fever Ray,se,2009,No,No,13,165,989,1904,78.497108459,295,8088
 166,Quebec,Ween,us,2003,No,No,21,166,998,1888,82.298751831,216,2333
-167,The Woods,Sleater-Kinney,us,2005,No,No,18,167,1008,1861,79.262298584,249,4805
+167,The Woods,Sleater+AC0-Kinney,us,2005,No,No,18,167,1008,1861,79.262298584,249,4805
 168,Picaresque,The Decemberists,us,2005,No,No,19,168,1010,1860,78.586624146,263,6286
 169,Audioslave,Audioslave,us,2002,No,No,18,169,1018,1848,73.585487366,438,2383
 170,Meteora,Linkin Park,us,2003,No,No,22,170,1021,1845,67.451332092,450,1784
-171,Our Endless Numbered Days,Iron & Wine,us,2004,No,No,17,171,1031,1826,77.059753418,291,1739
+171,Our Endless Numbered Days,Iron +ACY- Wine,us,2004,No,No,17,171,1031,1826,77.059753418,291,1739
 172,We Were Dead Before The Ship Even Sank,Modest Mouse,us,2007,No,No,18,172,1038,1799,77.500274658,444,2053
-173,† (Cross),Justice,fr,2007,No,No,19,173,1041,1793,77.326385498,385,3569
-174,And Then Nothing Turned Itself Inside-Out,Yo La Tengo,us,2000,No,No,22,174,1044,1788,79.759368896,276,1428
+173,+//3//f/9- (Cross),Justice,fr,2007,No,No,19,173,1041,1793,77.326385498,385,3569
+174,And Then Nothing Turned Itself Inside+AC0-Out,Yo La Tengo,us,2000,No,No,22,174,1044,1788,79.759368896,276,1428
 175,Into The Wild,Eddie Vedder,us,2007,No,No,20,175,1059,1766,78.577613831,310,3522
 176,Mount Eerie,The Microphones,us,2003,No,No,23,176,1060,1765,81.419563293,180,16521
 177,The Cold Vein,Cannibal Ox,us,2001,No,No,18,177,1063,1765,80.109336853,202,2507
 178,The Mantle,Agalloch,us,2002,No,No,19,178,1071,1752,79.179153442,205,15874
 179,West Ryder Pauper Lunatic Asylum,Kasabian,uk,2009,No,No,14,179,1081,1735,75.095024109,396,5743
 180,Get Behind Me Satan,The White Stripes,us,2005,No,No,20,180,1083,1734,75.876235962,582,2369
-181,It's Blitz!,Yeah Yeah Yeahs,us,2009,No,No,15,181,1099,1699,77.772491455,447,5017
-182,Með Suð Í Eyrum Við Spilum Endalaust,Sigur Rós,is,2008,No,No,12,182,1104,1684,77.2866745,478,3453
-183,Blink-182,Blink-182,us,2003,No,No,24,183,1113,1672,68.681915283,337,4168
+181,It's Blitz+ACE-,Yeah Yeah Yeahs,us,2009,No,No,15,181,1099,1699,77.772491455,447,5017
+182,Me+//3//Q- Su+//3//Q- +//3//Q- Eyrum Vi+//3//Q- Spilum Endalaust,Sigur R+//3//Q-s,is,2008,No,No,12,182,1104,1684,77.2866745,478,3453
+183,Blink+AC0-182,Blink+AC0-182,us,2003,No,No,24,183,1113,1672,68.681915283,337,4168
 184,Come Away With Me,Norah Jones,us,2002,No,No,20,184,1121,1652,74.810585022,382,1510
 185,Crystal Castles,Crystal Castles,ca,2008,No,No,13,185,1124,1648,76.479850769,314,4575
 186,The Libertines,The Libertines,uk,2004,No,No,18,186,1137,1625,75.493431091,442,147
@@ -200,7 +200,7 @@ Rank,Title,Artist,Country,Released,Compilation,Live,YearRank,DecadeRank,OverallR
 199,Leviathan,Mastodon,us,2004,No,No,19,199,1223,1495,82.564743042,267,1288
 200,Supreme Clientele,Ghostface Killah,us,2000,No,No,23,200,1224,1493,80.638587952,236,4212
 201,Felt Mountain,Goldfrapp,uk,2000,No,No,24,201,1229,1490,76.969924927,238,2545
-202,Flood,ボリス [Boris],jp,2000,No,No,25,202,1234,1477,80.424346924,117,13777
+202,Flood,+//3//f/9//3//f/9//3//f/9- +AFs-Boris+AF0-,jp,2000,No,No,25,202,1234,1477,80.424346924,117,13777
 203,Three Cheers For Sweet Revenge,My Chemical Romance,us,2004,No,No,20,203,1240,1458,73.234161377,272,4370
 204,From A Basement On The Hill,Elliott Smith,us,2004,No,No,21,204,1242,1457,80.718452454,286,1738
 205,Dragging A Dead Deer Up A Hill,Grouper,us,2008,No,No,14,205,1251,1444,78.933876038,151,22885
@@ -210,7 +210,7 @@ Rank,Title,Artist,Country,Released,Compilation,Live,YearRank,DecadeRank,OverallR
 209,A Grand Don't Come For Free,The Streets,uk,2004,No,No,23,209,1266,1430,75.222427368,298,277
 210,The Fame Monster,Lady Gaga,us,2009,No,No,17,210,1274,1422,67.298271179,324,10864
 211,Wolfmother,Wolfmother,au,2005,No,No,25,211,1279,1417,73.819374084,360,1044
-212,"Lifted Or The Story Is In The Soil, Keep Your Ear To The Ground",Bright Eyes,us,2002,No,No,22,212,1281,1416,77.290611267,269,1286
+212,+ACI-Lifted Or The Story Is In The Soil, Keep Your Ear To The Ground+ACI-,Bright Eyes,us,2002,No,No,22,212,1281,1416,77.290611267,269,1286
 213,Consolers Of The Lonely,The Raconteurs,us,2008,No,No,15,213,1285,1412,76.123916626,331,2647
 214,Gold,Ryan Adams,us,2001,No,No,21,214,1288,1408,75.332183838,318,1416
 215,Our Love To Admire,Interpol,us,2007,No,No,21,215,1295,1402,74.686225891,387,2026
@@ -221,37 +221,37 @@ Rank,Title,Artist,Country,Released,Compilation,Live,YearRank,DecadeRank,OverallR
 220,Aha Shake Heartbreak,Kings Of Leon,us,2004,No,No,24,220,1327,1372,73.45980072,470,1835
 221,Them Crooked Vultures,Them Crooked Vultures,us,2009,No,No,19,221,1336,1367,74.472137451,350,7554
 222,The Argument,Fugazi,us,2001,No,No,22,222,1340,1365,80.97644043,222,3425
-223,A Fever You Can't Sweat Out,Panic! At The Disco,us,2005,No,No,27,223,1346,1360,67.27419281,233,2603
+223,A Fever You Can't Sweat Out,Panic+ACE- At The Disco,us,2005,No,No,27,223,1346,1360,67.27419281,233,2603
 224,Kill The Moonlight,Spoon,us,2002,No,No,24,224,1365,1328,78.443344116,338,3423
 225,The Hazards Of Love,The Decemberists,us,2009,No,No,20,225,1367,1324,75.337203979,239,5754
-226,"Echoes, Silence, Patience & Grace",Foo Fighters,us,2007,No,No,23,226,1368,1318,73.150588989,394,4102
+226,+ACI-Echoes, Silence, Patience +ACY- Grace+ACI-,Foo Fighters,us,2007,No,No,23,226,1368,1318,73.150588989,394,4102
 227,Time (The Revelator),Gillian Welch,us,2001,No,No,23,227,1370,1315,77.957824707,169,7829
 228,Embryonic,The Flaming Lips,us,2009,No,No,21,228,1378,1305,78.516441345,336,7213
 229,Because Of The Times,Kings Of Leon,us,2007,No,No,24,229,1379,1305,73.215385437,444,2088
-230,Medúlla,Björk,is,2004,No,No,25,230,1381,1305,75.666496277,328,2550
+230,Med+//3//Q-lla,Bj+//3//Q-rk,is,2004,No,No,25,230,1381,1305,75.666496277,328,2550
 231,Alive 2007,Daft Punk,fr,2007,No,Yes,25,231,1389,1296,78.441917419,234,2400
 232,Let It Be... Naked,The Beatles,uk,2003,No,No,27,232,1395,1288,81.756599426,399,2114
 233,Guero,Beck,us,2005,No,No,28,233,1404,1282,75.698440552,371,1972
 234,The Age Of The Understatement,The Last Shadow Puppets,uk,2008,No,No,16,234,1406,1279,76.110527039,270,2472
 235,Night Falls Over Kortedala,Jens Lekman,se,2007,No,No,26,235,1410,1277,79.98614502,164,11710
-236,Yanqui U.X.O.,Godspeed You! Black Emperor,ca,2002,No,No,25,236,1415,1271,80.067474365,257,2203
+236,Yanqui U.X.O.,Godspeed You+ACE- Black Emperor,ca,2002,No,No,25,236,1415,1271,80.067474365,257,2203
 237,All Hail West Texas,The Mountain Goats,us,2002,No,No,26,237,1424,1256,79.666343689,150,1214
 238,Modal Soul,Nujabes,jp,2005,No,No,29,238,1428,1253,83.138389587,140,16341
-239,"You're A Woman, I'm A Machine",Death From Above 1979,ca,2004,No,No,26,239,1431,1251,76.368774414,237,2212
+239,+ACI-You're A Woman, I'm A Machine+ACI-,Death From Above 1979,ca,2004,No,No,26,239,1431,1251,76.368774414,237,2212
 240,Daisies Of The Galaxy,Eels,us,2000,No,No,27,240,1433,1249,76.972961426,194,6912
 241,In Between Dreams,Jack Johnson,us,2005,No,No,30,241,1434,1247,72.569168091,288,2951
 242,Devotion,Beach House,us,2008,No,No,17,242,1436,1244,78.731651306,258,5002
 243,It's A Wonderful Life,Sparklehorse,us,2001,No,No,24,243,1441,1237,79.121147156,155,6955
 244,Cease To Begin,Band Of Horses,us,2007,No,No,27,244,1445,1233,75.430099487,221,3456
 245,The Disintegration Loops I,William Basinski,us,2002,No,No,27,245,1474,1210,79.544746399,141,12069
-246,Day & Age,The Killers,us,2008,No,No,18,246,1485,1199,68.132225037,451,3639
+246,Day +ACY- Age,The Killers,us,2008,No,No,18,246,1485,1199,68.132225037,451,3639
 247,The Reminder,Feist,ca,2007,No,No,28,247,1486,1197,76.361633301,276,2613
 248,Panopticon,Isis,us,2004,No,No,27,248,1492,1192,78.908317566,127,12948
-249,Source Tags & Codes,...And You Will Know Us By The Trail Of Dead,us,2002,No,No,28,249,1496,1189,76.085990906,198,2056
+249,Source Tags +ACY- Codes,...And You Will Know Us By The Trail Of Dead,us,2002,No,No,28,249,1496,1189,76.085990906,198,2056
 250,How To Dismantle An Atomic Bomb,U2,ie,2004,No,No,28,250,1497,1187,69.852890015,670,1882
 251,Harmony In Ultraviolet,Tim Hecker,ca,2006,No,No,20,251,1508,1178,77.449516296,141,11030
 252,The Midnight Organ Fight,Frightened Rabbit,uk,2008,No,No,19,252,1510,1176,77.429954529,133,5535
-253,Take Off Your Pants And Jacket,Blink-182,us,2001,No,No,25,253,1511,1175,68.416534424,282,3540
+253,Take Off Your Pants And Jacket,Blink+AC0-182,us,2001,No,No,25,253,1511,1175,68.416534424,282,3540
 254,At War With The Mystics,The Flaming Lips,us,2006,No,No,21,254,1513,1174,75.234268188,304,7259
 255,Mirrored,Battles,us,2007,No,No,29,255,1514,1173,78.181373596,228,2446
 256,You Are Free,Cat Power,us,2003,No,No,28,256,1515,1173,80.244796753,209,4958
@@ -262,10 +262,10 @@ Rank,Title,Artist,Country,Released,Compilation,Live,YearRank,DecadeRank,OverallR
 261,Twin Cinema,The New Pornographers,ca,2005,No,No,31,261,1546,1137,80.571006775,201,5973
 262,Thirteenth Step,A Perfect Circle,us,2003,No,No,30,262,1558,1123,77.122131348,212,1446
 263,Mama's Gun,Erykah Badu,us,2000,No,No,28,263,1562,1119,78.451629639,153,4510
-264,The Creek Drank The Cradle,Iron & Wine,us,2002,No,No,30,264,1563,1119,77.838218689,156,8852
+264,The Creek Drank The Cradle,Iron +ACY- Wine,us,2002,No,No,30,264,1563,1119,77.838218689,156,8852
 265,Fantasies,Metric,ca,2009,No,No,22,265,1566,1117,77.422637939,152,11088
 266,Antidotes,Foals,uk,2008,No,No,20,266,1578,1102,73.9139328,254,3479
-267,Raising Sand,Robert Plant & Alison Krauss,un,2007,No,No,30,267,1585,1099,74.946395874,225,4548
+267,Raising Sand,Robert Plant +ACY- Alison Krauss,un,2007,No,No,30,267,1585,1099,74.946395874,225,4548
 268,Sleeping With Ghosts,Placebo,uk,2003,No,No,31,268,1588,1098,74.698036194,182,3222
 269,Broken Boy Soldiers,The Raconteurs,us,2006,No,No,22,269,1591,1097,75.412704468,280,3553
 270,Blood Mountain,Mastodon,us,2006,No,No,23,270,1594,1091,78.715156555,206,1928
@@ -274,7 +274,7 @@ Rank,Title,Artist,Country,Released,Compilation,Live,YearRank,DecadeRank,OverallR
 273,Lost Souls,Doves,uk,2000,No,No,29,273,1620,1064,77.385322571,213,958
 274,Narrow Stairs,Death Cab For Cutie,us,2008,No,No,21,274,1621,1064,74.4009552,238,2560
 275,Dopesmoker,Sleep,us,2003,No,No,32,275,1622,1064,81.233940125,143,18214
-276,Youth & Young Manhood,Kings Of Leon,us,2003,No,No,33,276,1627,1062,74.572990417,396,1673
+276,Youth +ACY- Young Manhood,Kings Of Leon,us,2003,No,No,33,276,1627,1062,74.572990417,396,1673
 277,Under The Iron Sea,Keane,uk,2006,No,No,25,277,1630,1060,70.668052673,197,3416
 278,The Campfire Headphase,Boards Of Canada,uk,2005,No,No,33,278,1637,1053,80.238128662,171,2021
 279,Begin To Hope,Regina Spektor,un,2006,No,No,26,279,1647,1044,77.697303772,211,2292
@@ -299,7 +299,7 @@ Rank,Title,Artist,Country,Released,Compilation,Live,YearRank,DecadeRank,OverallR
 298,Building Nothing Out Of Something,Modest Mouse,us,2000,Yes,No,33,298,1719,995,81.358444214,194,4696
 299,Things We Lost In The Fire,Low,us,2001,No,No,27,299,1721,994,79.914634705,138,11029
 300,Bloodflowers,The Cure,uk,2000,No,No,34,300,1725,993,73.933753967,226,5902
-301,Cage The Elephant,Cage The Elephant,us,2008,No,No,22,301,1727,991,74.35231781,238,6903
+301,Cage The Elephant,Cage The Elephant,us,2009,No,No,22,301,1727,991,74.35231781,238,6903
 302,Mer De Noms,A Perfect Circle,us,2000,No,No,35,302,1735,985,77.809814453,181,2281
 303,An End Has A Start,Editors,uk,2007,No,No,32,303,1743,981,74.265327454,179,5045
 304,Rings Around The World,Super Furry Animals,uk,2001,No,No,28,304,1748,980,76.564819336,182,1230
@@ -323,7 +323,7 @@ Rank,Title,Artist,Country,Released,Compilation,Live,YearRank,DecadeRank,OverallR
 322,One By One,Foo Fighters,us,2002,No,No,33,322,1849,911,72.04447937,323,1826
 323,Mutter,Rammstein,de,2001,No,No,30,323,1858,908,75.582267761,197,2754
 324,The Drift,Scott Walker,us,2006,No,No,33,324,1864,903,77.398765564,141,7207
-325,Riot!,Paramore,us,2007,No,No,34,325,1865,902,71.151634216,197,4354
+325,Riot+ACE-,Paramore,us,2007,No,No,34,325,1865,902,71.151634216,197,4354
 326,The Ape Of Naples,Coil,uk,2005,No,No,40,326,1872,897,78.923103333,99,16029
 327,Fox Confessor Brings The Flood,Neko Case,us,2006,No,No,34,327,1876,895,79.128814697,123,2252
 328,Lupe Fiasco's Food And Liquor,Lupe Fiasco,us,2006,No,No,35,328,1879,894,76.559387207,157,3677
@@ -331,10 +331,10 @@ Rank,Title,Artist,Country,Released,Compilation,Live,YearRank,DecadeRank,OverallR
 330,Music,Madonna,us,2000,No,No,39,330,1898,882,72.915336609,225,5520
 331,Only Revolutions,Biffy Clyro,uk,2009,No,No,25,331,1904,880,74.25743103,181,12109
 332,The Tired Sounds Of Stars Of The Lid,Stars Of The Lid,us,2001,No,No,31,332,1909,879,76.168533325,144,2858
-333,The Shepherd's Dog,Iron & Wine,us,2007,No,No,35,333,1911,878,77.212249756,175,7789
+333,The Shepherd's Dog,Iron +ACY- Wine,us,2007,No,No,35,333,1911,878,77.212249756,175,7789
 334,Let's Get Out Of This Country,Camera Obscura,uk,2006,No,No,36,334,1912,878,79.657669067,145,5767
 335,Soviet Kitsch,Regina Spektor,un,2004,No,No,32,335,1916,875,77.455047607,156,3908
-336,Bows + Arrows,The Walkmen,us,2004,No,No,33,336,1920,873,76.722320557,158,2771
+336,Bows  Arrows,The Walkmen,us,2004,No,No,33,336,1920,873,76.722320557,158,2771
 337,Marry Me,St. Vincent,us,2007,No,No,36,337,1927,869,77.655220032,170,1760
 338,Frank,Amy Winehouse,uk,2003,No,No,41,338,1928,868,77.285972595,192,10519
 339,Chaos And Creation In The Backyard,Paul McCartney,uk,2005,No,No,41,339,1931,867,78.302345276,178,4256
@@ -350,13 +350,13 @@ Rank,Title,Artist,Country,Released,Compilation,Live,YearRank,DecadeRank,OverallR
 349,Brand New Eyes,Paramore,us,2009,No,No,26,349,1998,836,73.071731567,153,10673
 350,From Here We Go Sublime,The Field,se,2007,No,No,40,350,2003,833,79.230163574,111,8177
 351,Extraordinary Machine,Fiona Apple,us,2005,No,No,44,351,2007,830,77.597999573,277,1567
-352,"Dead Cities, Red Seas & Lost Ghosts",M83,fr,2003,No,No,43,352,2021,823,78.820632935,208,1927
+352,+ACI-Dead Cities, Red Seas +ACY- Lost Ghosts+ACI-,M83,fr,2003,No,No,43,352,2021,823,78.820632935,208,1927
 353,cLOUDDEAD,cLOUDDEAD,us,2001,Yes,No,32,353,2023,822,80.185501099,88,4239
-354,Saturdays = Youth,M83,fr,2008,No,No,26,354,2026,820,77.176879883,217,4225
+354,Saturdays +AD0- Youth,M83,fr,2008,No,No,26,354,2026,820,77.176879883,217,4225
 355,Dig Out Your Soul,Oasis,uk,2008,No,No,27,355,2032,818,69.007102966,367,3184
 356,Thirteen Tales From Urban Bohemia,The Dandy Warhols,us,2000,No,No,42,356,2038,815,73.516723633,180,2042
 357,Inside In/Inside Out,The Kooks,uk,2006,No,No,37,357,2040,814,71.200088501,192,5307
-358,"Thunder, Lightning, Strike",The Go! Team,uk,2004,No,No,34,358,2041,813,77.906677246,148,5580
+358,+ACI-Thunder, Lightning, Strike+ACI-,The Go+ACE- Team,uk,2004,No,No,34,358,2041,813,77.906677246,148,5580
 359,Frengers,Mew,dk,2003,No,No,44,359,2043,813,78.018112183,139,2025
 360,Year Zero,Nine Inch Nails,un,2007,No,No,41,360,2045,813,74.872085571,206,2150
 361,21st Century Breakdown,Green Day,us,2009,No,No,27,361,2058,806,62.681995392,444,5462
@@ -376,26 +376,26 @@ Rank,Title,Artist,Country,Released,Compilation,Live,YearRank,DecadeRank,OverallR
 375,Glasvegas,Glasvegas,uk,2008,No,No,29,375,2113,782,72.262756348,138,4199
 376,The Information,Beck,us,2006,No,No,41,376,2114,781,74.472389221,207,2551
 377,Playing The Angel,Depeche Mode,uk,2005,No,No,46,377,2115,780,74.485572815,191,7139
-378,Pretty. Odd.,Panic! At The Disco,us,2008,No,No,30,378,2120,777,70.717086792,165,3004
-379,Attack & Release,The Black Keys,us,2008,No,No,31,379,2123,776,75.561302185,359,9916
+378,Pretty. Odd.,Panic+ACE- At The Disco,us,2008,No,No,30,378,2120,777,70.717086792,165,3004
+379,Attack +ACY- Release,The Black Keys,us,2008,No,No,31,379,2123,776,75.561302185,359,9916
 380,Asleep In The Back,Elbow,uk,2001,No,No,36,380,2125,776,75.531692505,185,2044
 381,Sometimes I Wish We Were An Eagle,Bill Callahan,us,2009,No,No,29,381,2130,773,80.061958313,114,9527
 382,Tarot Sport,Fuck Buttons,uk,2009,No,No,30,382,2135,770,81.73449707,129,8278
-383,"Orphans: Brawlers, Bawlers & Bastards",Tom Waits,us,2006,No,No,42,383,2139,768,78.222709656,134,7660
+383,+ACI-Orphans: Brawlers, Bawlers +ACY- Bastards+ACI-,Tom Waits,us,2006,No,No,42,383,2139,768,78.222709656,134,7660
 384,From Mars To Sirius,Gojira,fr,2005,No,No,47,384,2146,765,81.367286682,89,22023
-385,Melody A.M.,Röyksopp,no,2001,No,No,37,385,2152,761,77.652908325,190,4171
+385,Melody A.M.,R+//3//Q-yksopp,no,2001,No,No,37,385,2152,761,77.652908325,190,4171
 386,White Chalk,PJ Harvey,uk,2007,No,No,42,386,2154,760,77.930465698,212,3299
-387,"The Good, The Bad & The Queen","The Good, The Bad & The Queen",un,2007,No,No,43,387,2155,759,75.957832336,167,2092
+387,+ACI-The Good, The Bad +ACY- The Queen+ACI-,+ACI-The Good, The Bad +ACY- The Queen+ACI-,un,2007,No,No,43,387,2155,759,75.957832336,167,2092
 388,Era Vulgaris,Queens Of The Stone Age,us,2007,No,No,44,388,2157,759,75.628662109,363,3390
 389,Backspacer,Pearl Jam,us,2009,No,No,31,389,2159,758,74.382827759,331,6819
-390,Southern Rock Opera,Drive-By Truckers,us,2001,No,No,38,390,2163,756,77.193588257,113,1854
+390,Southern Rock Opera,Drive+AC0-By Truckers,us,2001,No,No,38,390,2163,756,77.193588257,113,1854
 391,Any Other City,Life Without Buildings,uk,2001,No,No,39,391,2173,753,79.900306702,65,7114
-392,Folie À Deux,Fall Out Boy,us,2008,No,No,32,392,2177,752,68.367927551,115,16436
+392,Folie +//3//Q- Deux,Fall Out Boy,us,2008,No,No,32,392,2177,752,68.367927551,115,16436
 393,Six Degrees Of Inner Turbulence,Dream Theater,us,2002,No,No,36,393,2178,751,76.642333984,160,6596
 394,Carnavas,Silversun Pickups,us,2006,No,No,43,394,2184,749,76.512001038,171,7228
 395,Aim And Ignite,fun.,us,2009,No,No,32,395,2188,746,71.359550476,129,7209
 396,Confessions On A Dance Floor,Madonna,us,2005,No,No,48,396,2194,744,68.247390747,231,2487
-397,Finally We Are No One,Múm,is,2002,No,No,37,397,2203,741,78.811172485,139,6645
+397,Finally We Are No One,M+//3//Q-m,is,2002,No,No,37,397,2203,741,78.811172485,139,6645
 398,It Still Moves,My Morning Jacket,us,2003,No,No,46,398,2213,736,78.521232605,141,6386
 399,Journal For Plague Lovers,Manic Street Preachers,uk,2009,No,No,33,399,2214,736,75.014526367,173,6515
 400,Lupe Fiasco's The Cool,Lupe Fiasco,us,2007,No,No,45,400,2227,731,76.400146484,128,2978
@@ -405,44 +405,44 @@ Rank,Title,Artist,Country,Released,Compilation,Live,YearRank,DecadeRank,OverallR
 404,1,The Beatles,uk,2000,Yes,No,44,404,2242,725,85.365493774,575,2514
 405,The Greatest,Cat Power,us,2006,No,No,44,405,2247,724,75.377815247,174,9039
 406,Want One,Rufus Wainwright,un,2003,No,No,47,406,2252,721,76.196723938,107,7210
-407,The Dirty South,Drive-By Truckers,us,2004,No,No,35,407,2254,721,78.457046509,93,8010
+407,The Dirty South,Drive+AC0-By Truckers,us,2004,No,No,35,407,2254,721,78.457046509,93,8010
 408,Metaphorical Music,Nujabes,jp,2003,No,No,48,408,2258,721,81.87612915,99,16340
 409,Shadows Collide With People,John Frusciante,us,2004,No,No,36,409,2261,720,78.523849487,101,11033
 410,Warning,Green Day,us,2000,No,No,45,410,2266,716,71.3279953,318,9253
 411,Songs About Leaving,Carissa's Wierd,us,2002,No,No,38,411,2278,710,78.82006073,83,13778
-412,Decoration Day,Drive-By Truckers,us,2003,No,No,49,412,2287,707,77.450691223,91,5322
+412,Decoration Day,Drive+AC0-By Truckers,us,2003,No,No,49,412,2287,707,77.450691223,91,5322
 413,Show Your Bones,Yeah Yeah Yeahs,us,2006,No,No,45,413,2288,707,75.174674988,236,2763
 414,All Is Dream,Mercury Rev,us,2001,No,No,42,414,2290,706,76.366165161,131,2891
 415,Insurgentes,Steven Wilson,uk,2008,No,No,34,415,2293,705,77.72996521,123,5070
 416,Fishscale,Ghostface Killah,us,2006,No,No,46,416,2302,701,77.117523193,144,1065
-417,Post-Nothing,Japandroids,ca,2009,No,No,34,417,2304,699,76.078926086,154,8141
+417,Post+AC0-Nothing,Japandroids,ca,2009,No,No,34,417,2304,699,76.078926086,154,8141
 418,Get Born,Jet,au,2003,No,No,50,418,2306,699,67.951622009,185,6881
 419,How The West Was Won,Led Zeppelin,uk,2003,No,Yes,51,419,2309,698,82.118652344,332,1911
 420,Magic,Bruce Springsteen,us,2007,No,No,46,420,2311,697,73.585624695,230,7108
 421,Rockin' The Suburbs,Ben Folds,us,2001,No,No,43,421,2323,691,77.18170929,134,3669
-422,"Dig, Lazarus, Dig!!!",Nick Cave & The Bad Seeds,au,2008,No,No,35,422,2335,688,77.565483093,226,2989
+422,+ACI-Dig, Lazarus, Dig+ACEAIQAh-+ACI-,Nick Cave +ACY- The Bad Seeds,au,2008,No,No,35,422,2335,688,77.565483093,226,2989
 423,Death Magnetic,Metallica,us,2008,No,No,36,423,2339,687,67.806991577,488,3331
 424,The Con,Tegan And Sara,ca,2007,No,No,47,424,2342,686,76.646812439,111,3821
 425,Castaways And Cutouts,The Decemberists,us,2002,No,No,39,425,2356,684,77.944839478,144,1232
 426,The Invisible Band,Travis,uk,2001,No,No,44,426,2361,681,74.422668457,180,2741
-427,The Sufferer & The Witness,Rise Against,us,2006,No,No,47,427,2363,681,71.91280365,112,7105
+427,The Sufferer +ACY- The Witness,Rise Against,us,2006,No,No,47,427,2363,681,71.91280365,112,7105
 428,Octavarium,Dream Theater,us,2005,No,No,49,428,2372,677,76.644325256,173,5408
 429,St. Elsewhere,Gnarls Barkley,us,2006,No,No,48,429,2373,676,73.817779541,255,2615
 430,Blood Money,Tom Waits,us,2002,No,No,40,430,2381,673,77.634666443,162,6509
 431,Don't Believe The Truth,Oasis,uk,2005,No,No,50,431,2391,668,68.524330139,352,1419
 432,Tonight: Franz Ferdinand,Franz Ferdinand,uk,2009,No,No,35,432,2393,666,73.230537415,316,4325
-433,"Mens Needs, Womens Needs, Whatever",The Cribs,uk,2007,No,No,48,433,2399,663,76.279838562,78,5526
+433,+ACI-Mens Needs, Womens Needs, Whatever+ACI-,The Cribs,uk,2007,No,No,48,433,2399,663,76.279838562,78,5526
 434,19,Adele,uk,2008,No,No,37,434,2400,663,69.158088684,272,5615
 435,I And Love And You,The Avett Brothers,us,2009,No,No,36,435,2402,662,76.648628235,125,7893
 436,Highly Evolved,The Vines,au,2002,No,No,41,436,2429,653,70.215270996,193,305
 437,Ventura,Los Hermanos,br,2003,No,No,52,437,2430,653,77.814216614,63,11243
 438,Mean Everything To Nothing,Manchester Orchestra,us,2009,No,No,37,438,2434,651,76.061080933,83,6029
-439,"Those Who Tell The Truth Shall Die, Those Who Tell The Truth Shall Live Forever",Explosions In The Sky,us,2001,No,No,45,439,2436,650,78.699371338,114,1204
+439,+ACI-Those Who Tell The Truth Shall Die, Those Who Tell The Truth Shall Live Forever+ACI-,Explosions In The Sky,us,2001,No,No,45,439,2436,650,78.699371338,114,1204
 440,Veni Vidi Vicious,The Hives,se,2000,No,No,46,440,2437,650,73.847732544,201,3304
 441,Train Of Thought,Dream Theater,us,2003,No,No,53,441,2452,646,79.045692444,116,6597
 442,Live At Massey Hall 1971,Neil Young,ca,2007,No,Yes,49,442,2453,646,81.998405457,233,6487
 443,Seventh Tree,Goldfrapp,uk,2008,No,No,38,443,2458,644,75.676040649,128,3420
-444,Below The Heavens,Blu & Exile,us,2007,No,No,50,444,2471,641,77.623733521,94,12619
+444,Below The Heavens,Blu +ACY- Exile,us,2007,No,No,50,444,2471,641,77.623733521,94,12619
 445,Armchair Apocrypha,Andrew Bird,us,2007,No,No,51,445,2477,640,79.656738281,130,2563
 446,Tell All Your Friends,Taking Back Sunday,us,2002,No,No,42,446,2481,639,72.655899048,88,8865
 447,Love,The Beatles,uk,2006,No,No,49,447,2494,634,78.984016418,338,6353
@@ -474,7 +474,7 @@ Rank,Title,Artist,Country,Released,Compilation,Live,YearRank,DecadeRank,OverallR
 473,Mr Beast,Mogwai,uk,2006,No,No,52,473,2598,600,76.96295929,165,3126
 474,Nixon,Lambchop,us,2000,No,No,50,474,2608,598,78.897460938,101,2122
 475,Diorama,Silverchair,au,2002,No,No,46,475,2612,596,73.88747406,102,1091
-476,Black Clouds & Silver Linings,Dream Theater,us,2009,No,No,38,476,2616,595,74.850196838,108,15905
+476,Black Clouds +ACY- Silver Linings,Dream Theater,us,2009,No,No,38,476,2616,595,74.850196838,108,15905
 477,Love. Angel. Music. Baby.,Gwen Stefani,us,2004,No,No,39,477,2618,595,64.819496155,114,1505
 478,Permission To Land,The Darkness,uk,2003,No,No,60,478,2622,594,71.968193054,164,1125
 479,Bachelor No. 2,Aimee Mann,us,2000,No,No,51,479,2630,591,75.158729553,102,3607
@@ -489,7 +489,7 @@ Rank,Title,Artist,Country,Released,Compilation,Live,YearRank,DecadeRank,OverallR
 488,Beyond,Dinosaur Jr.,us,2007,No,No,55,488,2684,575,76.617469788,108,10295
 489,Blinking Lights And Other Revelations,Eels,us,2005,No,No,56,489,2685,575,76.661445618,129,1284
 490,Binaural,Pearl Jam,us,2000,No,No,52,490,2692,572,71.702392578,254,8432
-491,"It's Not Me, It's You",Lily Allen,uk,2009,No,No,41,491,2694,571,70.085319519,141,5594
+491,+ACI-It's Not Me, It's You+ACI-,Lily Allen,uk,2009,No,No,41,491,2694,571,70.085319519,141,5594
 492,The Warning,Hot Chip,uk,2006,No,No,54,492,2707,569,75.773826599,144,4987
 493,Breakaway,Kelly Clarkson,us,2004,No,No,40,493,2711,568,67.608840942,106,1762
 494,Rainy Day Music,The Jayhawks,us,2003,No,No,62,494,2712,568,72.956100464,67,13345
@@ -504,9 +504,9 @@ Rank,Title,Artist,Country,Released,Compilation,Live,YearRank,DecadeRank,OverallR
 503,Everything In Transit,Jack's Mannequin,us,2005,No,No,57,503,2770,554,74.469245911,52,2598
 504,I Had The Blues But I Shook Them Loose,Bombay Bicycle Club,uk,2009,No,No,42,504,2775,554,74.176826477,85,10552
 505,Emotionalism,The Avett Brothers,us,2007,No,No,57,505,2777,553,75.995201111,70,7921
-506,You & Me,The Walkmen,us,2008,No,No,43,506,2781,551,77.29309845,75,5575
+506,You +ACY- Me,The Walkmen,us,2008,No,No,43,506,2781,551,77.29309845,75,5575
 507,Somewhere In The Between,Streetlight Manifesto,us,2007,No,No,58,507,2795,549,78.247299194,37,7676
-508,Love Ire & Song,Frank Turner,uk,2008,No,No,44,508,2796,549,77.278999329,47,12676
+508,Love Ire +ACY- Song,Frank Turner,uk,2008,No,No,44,508,2796,549,77.278999329,47,12676
 509,Misery Is A Butterfly,Blonde Redhead,us,2004,No,No,42,509,2798,549,78.669052124,114,3349
 510,Century Child,Nightwish,fi,2002,No,No,48,510,2800,549,76.531715393,59,19128
 511,Colors,Between The Buried And Me,us,2007,No,No,59,511,2803,548,76.606559753,87,2475
@@ -519,19 +519,19 @@ Rank,Title,Artist,Country,Released,Compilation,Live,YearRank,DecadeRank,OverallR
 518,Mother Earth,Within Temptation,nl,2000,No,No,54,518,2836,540,75.133720398,47,7527
 519,The Open Door,Evanescence,us,2006,No,No,55,519,2843,539,66.922370911,85,11260
 520,Midnight Boom,The Kills,un,2008,No,No,45,520,2846,538,75.684524536,118,3472
-521,Fourteen Autumns & Fifteen Winters,The Twilight Sad,uk,2007,No,No,60,521,2847,538,77.128684998,58,13176
+521,Fourteen Autumns +ACY- Fifteen Winters,The Twilight Sad,uk,2007,No,No,60,521,2847,538,77.128684998,58,13176
 522,The Ecstatic,Mos Def,us,2009,No,No,45,522,2848,538,77.688911438,126,7610
 523,Let It Die,Feist,ca,2004,No,No,44,523,2849,537,76.185165405,125,9669
 524,Up,Peter Gabriel,uk,2002,No,No,49,524,2850,537,74.350845337,142,2225
-525,"All Is Violent, All Is Bright",God Is An Astronaut,ie,2005,No,No,60,525,2854,536,76.657821655,70,14691
+525,+ACI-All Is Violent, All Is Bright+ACI-,God Is An Astronaut,ie,2005,No,No,60,525,2854,536,76.657821655,70,14691
 526,Far,Regina Spektor,un,2009,No,No,46,526,2856,535,74.864242554,119,8038
 527,Mass Romantic,The New Pornographers,ca,2000,No,No,55,527,2858,535,77.272125244,155,6934
 528,Fever,Kylie Minogue,au,2001,No,No,51,528,2862,534,70.927452087,134,2483
 529,Game Theory,The Roots,us,2006,No,No,56,529,2884,529,79.54447937,96,5562
 530,The Beautiful Letdown,Switchfoot,us,2003,No,No,64,530,2885,528,68.036499023,144,2091
-531,Silent Hill 2 Soundtrack,山岡 晃 [Akira Yamaoka],jp,2001,No,No,52,531,2886,528,77.502189636,47,9314
+531,Silent Hill 2 Soundtrack,+//3//f/9//3//f/9- +//3//f/9- +AFs-Akira Yamaoka+AF0-,jp,2001,No,No,52,531,2886,528,77.502189636,47,9314
 532,Forget And Not Slow Down,Relient K,us,2009,No,No,47,532,2896,525,78.065597534,31,11038
-533,"10,000 Hz Legend",Air (FR),fr,2001,No,No,53,533,2898,525,73.484153748,140,1331
+533,+ACI-10,000 Hz Legend+ACI-,Air (FR),fr,2001,No,No,53,533,2898,525,73.484153748,140,1331
 534,Cryptograms,Deerhunter,us,2007,No,No,61,534,2900,525,77.453857422,151,11027
 535,B.R.M.C.,Black Rebel Motorcycle Club,us,2001,No,No,54,535,2901,524,77.12424469,160,6506
 536,April,Sun Kil Moon,us,2008,No,No,46,536,2904,524,79.718963623,124,2568
@@ -541,7 +541,7 @@ Rank,Title,Artist,Country,Released,Compilation,Live,YearRank,DecadeRank,OverallR
 540,Love Is Here,Starsailor,uk,2001,No,No,55,540,2917,522,70.38004303,89,3523
 541,The Pains Of Being Pure At Heart,The Pains Of Being Pure At Heart,us,2009,No,No,48,541,2919,522,77.354530334,163,4637
 542,Zitilites,Kashmir,dk,2003,No,No,65,542,2922,522,77.774978638,45,6949
-543,"O Brother, Where Art Thou?",Various Artists,un,2000,No,No,56,543,2923,521,76.615463257,135,5571
+543,+ACI-O Brother, Where Art Thou?+ACI-,Various Artists,un,2000,No,No,56,543,2923,521,76.615463257,135,5571
 544,Colour Green,Sibylle Baier,de,2006,No,No,58,544,2927,520,77.561737061,74,6790
 545,Sad Songs For Dirty Lovers,The National,us,2003,No,No,66,545,2941,515,74.96308136,193,9241
 546,...Is A Real Boy,Say Anything,us,2004,No,No,45,546,2947,513,72.258674622,63,2713
@@ -557,10 +557,10 @@ Rank,Title,Artist,Country,Released,Compilation,Live,YearRank,DecadeRank,OverallR
 556,Infinity On High,Fall Out Boy,us,2007,No,No,63,556,2999,504,65.772880554,181,2093
 557,We Shall Overcome: The Seeger Sessions,Bruce Springsteen,us,2006,No,No,59,557,3005,503,74.459823608,163,3376
 558,The Mouse And The Mask,Dangerdoom,un,2005,No,No,62,558,3006,503,78.432929993,103,12618
-559,Elv1s: 30 #1 Hits,Elvis Presley,us,2002,Yes,No,51,559,3009,502,80.414077759,106,23400
+559,Elv1s: 30 +ACM-1 Hits,Elvis Presley,us,2002,Yes,No,51,559,3009,502,80.414077759,106,23400
 560,Employment,Kaiser Chiefs,uk,2005,No,No,63,560,3010,501,73.479347229,206,916
 561,Under Rug Swept,Alanis Morissette,ca,2002,No,No,52,561,3013,501,71.676567078,87,5259
-562,Amélie,Yann Tiersen,fr,2001,No,No,58,562,3018,500,79.651611328,128,5683
+562,Am+//3//Q-lie,Yann Tiersen,fr,2001,No,No,58,562,3018,500,79.651611328,128,5683
 563,100 Broken Windows,Idlewild,uk,2000,No,No,58,563,3027,498,75.306922913,81,2584
 564,Life For Rent,Dido,uk,2003,No,No,68,564,3028,498,74.307785034,111,5544
 565,Burial,Burial,uk,2006,No,No,60,565,3032,498,77.423423767,121,5669
@@ -568,18 +568,18 @@ Rank,Title,Artist,Country,Released,Compilation,Live,YearRank,DecadeRank,OverallR
 567,Odyssey Number Five,Powderfinger,au,2000,No,No,59,567,3045,494,77.431343079,63,1160
 568,They're Only Chasing Safety,Underoath,us,2004,No,No,48,568,3049,493,69.950439453,38,10850
 569,Panic Prevention,Jamie T,uk,2007,No,No,64,569,3051,493,75.980056763,60,2384
-570,Out Of Season,Beth Gibbons & Rustin Man,uk,2002,No,No,53,570,3066,489,76.995506287,75,1981
+570,Out Of Season,Beth Gibbons +ACY- Rustin Man,uk,2002,No,No,53,570,3066,489,76.995506287,75,1981
 571,The Empyrean,John Frusciante,us,2009,No,No,49,571,3071,488,78.365707397,71,10655
 572,Riot On An Empty Street,Kings Of Convenience,no,2004,No,No,49,572,3072,488,75.126197815,92,4043
 573,Appeal To Reason,Rise Against,us,2008,No,No,49,573,3074,488,70.398353577,98,11326
 574,On An Island,David Gilmour,uk,2006,No,No,61,574,3075,488,74.119544983,130,2840
-575,"Desperate Youth, Blood Thirsty Babes",TV On The Radio,us,2004,No,No,50,575,3096,484,76.283309937,148,6710
+575,+ACI-Desperate Youth, Blood Thirsty Babes+ACI-,TV On The Radio,us,2004,No,No,50,575,3096,484,76.283309937,148,6710
 576,Fall Be Kind,Animal Collective,us,2009,No,No,50,576,3098,484,77.52406311,205,8303
 577,Classics,Ratatat,us,2006,No,No,62,577,3099,483,76.410865784,86,4507
 578,Standing On The Shoulder Of Giants,Oasis,uk,2000,No,No,60,578,3100,483,63.274986267,345,1420
 579,Mmhmm,Relient K,us,2004,No,No,51,579,3112,480,76.624938965,48,4993
 580,Separation Sunday,The Hold Steady,us,2005,No,No,64,580,3117,479,77.147727966,91,6344
-581,Rossz Csillag Alatt Született,Venetian Snares,ca,2005,No,No,65,581,3119,478,77.373687744,90,5304
+581,Rossz Csillag Alatt Sz+//3//Q-letett,Venetian Snares,ca,2005,No,No,65,581,3119,478,77.373687744,90,5304
 582,American Don,Don Caballero,us,2000,No,No,61,582,3127,477,75.300544739,32,8599
 583,Sumday,Grandaddy,us,2003,No,No,69,583,3130,477,76.798149109,86,6808
 584,Bluffer's Guide To The Flight Deck,Flotation Toy Warning,uk,2004,No,No,52,584,3131,477,79.431991577,47,22876
@@ -587,9 +587,9 @@ Rank,Title,Artist,Country,Released,Compilation,Live,YearRank,DecadeRank,OverallR
 586,The Noise Made By People,Broadcast,uk,2000,No,No,62,586,3137,476,81.006462097,88,6865
 587,Bring Me Your Love,City And Colour,ca,2008,No,No,50,587,3140,475,75.59715271,54,4319
 588,Heathen Chemistry,Oasis,uk,2002,No,No,54,588,3148,474,63.231174469,356,1421
-589,The Complete Hot Five & Hot Seven Recordings,Louis Armstrong,us,2000,Yes,No,63,589,3156,472,80.580039978,30,47971
+589,The Complete Hot Five +ACY- Hot Seven Recordings,Louis Armstrong,us,2000,Yes,No,63,589,3156,472,80.580039978,30,47971
 590,Back To Bedlam,James Blunt,uk,2004,No,No,53,590,3159,472,66.866294861,120,12094
-591,Pink,ボリス [Boris],jp,2005,No,No,66,591,3162,471,79.937522888,109,8239
+591,Pink,+//3//f/9//3//f/9//3//f/9- +AFs-Boris+AF0-,jp,2005,No,No,66,591,3162,471,79.937522888,109,8239
 592,City Of Evil,Avenged Sevenfold,us,2005,No,No,67,592,3163,471,67.905792236,132,3075
 593,Nouns,No Age,us,2008,No,No,51,593,3164,471,75.539833069,107,2834
 594,Cassadaga,Bright Eyes,us,2007,No,No,65,594,3165,471,74.918067932,144,3793
@@ -597,17 +597,17 @@ Rank,Title,Artist,Country,Released,Compilation,Live,YearRank,DecadeRank,OverallR
 596,Horehound,The Dead Weather,us,2009,No,No,51,596,3169,470,74.62651062,161,6880
 597,All Of A Sudden I Miss Everyone,Explosions In The Sky,us,2007,No,No,66,597,3171,469,78.910171509,141,5064
 598,Curtains,John Frusciante,us,2005,No,No,68,598,3173,469,78.473587036,81,2841
-599,"Good Apollo, I'm Burning Star IV, Volume One: From Fear Through The Eyes Of Madness",Coheed And Cambria,us,2005,No,No,69,599,3176,469,73.897506714,103,4101
+599,+ACI-Good Apollo, I'm Burning Star IV, Volume One: From Fear Through The Eyes Of Madness+ACI-,Coheed And Cambria,us,2005,No,No,69,599,3176,469,73.897506714,103,4101
 600,Van Lear Rose,Loretta Lynn,us,2004,No,No,54,600,3191,467,76.563690186,96,4075
 601,The Decline Of British Sea Power,British Sea Power,uk,2003,No,No,70,601,3197,466,76.362472534,80,12502
 602,Like Water For Chocolate,Common,us,2000,No,No,64,602,3203,465,77.902084351,98,4181
-603,Cuatro Caminos,Café Tacuba,mx,2003,No,No,71,603,3207,464,78.886772156,65,11496
-604,"Alright, Still",Lily Allen,uk,2006,No,No,65,604,3212,463,74.21546936,95,12112
+603,Cuatro Caminos,Caf+//3//Q- Tacuba,mx,2003,No,No,71,603,3207,464,78.886772156,65,11496
+604,+ACI-Alright, Still+ACI-,Lily Allen,uk,2006,No,No,65,604,3212,463,74.21546936,95,12112
 605,Hombre Lobo,Eels,us,2009,No,No,52,605,3214,463,74.9347229,103,6700
 606,23,Blonde Redhead,us,2007,No,No,67,606,3215,463,77.768119812,121,11048
 607,Invaders Must Die,The Prodigy,uk,2009,No,No,53,607,3216,463,71.852043152,123,7103
 608,Ta Det Lugnt,Dungen,se,2004,No,No,55,608,3221,461,77.677947998,75,6940
-609,Steal This Album!,System Of A Down,us,2002,No,No,55,609,3227,460,72.490287781,238,4465
+609,Steal This Album+ACE-,System Of A Down,us,2002,No,No,55,609,3227,460,72.490287781,238,4465
 610,It's Never Been Like That,Phoenix (FR),fr,2006,No,No,66,610,3236,458,74.806167603,160,1924
 611,Come With Us,The Chemical Brothers,uk,2002,No,No,56,611,3237,457,74.82447052,90,1832
 612,Reality,David Bowie,uk,2003,No,No,72,612,3238,457,73.128387451,217,14898
@@ -618,7 +618,7 @@ Rank,Title,Artist,Country,Released,Compilation,Live,YearRank,DecadeRank,OverallR
 617,Rather Ripped,Sonic Youth,us,2006,No,No,67,617,3268,452,75.622123718,165,4844
 618,Santogold,Santigold,us,2008,No,No,52,618,3298,446,77.89037323,113,4200
 619,Absent Friends,The Divine Comedy,ie,2004,No,No,56,619,3300,446,75.107330322,61,8003
-620,"Fold Your Hands Child, You Walk Like A Peasant",Belle And Sebastian,uk,2000,No,No,65,620,3301,446,74.15083313,141,13606
+620,+ACI-Fold Your Hands Child, You Walk Like A Peasant+ACI-,Belle And Sebastian,uk,2000,No,No,65,620,3301,446,74.15083313,141,13606
 621,Human After All,Daft Punk,fr,2005,No,No,70,621,3303,445,68.387237549,227,5705
 622,This Is War,30 Seconds To Mars,us,2009,No,No,55,622,3306,445,62.894622803,117,8045
 623,Beauty And The Beat,Edan,us,2005,No,No,71,623,3312,443,79.403106689,62,5719
@@ -633,7 +633,7 @@ Rank,Title,Artist,Country,Released,Compilation,Live,YearRank,DecadeRank,OverallR
 632,Alopecia,Why?,us,2008,No,No,53,632,3364,435,75.166046143,67,4549
 633,Taking The Long Way,Dixie Chicks,us,2006,No,No,69,633,3366,435,69.064712524,46,16105
 634,Tallahassee,The Mountain Goats,us,2002,No,No,58,634,3369,434,77.477607727,96,6473
-635,The Texas - Jerusalem Crossroads,Lift To Experience,us,2001,No,No,63,635,3374,433,77.31362915,43,13350
+635,The Texas +AC0- Jerusalem Crossroads,Lift To Experience,us,2001,No,No,63,635,3374,433,77.31362915,43,13350
 636,Bubblegum,Mark Lanegan Band,us,2004,No,No,59,636,3377,433,76.043113708,74,4176
 637,I Am Not Afraid Of You And I Will Beat Your Ass,Yo La Tengo,us,2006,No,No,70,637,3390,432,78.435752869,97,1285
 638,Some Cities,Doves,uk,2005,No,No,72,638,3391,432,73.809524536,119,5898
@@ -643,8 +643,8 @@ Rank,Title,Artist,Country,Released,Compilation,Live,YearRank,DecadeRank,OverallR
 642,The Letting Go,Bonnie 'Prince' Billy,us,2006,No,No,73,642,3412,427,78.736763,76,3701
 643,Happy Songs For Happy People,Mogwai,uk,2003,No,No,74,643,3417,427,77.911567688,132,10757
 644,Define The Great Line,Underoath,us,2006,No,No,74,644,3420,426,73.584396362,27,30323
-645,Volta,Björk,is,2007,No,No,70,645,3423,425,70.887329102,226,13850
-646,Portrait Of A Legend 1951-1964,Sam Cooke,us,2003,Yes,No,75,646,3429,424,81.800170898,124,1392
+645,Volta,Bj+//3//Q-rk,is,2007,No,No,70,645,3423,425,70.887329102,226,13850
+646,Portrait Of A Legend 1951+AC0-1964,Sam Cooke,us,2003,Yes,No,75,646,3429,424,81.800170898,124,1392
 647,Love Is Hell,Ryan Adams,us,2004,Yes,No,61,647,3432,424,75.956291199,114,1195
 648,Suburban Light,The Clientele,uk,2000,Yes,No,66,648,3438,423,79.888206482,56,22988
 649,United,Phoenix (FR),fr,2000,No,No,67,649,3441,422,73.263114929,97,10133
@@ -659,7 +659,7 @@ Rank,Title,Artist,Country,Released,Compilation,Live,YearRank,DecadeRank,OverallR
 658,Meds,Placebo,uk,2006,No,No,75,658,3482,416,71.80014801,124,3804
 659,Fearless,Taylor Swift,us,2008,No,No,58,659,3483,416,61.614994049,165,4610
 660,La Revancha Del Tango,Gotan Project,un,2001,No,No,64,660,3487,415,75.618438721,68,5660
-661,"I Brought You My Bullets, You Brought Me Your Love",My Chemical Romance,us,2002,No,No,60,661,3496,414,66.389793396,125,8943
+661,+ACI-I Brought You My Bullets, You Brought Me Your Love+ACI-,My Chemical Romance,us,2002,No,No,60,661,3496,414,66.389793396,125,8943
 662,Controlling Crowds,Archive,uk,2009,No,No,58,662,3519,411,79.411346436,46,11885
 663,Scarlet's Walk,Tori Amos,us,2002,No,No,61,663,3528,410,74.058082581,105,2701
 664,Two Suns,Bat For Lashes,uk,2009,No,No,59,664,3532,409,74.787025452,142,7179
@@ -667,9 +667,9 @@ Rank,Title,Artist,Country,Released,Compilation,Live,YearRank,DecadeRank,OverallR
 666,Future Perfect,Autolux,us,2004,No,No,62,666,3539,409,78.12776947,34,15084
 667,Didn't It Rain,Songs: Ohia,us,2002,No,No,62,667,3541,409,78.081489563,60,12583
 668,Black Gives Way To Blue,Alice In Chains,us,2009,No,No,60,668,3543,409,73.529327393,187,7887
-669,Up From Below,Edward Sharpe & The Magnetic Zeros,us,2009,No,No,61,669,3550,407,72.831604004,112,11875
+669,Up From Below,Edward Sharpe +ACY- The Magnetic Zeros,us,2009,No,No,61,669,3550,407,72.831604004,112,11875
 670,Scissor Sisters,Scissor Sisters,us,2004,No,No,63,670,3555,407,74.758888245,147,2240
-671,Hammersmith Odeon London '75,Bruce Springsteen & The E Street Band,us,2006,No,Yes,76,671,3557,407,81.922363281,87,35556
+671,Hammersmith Odeon London '75,Bruce Springsteen +ACY- The E Street Band,us,2006,No,Yes,76,671,3557,407,81.922363281,87,35556
 672,Amputechture,The Mars Volta,us,2006,No,No,77,672,3559,407,74.761886597,149,1453
 673,No Cities Left,The Dears,ca,2003,No,No,77,673,3560,406,77.448310852,36,2501
 674,Stephen Malkmus,Stephen Malkmus,us,2001,No,No,66,674,3563,406,75.919235229,70,2576
@@ -677,12 +677,12 @@ Rank,Title,Artist,Country,Released,Compilation,Live,YearRank,DecadeRank,OverallR
 676,Chuck,Sum 41,ca,2004,No,No,64,676,3570,405,70.566932678,76,5783
 677,Phrenology,The Roots,us,2002,No,No,63,677,3571,404,75.967956543,159,4195
 678,Relapse,Eminem,us,2009,No,No,62,678,3573,404,59.030490875,240,6676
-679,あらためまして、はじめまして、ミドリです。 [Hello Everyone. Nice To Meet You. We Are Midori],ミドリ [Midori],jp,2008,No,No,59,679,3574,404,78.643981934,36,37353
+679,+//3//f/9//3//f/9//3//f/9//3//f/9//3//f/9//3//f/9//3//f/9//3//f/9//3//f/9//3//f/9//3//f/9//3//f/9//3//f/9//3//f/9//3//f/9//3//f/9//3//f/9//3//f/9//3//f/9//3//f/9//3//f/9- +AFs-Hello Everyone. Nice To Meet You. We Are Midori+AF0-,+//3//f/9//3//f/9//3//f/9- +AFs-Midori+AF0-,jp,2008,No,No,59,679,3574,404,78.643981934,36,37353
 680,The Great Destroyer,Low,us,2005,No,No,74,680,3576,403,76.94908905,76,13771
 681,The Heart Of Everything,Within Temptation,nl,2007,No,No,72,681,3578,403,76.207527161,47,1849
 682,Home,Dixie Chicks,us,2002,No,No,64,682,3584,402,68.837806702,91,1522
 683,Sound Awake,Karnivool,au,2009,No,No,63,683,3586,402,76.32762146,57,7157
-684,Fantastic Damage,El-P,us,2002,No,No,65,684,3588,402,80.029144287,82,16569
+684,Fantastic Damage,El+AC0-P,us,2002,No,No,65,684,3588,402,80.029144287,82,16569
 685,Blackout,Britney Spears,us,2007,No,No,73,685,3590,402,59.606967926,136,3085
 686,The Virgin Suicides,Air (FR),fr,2000,No,No,68,686,3598,400,74.612991333,179,3155
 687,Digital Ash In A Digital Urn,Bright Eyes,us,2005,No,No,75,687,3600,400,73.73928833,97,2290
@@ -693,23 +693,23 @@ Rank,Title,Artist,Country,Released,Compilation,Live,YearRank,DecadeRank,OverallR
 692,Ghost,Radical Face,us,2007,No,No,74,692,3613,399,75.752456665,40,14545
 693,The Best Damn Thing,Avril Lavigne,ca,2007,No,No,75,693,3614,399,57.807746887,96,1761
 694,Watershed,Opeth,se,2008,No,No,60,694,3617,397,78.775276184,147,4862
-695,Du & Jag Döden [Du & Jag Doden],Kent,se,2005,No,No,76,695,3619,397,74.187416077,36,2030
+695,Du +ACY- Jag D+//3//Q-den +AFs-Du +ACY- Jag Doden+AF0-,Kent,se,2005,No,No,76,695,3619,397,74.187416077,36,2030
 696,Leaving Through The Window,Something Corporate,us,2002,No,No,66,696,3628,396,73.430473328,17,6228
 697,Systematic Chaos,Dream Theater,us,2007,No,No,76,697,3633,395,74.266807556,120,5409
 698,Before The Dawn Heals Us,M83,fr,2005,No,No,77,698,3634,395,76.228767395,104,17978
-699,Boris At Last: -Feedbacker-,ボリス [Boris],jp,2003,No,No,79,699,3637,394,78.609680176,98,17264
-700,Junior,Röyksopp,no,2009,No,No,64,700,3639,394,75.993499756,48,8037
+699,Boris At Last: +AC0-Feedbacker+AC0-,+//3//f/9//3//f/9//3//f/9- +AFs-Boris+AF0-,jp,2003,No,No,79,699,3637,394,78.609680176,98,17264
+700,Junior,R+//3//Q-yksopp,no,2009,No,No,64,700,3639,394,75.993499756,48,8037
 701,Vocalcity,Luomo,fi,2000,No,No,70,701,3642,394,76.927337646,64,4969
 702,The Sickness,Disturbed,us,2000,No,No,71,702,3643,394,64.289642334,113,4466
 703,Two Lefts Don't Make A Right... But Three Do,Relient K,us,2003,No,No,80,703,3648,393,70.084587097,21,29795
 704,Ashes Against The Grain,Agalloch,us,2006,No,No,78,704,3650,393,79.066894531,92,16012
 705,Walking On A Dream,Empire Of The Sun,au,2008,No,No,61,705,3651,393,72.042877197,123,7169
 706,In A Beautiful Place Out In The Country,Boards Of Canada,uk,2000,No,No,72,706,3655,392,80.898780823,133,6911
-707,Selmasongs,Björk,is,2000,No,No,73,707,3658,392,73.984138489,142,10198
+707,Selmasongs,Bj+//3//Q-rk,is,2000,No,No,73,707,3658,392,73.984138489,142,10198
 708,Blazing Arrow,Blackalicious,us,2002,No,No,67,708,3662,391,77.91318512,77,1834
-709,Robbers & Cowards,Cold War Kids,us,2006,No,No,79,709,3665,391,75.22454834,116,5305
-710,The Crying Light,Antony & The Johnsons,un,2009,No,No,65,710,3669,390,77.380950928,117,4981
-711,Veneer,José González,se,2003,No,No,81,711,3670,390,77.520530701,120,2775
+709,Robbers +ACY- Cowards,Cold War Kids,us,2006,No,No,79,709,3665,391,75.22454834,116,5305
+710,The Crying Light,Antony +ACY- The Johnsons,un,2009,No,No,65,710,3669,390,77.380950928,117,4981
+711,Veneer,Jos+//3//Q- Gonz+//3//Q-lez,se,2003,No,No,81,711,3670,390,77.520530701,120,2775
 712,Black Cherry,Goldfrapp,uk,2003,No,No,82,712,3671,390,74.025016785,97,4196
 713,Twenty One Pilots,Twenty One Pilots,us,2009,No,No,66,713,3678,390,72.332740784,65,63587
 714,Justified,Justin Timberlake,us,2002,No,No,68,714,3680,389,66.301025391,116,12192
@@ -723,7 +723,7 @@ Rank,Title,Artist,Country,Released,Compilation,Live,YearRank,DecadeRank,OverallR
 722,The Incident,Porcupine Tree,uk,2009,No,No,69,722,3712,385,77.257270813,146,11893
 723,Dance Of Death,Iron Maiden,uk,2003,No,No,84,723,3722,384,70.341720581,145,6493
 724,Souljacker,Eels,us,2001,No,No,68,724,3723,384,75.02495575,96,2991
-725,"Greatest Hits I, II & III - The Platinum Collection",Queen,uk,2000,Yes,No,76,725,3733,383,80.89364624,148,5731
+725,+ACI-Greatest Hits I, II +ACY- III +AC0- The Platinum Collection+ACI-,Queen,uk,2000,Yes,No,76,725,3733,383,80.89364624,148,5731
 726,Psychic Chasms,Neon Indian,us,2009,No,No,70,726,3735,383,76.321640015,79,8743
 727,You Will Never Know Why,Sweet Trip,us,2009,No,No,71,727,3740,382,80.907287598,48,11757
 728,Monoliths And Dimensions,Sunn O))),us,2009,No,No,72,728,3748,381,78.84551239,97,15306
@@ -737,10 +737,10 @@ Rank,Title,Artist,Country,Released,Compilation,Live,YearRank,DecadeRank,OverallR
 736,Fabulous Muscles,Xiu Xiu,us,2004,No,No,68,736,3815,372,80.030540466,76,11502
 737,Blackbird,Alter Bridge,us,2007,No,No,78,737,3833,370,74.04209137,77,3078
 738,You All Look The Same To Me,Archive,uk,2002,No,No,70,738,3835,370,79.305290222,52,2742
-739,The Last Resort,Trentemøller,dk,2006,No,No,81,739,3837,369,75.809555054,56,6947
+739,The Last Resort,Trentem+//3//Q-ller,dk,2006,No,No,81,739,3837,369,75.809555054,56,6947
 740,Tourist,St. Germain,fr,2000,No,No,77,740,3846,368,76.425643921,70,17068
 741,To Record Only Water For Ten Days,John Frusciante,us,2001,No,No,73,741,3848,368,77.436660767,67,3350
-742,勝訴ストリップ [Shōso Strip],椎名 林檎 [Shiina Ringo],jp,2000,No,No,78,742,3852,367,81.781188965,42,14279
+742,+//3//f/9//3//f/9//3//f/9//3//f/9//3//f/9//3//f/9//3//f/9- +AFs-Sh+//3//Q-so Strip+AF0-,+//3//f/9//3//f/9- +//3//f/9//3//f/9- +AFs-Shiina Ringo+AF0-,jp,2000,No,No,78,742,3852,367,81.781188965,42,14279
 743,Vheissu,Thrice,us,2005,No,No,78,743,3861,367,74.424995422,55,12591
 744,Blacklisted,Neko Case,us,2002,No,No,71,744,3869,366,79.100250244,77,19837
 745,Get Ready,New Order,uk,2001,No,No,74,745,3870,366,73.586181641,121,1830
@@ -756,7 +756,7 @@ Rank,Title,Artist,Country,Released,Compilation,Live,YearRank,DecadeRank,OverallR
 755,Two Against Nature,Steely Dan,us,2000,No,No,79,755,3934,358,73.771873474,112,12078
 756,Wind's Poem,Mount Eerie,us,2009,No,No,74,756,3935,358,76.724609375,66,9472
 757,Alone With Everybody,Richard Ashcroft,uk,2000,No,No,80,757,3941,357,72.180023193,100,6425
-758,Yesterday Was Dramatic - Today Is OK,Múm,is,2000,No,No,81,758,3946,357,76.677886963,77,7070
+758,Yesterday Was Dramatic +AC0- Today Is OK,M+//3//Q-m,is,2000,No,No,81,758,3946,357,76.677886963,77,7070
 759,Tennessee,Lucero,us,2002,No,No,72,759,3950,356,74.360656738,26,16936
 760,9,Damien Rice,ie,2006,No,No,82,760,3951,356,75.299331665,101,3412
 761,In This Light And On This Evening,Editors,uk,2009,No,No,75,761,3952,356,70.559425354,94,7010
@@ -773,14 +773,14 @@ Rank,Title,Artist,Country,Released,Compilation,Live,YearRank,DecadeRank,OverallR
 772,Shades Of Blue,Madlib,us,2003,No,No,88,772,4015,350,80.091842651,75,11010
 773,Live At Reading,Nirvana,us,2009,No,Yes,78,773,4018,349,80.122810364,223,7224
 774,The Blackening,Machine Head,us,2007,No,No,81,774,4020,349,78.153999329,59,3333
-775,In Search Of... (Electronic Version),N*E*R*D,us,2001,No,No,78,775,4025,349,76.754295349,78,12088
+775,In Search Of... (Electronic Version),N+ACo-E+ACo-R+ACo-D,us,2001,No,No,78,775,4025,349,76.754295349,78,12088
 776,Conditions,The Temper Trap,au,2009,No,No,79,776,4029,348,71.546775818,122,10026
 777,Remedy Lane,Pain Of Salvation,se,2002,No,No,73,777,4035,348,78.579704285,48,14436
-778,Un Día En El Mundo,Vetusta Morla,es,2008,No,No,64,778,4038,348,76.470054626,36,39225
+778,Un D+//3//Q-a En El Mundo,Vetusta Morla,es,2008,No,No,64,778,4038,348,76.470054626,36,39225
 779,Her Majesty The Decemberists,The Decemberists,us,2003,No,No,89,779,4041,347,75.80027771,88,7942
-780,加爾基 精液 栗ノ花 [Karuki Samen Kuri No Hana],椎名 林檎 [Shiina Ringo],jp,2003,No,No,90,780,4045,346,81.449531555,48,37108
+780,+//3//f/9//3//f/9//3//f/9- +//3//f/9//3//f/9- +//3//f/9//3//f/9//3//f/9- +AFs-Karuki Samen Kuri No Hana+AF0-,+//3//f/9//3//f/9- +//3//f/9//3//f/9- +AFs-Shiina Ringo+AF0-,jp,2003,No,No,90,780,4045,346,81.449531555,48,37108
 781,Lost In The Sound Of Separation,Underoath,us,2008,No,No,65,781,4046,346,70.211769104,26,28161
-782,Minimum-Maximum,Kraftwerk,de,2005,No,Yes,82,782,4047,346,79.544006348,63,8868
+782,Minimum+AC0-Maximum,Kraftwerk,de,2005,No,Yes,82,782,4047,346,79.544006348,63,8868
 783,The Remote Part,Idlewild,uk,2002,No,No,74,783,4054,346,74.550346375,62,10764
 784,Perdition City,Ulver,no,2000,No,No,83,784,4064,345,75.332771301,73,14837
 785,Lord Willin',Clipse,us,2002,No,No,75,785,4067,345,80.561531067,57,17020
@@ -791,21 +791,21 @@ Rank,Title,Artist,Country,Released,Compilation,Live,YearRank,DecadeRank,OverallR
 790,Blackfield,Blackfield,un,2004,No,No,73,790,4108,340,74.961013794,52,5429
 791,Wilco (The Album),Wilco,us,2009,No,No,80,791,4112,340,74.597930908,172,7143
 792,Speak For Yourself,Imogen Heap,uk,2005,No,No,83,792,4113,340,73.886817932,65,2644
-793,"Alas, I Cannot Swim",Laura Marling,uk,2008,No,No,66,793,4115,340,75.553901672,85,2592
+793,+ACI-Alas, I Cannot Swim+ACI-,Laura Marling,uk,2008,No,No,66,793,4115,340,75.553901672,85,2592
 794,Deep Cuts,The Knife,se,2003,No,No,91,794,4118,340,75.981681824,120,5768
 795,American Life,Madonna,us,2003,No,No,92,795,4120,339,64.004562378,128,12523
 796,Farm,Dinosaur Jr.,us,2009,No,No,81,796,4129,338,76.817550659,153,6322
 797,Is A Woman,Lambchop,us,2002,No,No,76,797,4133,338,75.66003418,47,4138
 798,Louder Now,Taking Back Sunday,us,2006,No,No,83,798,4136,338,72.715400696,37,8670
-799,Dimanche À Bamako,Amadou & Mariam,ml,2004,No,No,74,799,4140,337,74.786628723,50,10543
+799,Dimanche +//3//Q- Bamako,Amadou +ACY- Mariam,ml,2004,No,No,74,799,4140,337,74.786628723,50,10543
 800,Songs In A Minor,Alicia Keys,us,2001,No,No,81,800,4146,337,69.10925293,135,1411
-801,"Whatever You Love, You Are",Dirty Three,au,2000,No,No,84,801,4147,337,77.332618713,50,17129
+801,+ACI-Whatever You Love, You Are+ACI-,Dirty Three,au,2000,No,No,84,801,4147,337,77.332618713,50,17129
 802,Sounds Of The Universe,Depeche Mode,uk,2009,No,No,82,802,4152,336,69.628669739,160,6703
 803,Deadringer,RJD2,us,2002,No,No,77,803,4156,336,80.617721558,60,10024
 804,Close To Paradise,Patrick Watson,ca,2006,No,No,84,804,4158,336,75.117233276,55,3379
 805,Riot Act,Pearl Jam,us,2002,No,No,78,805,4159,336,71.616859436,206,3428
 806,Music For Men,Gossip,us,2009,No,No,83,806,4163,335,74.812484741,57,7195
-807,Akuma No Uta,ボリス [Boris],jp,2003,No,No,93,807,4165,335,79.610618591,88,6776
+807,Akuma No Uta,+//3//f/9//3//f/9//3//f/9- +AFs-Boris+AF0-,jp,2003,No,No,93,807,4165,335,79.610618591,88,6776
 808,Rockferry,Duffy,uk,2008,No,No,67,808,4173,334,72.459701538,112,5612
 809,The Execution Of All Things,Rilo Kiley,us,2002,No,No,79,809,4179,334,76.187431335,69,5209
 810,Phrazes For The Young,Julian Casablancas,us,2009,No,No,84,810,4195,332,74.808769226,108,7250
@@ -824,10 +824,10 @@ Rank,Title,Artist,Country,Released,Compilation,Live,YearRank,DecadeRank,OverallR
 823,Guitar Romantic,The Exploding Hearts,us,2003,No,No,97,823,4252,325,75.029495239,80,4724
 824,Back To Basics,Christina Aguilera,us,2006,No,No,86,824,4258,324,66.542785645,63,15207
 825,Control,Pedro The Lion,us,2002,No,No,81,825,4259,324,77.346343994,38,6394
-826,Brighter Than Creation's Dark,Drive-By Truckers,us,2008,No,No,68,826,4261,323,75.952400208,61,16274
+826,Brighter Than Creation's Dark,Drive+AC0-By Truckers,us,2008,No,No,68,826,4261,323,75.952400208,61,16274
 827,Bath,Maudlin Of The Well,us,2001,No,No,83,827,4265,323,76.181587219,43,15872
 828,Where You Want To Be,Taking Back Sunday,us,2004,No,No,76,828,4276,323,73.665908813,49,7573
-829,One Beat,Sleater-Kinney,us,2002,No,No,82,829,4286,322,80.613014221,84,7257
+829,One Beat,Sleater+AC0-Kinney,us,2002,No,No,82,829,4286,322,80.613014221,84,7257
 830,Stay Positive,The Hold Steady,us,2008,No,No,69,830,4296,321,78.75227356,44,9220
 831,Fight With Tools,Flobots,us,2007,No,No,83,831,4297,321,74.37739563,42,11219
 832,The Chemistry Of Common Life,Fucked Up,ca,2008,No,No,70,832,4299,321,75.20690155,52,4664
@@ -838,8 +838,8 @@ Rank,Title,Artist,Country,Released,Compilation,Live,YearRank,DecadeRank,OverallR
 837,Push The Button,The Chemical Brothers,uk,2005,No,No,85,837,4363,314,69.114265442,83,14084
 838,Foiled,Blue October,us,2006,No,No,87,838,4364,314,70.352455139,41,16867
 839,Spiritual Machines,Our Lady Peace,ca,2000,No,No,87,839,4365,314,75.463760376,29,10123
-840,"Old World Underground, Where Are You Now?",Metric,ca,2003,No,No,99,840,4369,314,75.10585022,62,6814
-841,Vapen & Ammunition,Kent,se,2002,No,No,84,841,4370,314,75.074943542,25,17776
+840,+ACI-Old World Underground, Where Are You Now?+ACI-,Metric,ca,2003,No,No,99,840,4369,314,75.10585022,62,6814
+841,Vapen +ACY- Ammunition,Kent,se,2002,No,No,84,841,4370,314,75.074943542,25,17776
 842,Disappeared,Spring Heel Jack,uk,2000,No,No,88,842,4381,313,75.93208313,25,16506
 843,The View From This Tower,Faraquet,us,2000,No,No,89,843,4382,313,75.863243103,22,32436
 844,Ten New Songs,Leonard Cohen,ca,2001,No,No,84,844,4393,312,72.121635437,103,9095
@@ -847,11 +847,11 @@ Rank,Title,Artist,Country,Released,Compilation,Live,YearRank,DecadeRank,OverallR
 846,All Hour Cymbals,Yeasayer,us,2007,No,No,84,846,4403,310,76.353248596,90,4308
 847,Isla,Portico Quartet,uk,2009,No,No,87,847,4408,310,78.613876343,35,11090
 848,Blur: The Best Of,Blur,uk,2000,Yes,No,90,848,4419,309,83.131759644,196,5611
-849,"Hold On Now, Youngster...",Los Campesinos!,uk,2008,No,No,73,849,4424,308,75.209815979,75,4652
-850,Silent Hill 3,山岡 晃 [Akira Yamaoka],jp,2003,No,No,100,850,4437,308,76.937400818,12,17232
+849,+ACI-Hold On Now, Youngster...+ACI-,Los Campesinos+ACE-,uk,2008,No,No,73,849,4424,308,75.209815979,75,4652
+850,Silent Hill 3,+//3//f/9//3//f/9- +//3//f/9- +AFs-Akira Yamaoka+AF0-,jp,2003,No,No,100,850,4437,308,76.937400818,12,17232
 851,Insignificance,Jim O'Rourke,us,2001,No,No,85,851,4438,308,79.526885986,69,24368
 852,This Is The Life,Amy MacDonald,uk,2007,No,No,85,852,4455,306,72.054069519,57,5517
-853,Absence,Dälek,us,2005,No,No,86,853,4461,306,76.888137817,47,17295
+853,Absence,D+//3//Q-lek,us,2005,No,No,86,853,4461,306,76.888137817,47,17295
 854,Up In Flames,Manitoba,ca,2003,No,No,101,854,4466,305,78.788589478,58,1666
 855,Ocean Avenue,Yellowcard,us,2003,No,No,102,855,4472,305,68.173477173,58,4612
 856,Sainthood,Tegan And Sara,ca,2009,No,No,88,856,4482,304,76.234115601,62,7870
@@ -859,7 +859,7 @@ Rank,Title,Artist,Country,Released,Compilation,Live,YearRank,DecadeRank,OverallR
 858,The Richest Man In Babylon,Thievery Corporation,us,2002,No,No,85,858,4491,303,75.895820618,32,3895
 859,New Moon,Elliott Smith,us,2007,Yes,No,86,859,4498,303,77.880531311,104,3632
 860,A Beautiful Lie,30 Seconds To Mars,us,2005,No,No,87,860,4499,302,66.378120422,109,1619
-861,I'm Not Dead,P!nk,us,2006,No,No,88,861,4502,302,67.08971405,75,12093
+861,I'm Not Dead,P+ACE-nk,us,2006,No,No,88,861,4502,302,67.08971405,75,12093
 862,Feed The Animals,Girl Talk,us,2008,No,No,74,862,4507,302,76.59526062,70,3392
 863,So Much For The City,The Thrills,ie,2003,No,No,103,863,4514,301,72.775856018,72,2759
 864,Hold Your Colour,Pendulum,au,2005,No,No,88,864,4517,301,72.117286682,56,2492
@@ -874,22 +874,22 @@ Rank,Title,Artist,Country,Released,Compilation,Live,YearRank,DecadeRank,OverallR
 873,Mothership,Led Zeppelin,uk,2007,Yes,No,87,873,4539,299,82.424446106,190,2553
 874,Hercules And Love Affair,Hercules And Love Affair,us,2008,No,No,76,874,4540,299,74.350196838,87,4651
 875,Alexisonfire,Alexisonfire,ca,2002,No,No,89,875,4543,299,75.489555359,26,4524
-876,Everything That Happens Will Happen Today,Brian Eno & David Byrne,un,2008,No,No,77,876,4545,299,75.24822998,61,6324
+876,Everything That Happens Will Happen Today,Brian Eno +ACY- David Byrne,un,2008,No,No,77,876,4545,299,75.24822998,61,6324
 877,Box Car Racer,Box Car Racer,us,2002,No,No,90,877,4546,299,74.441291809,40,4339
-878,"Brother, Sister",mewithoutYou,us,2006,No,No,89,878,4547,299,79.779022217,47,11050
+878,+ACI-Brother, Sister+ACI-,mewithoutYou,us,2006,No,No,89,878,4547,299,79.779022217,47,11050
 879,The Airborne Toxic Event,The Airborne Toxic Event,us,2008,No,No,78,879,4556,298,72.365470886,84,6115
 880,Tales Of The Inexpressible,Shpongle,uk,2001,No,No,87,880,4557,298,77.832191467,28,22712
-881,Vrioon,Alva Noto & Ryuichi Sakamoto,un,2002,No,No,91,881,4560,298,75.467506409,17,76077
+881,Vrioon,Alva Noto +ACY- Ryuichi Sakamoto,un,2002,No,No,91,881,4560,298,75.467506409,17,76077
 882,Till The Sun Turns Black,Ray LaMontagne,us,2006,No,No,90,882,4563,297,78.258232117,66,3703
 883,The Satanic Satanist,Portugal. The Man,us,2009,No,No,89,883,4573,296,77.343208313,54,6325
 884,Beautiful Garbage,Garbage,us,2001,No,No,88,884,4575,296,72.209953308,94,3204
 885,O My Heart,Mother Mother,ca,2008,No,No,79,885,4582,295,77.342658997,21,14571
-886,"Yours Truly, Angry Mob",Kaiser Chiefs,uk,2007,No,No,88,886,4583,295,71.62587738,130,5518
+886,+ACI-Yours Truly, Angry Mob+ACI-,Kaiser Chiefs,uk,2007,No,No,88,886,4583,295,71.62587738,130,5518
 887,La Roux,La Roux,uk,2009,No,No,90,887,4594,294,71.021873474,112,6991
 888,Alcachofa,Villalobos,de,2003,No,No,105,888,4601,294,77.853042603,47,8490
 889,Lifeblood,Manic Street Preachers,uk,2004,No,No,78,889,4602,294,69.076217651,91,7110
 890,Grinderman,Grinderman,au,2007,No,No,89,890,4604,294,74.411521912,79,2643
-891,Watch Out!,Alexisonfire,ca,2004,No,No,79,891,4608,293,70.628425598,26,15536
+891,Watch Out+ACE-,Alexisonfire,ca,2004,No,No,79,891,4608,293,70.628425598,26,15536
 892,Friend And Foe,Menomena,us,2007,No,No,90,892,4614,293,77.898788452,54,6390
 893,Summer In Abaddon,Pinback,us,2004,No,No,80,893,4620,293,76.380065918,40,9888
 894,Cities,Anberlin,us,2007,No,No,91,894,4629,292,75.992126465,38,5935
@@ -898,21 +898,21 @@ Rank,Title,Artist,Country,Released,Compilation,Live,YearRank,DecadeRank,OverallR
 897,The Runners Four,Deerhoof,us,2005,No,No,90,897,4647,290,77.532821655,71,11009
 898,Doomsday Afternoon,Phideaux,us,2007,No,No,92,898,4655,290,76.594650269,23,29541
 899,Snow,Spock's Beard,us,2002,No,No,92,899,4662,289,73.665664673,34,14828
-900,New Wave,Against Me!,us,2007,No,No,93,900,4665,289,74.301605225,66,4663
-901,Rêver Mieux,Daniel Bélanger,ca,2001,No,No,89,901,4666,289,74.904914856,15,7596
+900,New Wave,Against Me+ACE-,us,2007,No,No,93,900,4665,289,74.301605225,66,4663
+901,R+//3//Q-ver Mieux,Daniel B+//3//Q-langer,ca,2001,No,No,89,901,4666,289,74.904914856,15,7596
 902,World Without Tears,Lucinda Williams,us,2003,No,No,107,902,4669,289,75.404006958,47,14819
 903,Echoes: The Best Of Pink Floyd,Pink Floyd,uk,2001,Yes,No,90,903,4673,289,82.021118164,214,14243
 904,Homesick,A Day To Remember,us,2009,No,No,91,904,4674,289,73.104141235,45,16755
 905,Souvenirs,The Gathering (NL),nl,2003,No,No,108,905,4679,288,77.502342224,44,8174
 906,Moderat,Moderat,de,2009,No,No,92,906,4680,288,75.917633057,31,18945
-907,La Nòvia,Acid Mothers Temple & The Melting Paraiso U.F.O.,jp,2000,No,No,93,907,4681,288,78.241439819,35,21356
+907,La N+//3//Q-via,Acid Mothers Temple +ACY- The Melting Paraiso U.F.O.,jp,2000,No,No,93,907,4681,288,78.241439819,35,21356
 908,Commit This To Memory,Motion City Soundtrack,us,2005,No,No,91,908,4684,288,78.315567017,30,8866
 909,Saturday Night Wrist,Deftones,us,2006,No,No,91,909,4687,288,74.1198349,113,7951
-910,Des Visages Des Figures,Noir Désir,fr,2001,No,No,91,910,4712,286,76.501876831,55,16194
+910,Des Visages Des Figures,Noir D+//3//Q-sir,fr,2001,No,No,91,910,4712,286,76.501876831,55,16194
 911,Rock Steady,No Doubt,us,2001,No,No,92,911,4722,285,70.421409607,105,924
 912,Tourist,Athlete,uk,2005,No,No,92,912,4724,285,71.434928894,66,4773
 913,Challengers,The New Pornographers,ca,2007,No,No,94,913,4727,285,75.391876221,86,6288
-914,"Reise, Reise",Rammstein,de,2004,No,No,81,914,4728,285,74.505325317,108,3963
+914,+ACI-Reise, Reise+ACI-,Rammstein,de,2004,No,No,81,914,4728,285,74.505325317,108,3963
 915,Surprise,Paul Simon,us,2006,No,No,92,915,4730,285,73.752456665,41,21335
 916,The Music,The Music,uk,2002,No,No,93,916,4735,284,72.457542419,46,4115
 917,Citrus,Asobi Seksu,us,2006,No,No,93,917,4741,284,76.159698486,45,10315
@@ -921,21 +921,21 @@ Rank,Title,Artist,Country,Released,Compilation,Live,YearRank,DecadeRank,OverallR
 920,Eye To The Telescope,KT Tunstall,uk,2004,No,No,82,920,4750,283,73.446601868,73,5691
 921,Make Believe,Weezer,us,2005,No,No,95,921,4752,283,57.624546051,252,4658
 922,Elvis At Sun,Elvis Presley,us,2004,Yes,No,83,922,4755,283,77.533653259,69,1517
-923,Against Me! Is Reinventing Axl Rose,Against Me!,us,2002,No,No,94,923,4756,283,76.993598938,51,21708
+923,Against Me+ACE- Is Reinventing Axl Rose,Against Me+ACE-,us,2002,No,No,94,923,4756,283,76.993598938,51,21708
 924,Mutemath,Mutemath,us,2006,No,No,94,924,4759,283,76.824104309,50,6352
 925,Kicking Television Live In Chicago,Wilco,us,2005,No,Yes,96,925,4760,283,79.40234375,87,13675
 926,We Love Life,Pulp,uk,2001,No,No,93,926,4762,283,74.023841858,101,7835
-927,Hvarf/Heim,Sigur Rós,is,2007,Yes,No,95,927,4763,283,77.069297791,101,8800
+927,Hvarf/Heim,Sigur R+//3//Q-s,is,2007,Yes,No,95,927,4763,283,77.069297791,101,8800
 928,Billy Talent II,Billy Talent,ca,2006,No,No,95,928,4764,283,71.64025116,81,7227
 929,Want Two,Rufus Wainwright,un,2004,No,No,84,929,4768,282,75.107330322,61,2034
-930,Beaches & Canyons,Black Dice,us,2002,No,No,95,930,4786,281,76.10811615,42,16520
-931,"It Was Hot, We Stayed In The Water",The Microphones,us,2000,No,No,94,931,4788,281,79.600196838,98,11051
+930,Beaches +ACY- Canyons,Black Dice,us,2002,No,No,95,930,4786,281,76.10811615,42,16520
+931,+ACI-It Was Hot, We Stayed In The Water+ACI-,The Microphones,us,2000,No,No,94,931,4788,281,79.600196838,98,11051
 932,Made In The Dark,Hot Chip,uk,2008,No,No,80,932,4793,281,73.277923584,94,4655
 933,Watching From A Distance,Warning,uk,2006,No,No,96,933,4803,280,75.238235474,23,13246
 934,The Big Come Up,The Black Keys,us,2002,No,No,96,934,4820,279,74.409866333,159,5303
 935,By The Throat,Ben Frost,au,2009,No,No,93,935,4821,279,78.257034302,44,29938
 936,Fate,Dr. Dog,us,2008,No,No,81,936,4824,279,77.774978638,46,8428
-937,Ghosts I-IV,Nine Inch Nails,un,2008,No,No,82,937,4827,279,69.153923035,111,2196
+937,Ghosts I+AC0-IV,Nine Inch Nails,un,2008,No,No,82,937,4827,279,69.153923035,111,2196
 938,Uh Huh Her,PJ Harvey,uk,2004,No,No,85,938,4829,279,73.641792297,140,6234
 939,In The Future,Black Mountain,ca,2008,No,No,83,939,4832,279,76.803283691,58,10264
 940,A River Ain't Too Much To Love,Smog,us,2005,No,No,97,940,4834,279,77.735404968,33,25329
@@ -945,15 +945,15 @@ Rank,Title,Artist,Country,Released,Compilation,Live,YearRank,DecadeRank,OverallR
 944,Laundry Service,Shakira,co,2001,No,No,94,944,4853,277,70.453094482,64,10875
 945,Master And Everyone,Bonnie 'Prince' Billy,us,2003,No,No,109,945,4857,277,76.485168457,50,12197
 946,The Lord Of The Rings: The Fellowship Of The Ring,Howard Shore,ca,2001,No,No,95,946,4861,277,81.938392639,61,9741
-947,One-X,Three Days Grace,ca,2006,No,No,97,947,4862,276,65.305717468,64,5785
+947,One+AC0-X,Three Days Grace,ca,2006,No,No,97,947,4862,276,65.305717468,64,5785
 948,Power In Numbers,Jurassic 5,us,2002,No,No,97,948,4867,276,75.710380554,50,2953
-949,Próxima Estación: Esperanza,Manu Chao,fr,2001,No,No,96,949,4869,276,73.311294556,101,15680
+949,Pr+//3//Q-xima Estaci+//3//Q-n: Esperanza,Manu Chao,fr,2001,No,No,96,949,4869,276,73.311294556,101,15680
 950,Melody Of Certain Damaged Lemons,Blonde Redhead,us,2000,No,No,95,950,4873,276,77.277984619,58,4431
 951,Ringleader Of The Tormentors,Morrissey,uk,2006,No,No,98,951,4892,274,72.713470459,98,13416
 952,No More Stories / Are Told Today / I'm Sorry / They Washed Away / No More Stories / The World Is Grey / I'm Tired / Let's Wash Away,Mew,dk,2009,No,No,94,952,4894,274,77.542320251,53,7613
 953,...For The Whole World To See,Death (Protopunk),us,2009,No,No,95,953,4895,274,80.337615967,58,31196
 954,Don't Give Up On Me,Solomon Burke,us,2002,No,No,98,954,4897,274,77.596694946,44,3642
-955,Trompe-l'oeil,Malajube,ca,2006,No,No,99,955,4908,273,76.169395447,35,2057
+955,Trompe+AC0-l'oeil,Malajube,ca,2006,No,No,99,955,4908,273,76.169395447,35,2057
 956,Witching Hour,Ladytron,uk,2005,No,No,99,956,4920,272,75.460380554,50,7498
 957,Wonder What's Next,Chevelle,us,2002,No,No,99,957,4921,272,73.907783508,70,2755
 958,Forth,The Verve,uk,2008,No,No,86,958,4928,271,72.256729126,82,9128
@@ -971,7 +971,7 @@ Rank,Title,Artist,Country,Released,Compilation,Live,YearRank,DecadeRank,OverallR
 970,Somewhere Along The Highway,Cult Of Luna,se,2006,No,No,102,970,4975,269,74.530349731,28,6279
 971,Driving Rain,Paul McCartney,uk,2001,No,No,98,971,4990,268,72.814170837,62,21227
 972,Dandelion Gum,Black Moth Super Rainbow,us,2007,No,No,96,972,4997,267,73.481369019,64,6076
-973,Overpowered,Róisín Murphy,ie,2007,No,No,97,973,4998,267,77.631332397,29,4191
+973,Overpowered,R+//3//Q-is+//3//Q-n Murphy,ie,2007,No,No,97,973,4998,267,77.631332397,29,4191
 974,Lost Horizons,Lemon Jelly,uk,2002,No,No,100,974,5004,266,72.502433777,41,7058
 975,Sawdust,The Killers,us,2007,Yes,No,98,975,5015,266,69.46509552,147,4407
 976,In The Zone,Britney Spears,us,2003,No,No,110,976,5018,265,59.976478577,91,15786
@@ -979,15 +979,15 @@ Rank,Title,Artist,Country,Released,Compilation,Live,YearRank,DecadeRank,OverallR
 978,The For Carnation,The For Carnation,us,2000,No,No,96,978,5026,265,76.557388306,27,24207
 979,Rejoicing In The Hands Of The Golden Empress,Devendra Banhart,us,2004,No,No,88,979,5030,265,74.538543701,72,15363
 980,Do You Like Rock Music?,British Sea Power,uk,2008,No,No,89,980,5032,265,77.622917175,52,12551
-981,All Hands On The Bad One,Sleater-Kinney,us,2000,No,No,97,981,5034,265,79.473587036,80,13741
+981,All Hands On The Bad One,Sleater+AC0-Kinney,us,2000,No,No,97,981,5034,265,79.473587036,80,13741
 982,Keep On Your Mean Side,The Kills,un,2003,No,No,111,982,5038,265,75.23374176,45,20476
-983,Lovetune For Vacuum,Soap&Skin,at,2009,No,No,97,983,5039,265,76.940597534,31,13100
+983,Lovetune For Vacuum,Soap+ACY-Skin,at,2009,No,No,97,983,5039,265,76.940597534,31,13100
 984,Dongs Of Sevotion,Smog,us,2000,No,No,98,984,5042,264,80.894645691,62,12870
 985,The E.N.D.,The Black Eyed Peas,un,2009,No,No,98,985,5060,263,50.635559082,120,9477
-986,Crazy Ex-Girlfriend,Miranda Lambert,us,2007,No,No,99,986,5064,263,75.300544739,33,17807
+986,Crazy Ex+AC0-Girlfriend,Miranda Lambert,us,2007,No,No,99,986,5064,263,75.300544739,33,17807
 987,Crisis,Alexisonfire,ca,2006,No,No,103,987,5081,262,73.832618713,53,4523
 988,Noble Beast,Andrew Bird,us,2009,No,No,99,988,5093,261,77.176216125,91,7737
-989,Oh My God! Charlie Darwin,The Low Anthem,us,2008,No,No,90,989,5094,261,76.045089722,26,7986
+989,Oh My God+ACE- Charlie Darwin,The Low Anthem,us,2008,No,No,90,989,5094,261,76.045089722,26,7986
 990,Mabool: The Story Of The Three Sons Of Seven,Orphaned Land,il,2004,No,No,89,990,5104,261,77.315597534,30,21531
 991,The Boy With No Name,Travis,uk,2007,No,No,100,991,5122,259,72.696365356,68,8074
 992,Venice,Fennesz,at,2004,No,No,90,992,5124,259,80.83605957,35,33513
@@ -997,5 +997,5 @@ Rank,Title,Artist,Country,Released,Compilation,Live,YearRank,DecadeRank,OverallR
 996,...And The Battle Begun,Rx Bandits,us,2006,No,No,104,996,5152,257,76.46975708,20,5423
 997,Details,Frou Frou,uk,2002,No,No,102,997,5159,257,75.293563843,33,8069
 998,Rated R,Rihanna,bb,2009,No,No,101,998,5169,256,57.953613281,106,8511
-999,Once (Music From The Motion Picture),Glen Hansard & Marketa Irglova,un,2007,No,No,101,999,5170,256,77.502044678,50,8051
+999,Once (Music From The Motion Picture),Glen Hansard +ACY- Marketa Irglova,un,2007,No,No,101,999,5170,256,77.502044678,50,8051
 1000,Afterglow,Sarah McLachlan,ca,2003,No,No,112,1000,5175,256,71.970680237,38,20337
