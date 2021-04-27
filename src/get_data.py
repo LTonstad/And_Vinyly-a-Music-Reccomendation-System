@@ -11,7 +11,7 @@ from src.data_prep import *
 
 
 # Setup Authentication
-auth_manager = SpotifyClientCredentials()
+auth_manager = SpotifyClientCredentials('424af1dc12124b348f3512f327311c06',  '4f653f97baa9452984c3a2dc2d202024')
 sp = spotipy.Spotify(auth_manager=auth_manager, requests_timeout=20, 
                     retries=20, status_retries=20, backoff_factor=3)
 
@@ -293,11 +293,11 @@ def get_song(song_name, artist_name):
                          'artist_popularity', 'followers', 'track_number', 'tracks_on_album', 'album_label', 
                          'explicit', 'duration_minutes', 'popularity', 'danceability', 'energy', 'key', 'loudness', 
                          'mode', 'speechiness', 'acousticness', 'instrumentalness', 'liveness', 'valence', 
-                         'tempo', 'tempo_confidence', 'track_length', 'end_fade_in', 'start_fade_out', 'end_silence_time', 
+                         'tempo', 'tempo_confidence', 'end_fade_in', 'start_fade_out', 'end_silence_time', 
                          'id', 'uri','track_href', 'analysis_url', 'artist_uri','album_uri', 'album_image_url',
                          'artist_spotify_link', 'artist_image_url', 'tatums_per_minute', 'beats_per_minute', 'bars_per_minute']]
 
-    add_genre_vals_alt(song_df, df_genre)
+    #add_genre_vals_alt(song_df, df_genre)
 
     # Creating bool value for if an there is an artist feature in the song
     if len(results['artists']) > 1:

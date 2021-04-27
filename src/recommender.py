@@ -1,6 +1,8 @@
 from sklearn.metrics.pairwise import cosine_distances, cosine_similarity, euclidean_distances, pairwise_distances
-from sklearn.preprocessing import StandardScaler, MinMaxScaler, RobustScaler
+from sklearn.preprocessing import StandardScaler
 from src.get_data import *
+from sklearn.cluster import KMeans
+from sklearn.pipeline import Pipeline
 import pandas as pd
 import numpy as np
 import operator
@@ -9,12 +11,20 @@ import random
 import math
 plt.rcParams["axes.grid"] = False
 
+['acousticness', 'artist_popularity', 'bars_per_minute',
+       'beats_per_minute', 'danceability', 'end_fade_in',
+       'end_silence_time', 'energy', 'explicit', 'followers',
+       'has_featured_artist', 'instrumentalness', 'key', 'liveness',
+       'loudness', 'mode', 'popularity', 'speechiness', 'start_fade_out',
+       'tatums_per_minute', 'tempo', 'tempo_confidence', 'track_number',
+       'tracks_on_album', 'valence', 'year', 'duration_minutes']
 
 df_mine = pd.read_pickle('../final_num_mine.pkl')
+grouped_mine = pd.read_pickle('../grouped_mine.pkl')
 # df_2010s = pd.read_pickle('../num_2010s.pkl') messed up pickle file
 df_rolling = pd.read_pickle('../final_num_rolling.pkl')
-df_mega_main = pd.read_pickle('../final_num_all.pkl')
-
+df_mega_main = pd.read_pickle('../final_num_full.pkl')
+grouped_all = pd.read_pickle('../final_grouped_all_albums.pkl')
 
 class ItemRecommender():
     '''
@@ -26,7 +36,7 @@ class ItemRecommender():
         self.similarity_measure = similarity_measure
 
     
-    def fit(self, X, scaler=StandardScaler, no_genre=False, just_song=False):
+    def fit(self, X):
         '''
         Takes a numpy array of the item attributes and creates the similarity matrix
 
@@ -42,18 +52,9 @@ class ItemRecommender():
         Create a similarity matrix of item to item similarity
         '''
 
-        # While keeping this as a sparse matrix would be best the cosign sim
-        # function returns a array so there is no reason.
-
         lst_of_albums = X.index.get_level_values(1)
-        
-        if no_genre == True:
-            X = X[X.columns[:23] | X.columns[-4:]]
-            if just_song == True:
-                X.drop(columns=['artist_popularity', 'followers', 'popularity', 'track_number', 'year'],
-                            inplace=True)
 
-        scaler = scaler()
+        scaler = StandardScaler()
         scale_matrix = scaler.fit_transform(X)
 
         indices = pd.Series(lst_of_albums)
@@ -66,7 +67,7 @@ class ItemRecommender():
                 index = self.item_names)
 
         
-    def get_recommendations(self, song_name, artist_name, n=20, no_genre=False, just_song=False):
+    def get_recommendations(self, song_name, artist_name, n=20):
         '''
         Returns the top n items related to the item passed in
         INPUT:
@@ -77,6 +78,9 @@ class ItemRecommender():
 
         For a given item find the n most similar items to it (this can be done using the similarity matrix created in the fit method)
         '''
+        grouped_mine = pd.read_pickle('../pca_mine_no_cluster.pkl')
+        grouped_all = pd.read_pickle('../pca_all_no_cluster.pkl')
+
         # Searches for song through Spotipy and then gets variables for the output
         song_df = get_song(song_name, artist_name)
 
@@ -85,17 +89,10 @@ class ItemRecommender():
         plt.imshow(img)
         plt.axis('off')
         plt.show()
-        
-        song_df = song_df[self.item_counts.columns]
-        
-        if no_genre == True or just_song == True:
-            song_df = song_df[song_df.columns[:23] | song_df.columns[-4:]]
-            if just_song == True:
-                song_df.drop(columns=['artist_popularity', 'followers', 'popularity', 
-                                             'track_number', 'year'],
-                            inplace=True)
 
-        simsim = cosine_similarity(song_df, self.item_counts)
+        song_recs = song_df[self.item_counts.columns]
+
+        simsim = cosine_similarity(song_recs, self.item_counts)
 
         recs_arr = np.argsort(simsim, axis=1)[0][-(n+1):-1]
 
@@ -137,4 +134,78 @@ class ItemRecommender():
         plt.axis('off')
         plt.show()
 
-        return df_recs
+        # Recommending songs from my albums
+
+        my_album_recs = song_df[grouped_mine.columns]
+
+        groupsim = cosine_similarity(my_album_recs, grouped_mine)
+
+        group_rec_arr = np.argsort(groupsim, axis=1)[0][-4:-1]
+
+        for idx, i in enumerate(group_rec_arr, start=1):
+            ser = grouped_mine.iloc[[i], :]
+            
+            if idx == 1:
+                df_recs = pd.DataFrame(ser)
+                
+            df_recs = df_recs.append(pd.DataFrame(ser))
+        
+        group_recs = df_recs.reset_index()
+
+        print(f"Meanwhile, while you're waiting for the new {artist_rec} album, you can try one of your own albums below:")
+
+        fig = plt.figure(figsize=(10,14))
+        ax = []
+        columns = 4
+        rows = 1
+
+        for i in range(1,4):
+            # Captures image to be printed by MatPlotLib at the end of the loop
+            img = Image.open(requests.get(group_recs['album_image_url'].values[i], stream=True).raw)
+            ax.append(fig.add_subplot(rows, columns, i+1))
+            title = (f'Album Name: {group_recs["album"][i]}\nArtist Name: {group_recs["artist"][i]}')
+            ax[-1].set_title(title, fontsize=8)
+            ax[-1].set_axis_off()
+            plt.imshow(img)
+
+
+        plt.tight_layout()
+        plt.show()
+
+        # Recommending album from all albums
+
+        all_album_recs = song_df[grouped_all.columns]
+
+        groupsim = cosine_similarity(all_album_recs, grouped_all)
+
+        group_rec_arr = np.argsort(groupsim, axis=1)[0][-4:-1]
+
+        for idx, i in enumerate(group_rec_arr, start=1):
+            group_ser = grouped_all.iloc[[i], :]
+            
+            if idx == 1:
+                group_df_recs = pd.DataFrame(group_ser)
+                
+            group_df_recs = group_df_recs.append(pd.DataFrame(group_ser))
+        
+        group_recs = group_df_recs.reset_index()
+
+
+        print(f"And if you're looking to purchase a new record for the collection, here are some good options:")
+
+        fig = plt.figure(figsize=(10,14))
+        ax = []
+        columns = 4
+        rows = 1
+
+        for i in range(1,4):
+            # Captures image to be printed by MatPlotLib at the end of the loop
+            img = Image.open(requests.get(group_recs['index'][i][2], stream=True).raw)
+            ax.append(fig.add_subplot(rows, columns, i+1))
+            title = (f'Album Name: {group_recs["index"][i][0]}\nArtist Name: {group_recs["index"][i][1]}')
+            ax[-1].set_title(title, fontsize=8)
+            ax[-1].set_axis_off()
+            plt.imshow(img)
+
+        plt.tight_layout()
+        plt.show()
