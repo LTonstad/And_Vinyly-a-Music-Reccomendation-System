@@ -65,7 +65,7 @@ Since it's much easier to identify a song that is stuck in your head rather than
 
 ## Credits
 
-![Stack](images/cap3_tech_stack.png)
+![Stack](images/cap3_tach_stack.png)
 
 * https://www.besteveralbums.com/index.php
 * https://towardsdatascience.com/how-to-build-an-amazing-music-recommendation-system-4cce2719a572
