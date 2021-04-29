@@ -8,7 +8,7 @@ Time is precious & too often we spend too much time in the presence of company m
 
 ### The Solution
 
-Since it's much easier to identify a song that is stuck in your head rather than an entire album, I made a song recommendation system using Python and the Spotipy API in which you can input the single song that is stuck in your head. The recommender will then output multiple songs, albums and an artist that are similar to that song that has been inputted. As a bonus, since we like to play vinyl records in our home I've also added a feature to recommend from the alubms that I currently own.
+Since it's much easier to identify a song that is stuck in your head rather than an entire album, I made a song recommendation system using Python and the Spotipy API in which you can input the single song that is stuck in your head. The recommender will then output multiple songs, albums and an artist that are similar to that song that has been inputted. As a bonus, since we like to play vinyl records in our home I've also added a feature to recommend from the albums that I currently own.
 
 ## Getting the Data
 
